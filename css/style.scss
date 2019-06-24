@@ -1,0 +1,146 @@
+//Phone1st
+//A super light developer theme
+//
+//
+// ===================================
+//   Import the basics
+//  ==================================
+@import "reset";
+@import "bourbon";
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+
+
+// ===================================
+//   Base styles
+//  ==================================
+//  
+@import "base/typography";
+@import "base/media";
+@import "base/form";
+@import "base/table";
+
+html {
+		-webkit-overflow-scrolling: touch;
+		-webkit-tap-highlight-color: $light-gray;
+		box-sizing: border-box;
+		height: 100%;
+}
+
+*,
+*::before,
+*::after {
+		box-sizing: inherit;
+}
+
+body {
+	height: 100%;
+	color: $font-color;
+	font-family: $font;
+	font-feature-settings: "kern", "liga", "pnum";
+	font-size: $font-size;
+	line-height: $line-height;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	
+	&:active,
+	&:focus,
+	&:hover {
+		color: $link-color;
+}
+}
+
+//Links hovers
+@include media(900) {
+a {
+  transition: color 0.4s ease-in 0.1s;
+    
+  &:hover {
+    color: $hover-color;
+}
+}
+}
+
+// ==========================
+//  Author's custom styles
+// ==========================
+
+@import "site/site";
+@import "site/menu";
+@import "site/navigation";
+@import "site/social";
+
+
+// ==============================================
+// Print styles.
+// ==============================================
+@media print {
+*,
+*:before,
+*:after,
+*:first-letter,
+*:first-line {
+	background: transparent !important;
+	color: #000 !important; // Black prints faster:
+	//http://www.sanbeiji.com/archives/953
+	box-shadow: none !important;
+	text-shadow: none !important;
+}
+
+a,
+a:visited {
+	text-decoration: underline;
+}
+
+a[href]:after {
+	content: " (" attr(href) ")";
+}
+
+abbr[title]:after {
+	content: " (" attr(title) ")";
+}
+// Don't show links that are fragment identifiers,
+// or use the `javascript:` pseudo protocol
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+	content: "";
+}
+
+pre,
+blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+// Printing Tables:
+// http://css-discuss.incutio.com/wiki/Printing_Tables
+thead {
+	display: table-header-group;
+}
+
+tr,
+img {
+	page-break-inside: avoid;
+}
+
+img {
+	max-width: 100% !important;
+}
+
+p,
+h2,
+h3 {
+	orphans: 3;
+	widows: 3;
+}
+
+h2,
+h3 {
+	page-break-after: avoid;
+}
+}

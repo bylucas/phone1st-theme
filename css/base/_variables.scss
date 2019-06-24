@@ -1,0 +1,52 @@
+// =======================
+// Variables
+// =======================
+
+// Typography
+$font: "Merriweather", serif;
+$heading-font: "antonio", sans-serif;
+$alt-font: "Ubuntu Condensed", sans-serif;
+$code-font: "Source Code Pro", monospace;
+$icon-font: "";
+
+// Font Sizes
+$font-size: 1rem; // 16px
+$lead: $font-size*1.1;
+$secondary: $font-size/1.1;
+$third: $font-size/1.2;
+
+// Line height
+$line-height: 1.6;
+
+// Other Sizes
+$radius: 5px;
+$spacer: 2rem;
+
+// Colors
+$black: #1C0301;
+$white:#FFF;
+$dark-gray: #464747;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+// Font Colors
+$font-color: $dark-gray;
+$link-color: #2365c0;//blue
+$hover-color: lighten($link-color, 25%);
+
+// Border
+$border: 1px solid $medium-gray;
+
+// Background Colors
+$background: $light-gray;
+$light-background: lighten($background, 11%);
+
+$input-background: #fdfdfd;
+$button-background: $link-color;
+
+$error-color: #ba221d;
+$alert-color: #BD912F;
+$success-color: #3f913a;
+
+
+

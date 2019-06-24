@@ -1,0 +1,160 @@
+// =======================
+// Forms
+// =======================
+
+form {
+  margin-bottom: $spacer/2;
+}
+
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: 700;
+  margin-bottom: $spacer / 4;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: $spacer / 4;
+}
+
+input,
+select,
+textarea {
+  outline: 0 none;
+  display: inline-block;
+  font-family: $font;
+  font-size: $secondary;
+}
+// Add your type inputs
+#{$all-text-inputs},
+textarea {
+  appearance: none;
+  background-color: $input-background;
+  border: $border;
+  border-radius: $radius;
+  box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+  margin-bottom: $spacer/2;
+  padding: $spacer / 6;
+  transition:background-color 0.8s ease-in 0.1s;
+    
+  &:hover {
+    border-color: darken($input-background, 20%);
+}
+  &:focus {
+    border-color: $link-color;
+    box-shadow: inset 0 1px 2px rgba(#000, 0.1);
+    outline: none;
+}
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  
+  &:hover {
+    border-color: $error-color;
+}
+}
+  @include placeholder {
+    color: $medium-gray;
+}
+}
+
+textarea {
+  resize: vertical;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  margin-right: $spacer/4;
+}
+
+[type="file"] {
+  margin-bottom: $spacer/2;
+}
+
+select {
+  margin-bottom: $spacer/2;
+}
+
+// =======================
+// Search Form
+// =======================
+
+ .search-box {
+
+  form.search-and-submit {
+    position: relative;
+
+  input[type=search] {
+    border-radius: $radius*2;
+    padding: .65rem;
+    font-style: italic;
+    margin: 0;
+}
+  input[type=submit] {
+  
+}
+}
+}
+
+////////////////////////////////////////////////////////////
+
+// buttons
+%btn {
+  outline: 0 none;
+  color: $white;
+  border-radius: $radius;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $alt-font;
+  font-size: $third;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  text-align: center;
+  padding: $spacer/3;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  white-space: nowrap;
+
+  &:hover, &:focus {
+  
+}
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+  &:hover {
+    background-color: $error-color;
+}
+}
+}
+
+@mixin button-bg($bg) {
+  background: $bg;
+  
+  @include media(900) {
+  
+  &:hover {
+    background:lighten($bg, 20%);
+    transition: all 0.3s ease;
+}
+}
+}
+
+//Add button types
+button,
+.but {
+  @extend %btn;
+  @include button-bg($button-background);
+  margin: 0;
+}

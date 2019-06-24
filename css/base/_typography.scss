@@ -1,0 +1,109 @@
+// =======================
+// Typography
+// =======================
+
+hr {
+  display: block;
+  border-bottom: $border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $spacer 0;
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  color: $font-color;
+  clear: both; // remember this!
+  line-height: 1.4;
+  margin-bottom: .5rem;
+  margin-top: $spacer/2;
+  hyphens: none;
+  font-size: $font-size;
+  font-weight: normal;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $spacer;
+  line-height: $line-height;
+  hyphens: none;
+}
+
+small {
+  font-size: $font-size / 1.25;
+}
+
+pre {
+  overflow: auto;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: -moz-pre-wrap; // fennec
+  white-space: pre-wrap;
+  white-space: pre\9; // IE7+
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: 600;
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: $code-font;
+  font-size: $secondary;
+  line-height: $line-height;
+  margin-bottom: $spacer/2;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+// consistant paragraphs
+.lead {
+  font-size: $lead;
+}
+
+.secondary {
+  font-size: $secondary;
+}
+
+.third {
+  font-size: $third;
+}

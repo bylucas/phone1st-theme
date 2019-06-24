@@ -1,0 +1,146 @@
+// =======================
+// Test
+// =======================
+@import "bourbon";
+@import "../css/base/variables";
+@import "../css/base/mixins";
+
+// PAGE SCROLL CURRENTLY IN THE FOOTER
+.back-to-top {
+  font-family: $alt-font;
+  text-align: center;
+  @include border-left-radius(5px);
+  position: fixed;
+  top: 275px;
+  right: 0;
+  background: $dark-gray;
+  display: none;
+  padding: .5rem;
+  font-size: $third;
+  letter-spacing: 1px;
+  color: $white;
+  opacity: .8;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $black;
+    opacity: 1;
+  }
+}
+///////////
+.test-intro {
+  text-align: center;
+
+  h1 {
+    font-size: modular-scale(3);
+  }
+}
+
+.links {
+  margin: $spacer/2 0 $spacer 0;
+
+  a {
+  display: block;
+}
+}
+
+//If you have a alternative font alter the style to suite
+.alt {
+  font-family: $alt-font;
+}
+
+.theme-variables p {
+  padding: $spacer/2;
+}
+
+.black-color {
+  background: $black;
+  
+  p {
+    color: #fff;
+}
+}
+
+.white-color {
+  background: $white;
+}
+
+.dark-gray {
+  background: $dark-gray;
+  
+  p {
+    color: #fff;
+}
+}
+
+.medium-gray {
+  background: $medium-gray;
+}
+
+.light-gray {
+  background: $light-gray;
+}
+
+.font-color {
+  background: $font-color;
+  
+  p {
+    color: #fff;
+}
+}
+
+.link-color {
+  background: $link-color;
+}
+
+.hover-color {
+  background: $hover-color;
+}
+
+.background {
+  background: $background;
+}
+
+.light-background {
+  background: $light-background;
+}
+
+.border {
+  border: $border;
+  border-radius: $radius;
+  margin-bottom: 2rem;
+
+  p {
+    margin: 0;
+}
+}
+
+.input-color {
+  background: $input-background;
+}
+
+.button-color {
+  background: $button-background;
+}
+
+.error-color {
+  background: $error-color;
+}
+
+.alert-color {
+  background: $alert-color;
+}
+
+.success-color {
+  background: $success-color;
+}
+
+.small {
+  font-size: $secondary;
+}
+
+.footer-info {
+  font-size: $third;
+
+}

@@ -1,0 +1,17 @@
+// =======================
+// Social Buttons
+// =======================
+    
+
+.social {
+    margin-bottom: $spacer;
+    margin-top: $spacer/2;
+
+	span {
+    margin-right: 1%;
+
+    &:before {
+  	font-family: $icon-font !important;
+}
+}
+}
