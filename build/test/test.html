@@ -21,7 +21,7 @@
 <meta property="og:title" content="Set the basic settings using this test page" />
 <meta property="og:description" content="Set and preview the very basic settings and then remove the folder if you wish" />
 <meta property="og:url" content="https://www.phone1st.org/test.html" />
-<meta property="og:image" content="https://www.phone1st.org/../tile-wide.png" />
+<meta property="og:image" content="https://www.phone1st.org/" />
 <meta property="og:image:width" content="580"/>
 <meta property="og:image:height" content="296"/>
 
@@ -29,7 +29,7 @@
 <meta name="twitter:title" content="Set the basic settings using this test page" />
 <meta name="twitter:description" content="Set and preview the very basic settings and then remove the folder if you wish" />
 <meta name="twitter:url" content="https://www.phone1st.org/test.html" />
-<meta name="twitter:image:src" content="https://www.phone1st.org/../tile-wide.png" />
+<meta name="twitter:image:src" content="https://www.phone1st.org/" />
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="test.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Source+Code+Pro|Ubuntu+Condensed" />
@@ -38,28 +38,19 @@
 </head>
 <body>
 	<div id="top" class="wrapper">
-
-	<main class="container" role="main">
+	 <div class="loader" id="loader">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
 	
-	<div class="test-intro">
-<h1>Phone1st Starter Theme Basics</h1>
-
-<figure>
-<img src="../tile-wide.png" alt="Phone1st logo" />
-</figure>
-
-<p>A <em>light</em> and <em>basic html starter theme</em> to get you off to a quick start with your web developments. The <em>CSS</em> is put together using <em>SCSS</em>, a popular way of creating <em>quick</em>, <em>organised</em> stylesheets.</p>
-
-<h5>Using Phone1st will save you time, building quicker, smarter projects.</h5>
-
-</div>		
-<hr>
-
-	<h2>Set the basics</h2>
-	<p>Use this page to set the basic elements before you start building your site.<br>
-	Link/button/table hovers don't come into effect until >900px
-	<br> The <em>test</em> folder can be deleted and <strong>will not</strong> effect your site.
-	<br> So start your website by making this page look pretty!</p>
+	<main class="container" role="main">
+			<h1>Set the basics</h1>
+			<p>Use this page to set the basic elements before you start building your site.<br>
+			Link/button/table hovers don't come into effect until >900px
+			<br> The <em>test</em> folder can be deleted and <strong>will not</strong> effect your site.
+			<br> Margins and padding in the theme have been taken off most elements or set to 0 
+			<br> -- So start your website by making this page look pretty!</p>
 			
 <hr>
 	<div class="links">
@@ -315,6 +306,7 @@
 		<h2 id="tables">Tables</h2>
 <hr>
 <h4>Basic table</h4>
+<p>The tables are fully formatted and ready to use</p>
 <table>
 	<caption>Table Caption</caption>
 	<tr>
@@ -545,17 +537,20 @@
 	<a href="https://www.linkedin.com/your-account"><span class=""></span>LinkedIn</a>
 	<a href="https://plus.google.com/your-account"><span class=""></span>Google+</a>
 	<a href="https://github.com/your-account"><span class=""></span>Github</a>
+
+<!-- //In-line SVG -->
+	<a href="https://www.facebook.com/your-account"><span class=""></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg></a>
 </div>
 <hr>
 <h2 id="404">404 Page Not Found</h2>
 <p>Change the 404 to your liking</p>
 <a href="../404.html">404.html</a>
 <hr>
-		<p class="small"><a href="../../index.html">Home</a></p>
+		<p class="small"><a href="../index.html">Home</a></p>
 	</main>
 	<footer>
 		<a class="back-to-top" href="#top">Top</a>
-		<p class="footer-info">&copy; 2019 bylucas <span>|</span> Phone1st Starter theme for html <a href="https://github.com/bylucas/phone1st-theme/" title="Phone1st Starter Theme for html available on Github">available on Github</a></p>
+		<p class="footer-info">&copy; 2019 bylucas <span>|</span> Phone1st Starter theme for html <a href="https://github.com/bylucas/Phone1st-New-html/" title="Phone1st Starter Theme for html available on Github">available on Github</a></p>
 	</footer>
 	</div><!-- wrapper   -->
 		<script src="app-min.js"></script>

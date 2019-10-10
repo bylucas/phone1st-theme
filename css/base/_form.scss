@@ -2,10 +2,6 @@
 // Forms
 // =======================
 
-form {
-  margin-bottom: $spacer/2;
-}
-
 fieldset {
   background-color: transparent;
   border: 0;
@@ -15,14 +11,11 @@ fieldset {
 
 legend {
   font-weight: 700;
-  margin-bottom: $spacer / 4;
-  padding: 0;
 }
 
 label {
   display: block;
   font-weight: 700;
-  margin-bottom: $spacer / 4;
 }
 
 input,
@@ -33,7 +26,7 @@ textarea {
   font-family: $font;
   font-size: $secondary;
 }
-// Add your type inputs
+// Add your type inputs - Bourbon Mixin
 #{$all-text-inputs},
 textarea {
   appearance: none;
@@ -41,8 +34,6 @@ textarea {
   border: $border;
   border-radius: $radius;
   box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-  margin-bottom: $spacer/2;
-  padding: $spacer / 6;
   transition:background-color 0.8s ease-in 0.1s;
     
   &:hover {
@@ -70,19 +61,6 @@ textarea {
   resize: vertical;
 }
 
-[type="checkbox"],
-[type="radio"] {
-  margin-right: $spacer/4;
-}
-
-[type="file"] {
-  margin-bottom: $spacer/2;
-}
-
-select {
-  margin-bottom: $spacer/2;
-}
-
 // =======================
 // Search Form
 // =======================
@@ -94,7 +72,6 @@ select {
 
   input[type=search] {
     border-radius: $radius*2;
-    padding: .65rem;
     font-style: italic;
     margin: 0;
 }
@@ -120,7 +97,6 @@ select {
   -webkit-font-smoothing: antialiased;
   line-height: 1;
   text-align: center;
-  padding: $spacer/3;
   text-decoration: none;
   vertical-align: middle;
   user-select: none;
@@ -153,7 +129,8 @@ select {
 
 //Add button types
 button,
-.but {
+.but,
+.submit {
   @extend %btn;
   @include button-bg($button-background);
   margin: 0;

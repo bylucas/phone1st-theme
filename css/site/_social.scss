@@ -11,7 +11,11 @@
     margin-right: 1%;
 
     &:before {
-  	font-family: $icon-font !important;
+  	font-family: $icon-font !important;//if using icon font
 }
 }
+svg {
+		@include size(1.2rem);//if using svg
+		fill: $error-color;
+	}
 }

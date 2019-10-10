@@ -1,6 +1,11 @@
 // as the page loads, call these scripts
 jQuery(document).ready(function ($) {
 
+// Wait for window load
+	$(window).on("load", function (e) {
+	$('.loader').fadeOut();
+});
+
 //Check to see if the window is top if not then display button
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 300) {
