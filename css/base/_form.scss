@@ -15,7 +15,6 @@ legend {
 
 label {
   display: block;
-  font-weight: 700;
 }
 
 input,
@@ -27,8 +26,7 @@ textarea {
   font-size: $secondary;
 }
 // Add your type inputs - Bourbon Mixin
-#{$all-text-inputs},
-textarea {
+#{$all-text-inputs} {
   appearance: none;
   background-color: $input-background;
   border: $border;
@@ -59,26 +57,6 @@ textarea {
 
 textarea {
   resize: vertical;
-}
-
-// =======================
-// Search Form
-// =======================
-
- .search-box {
-
-  form.search-and-submit {
-    position: relative;
-
-  input[type=search] {
-    border-radius: $radius*2;
-    font-style: italic;
-    margin: 0;
-}
-  input[type=submit] {
-  
-}
-}
 }
 
 ////////////////////////////////////////////////////////////

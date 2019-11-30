@@ -17,12 +17,12 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; // remember this!
   line-height: 1.4;
   hyphens: none;
-  font-size: $font-size;
+  font-size: $font-size;//Remove to set browser default headings
   font-weight: normal;
+  @include margin($spacer/2 null);//change browser default margins
 }
 
 p {
-  line-height: $line-height;
   hyphens: none;
 }
 
@@ -70,7 +70,7 @@ kbd,
 samp {
   font-family: $code-font;
   font-size: $secondary;
-  line-height: $line-height;
+  line-height: 1.4;
 }
 
 sub,

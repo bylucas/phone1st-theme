@@ -42,7 +42,7 @@ The following _variables_ for Meta Data are available with some _Facebook_ and _
 Meta variables available on the pages:
 
 `<!-- $title Page title -->` - Basic page title for use with navigation etc. eg `Home` `About`
-`<!-- $SEO-title -->`- 60ish characters
+`<!-- $SEO-title -->`- A more descriptive title - 60ish characters
 > Note: Your sitename is added after the $SEO-title
 
 `<!-- $description Page description -->` - 120ish characters  

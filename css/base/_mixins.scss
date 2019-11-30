@@ -1,6 +1,6 @@
-// =======================
-// Mixins
-// =======================
+// =============================
+// Mixins with Bourbon examples
+// =============================
 
 // @include background(value);
 // example @include background(lighten($red, 20%));
@@ -71,9 +71,10 @@
 
 //Phone1st uses Bourbon, a light mixin library, via Codekit.
 //Bourbon mixins
-//Check here for updates https://www.bourbon.io/docs/latest/
+//Check for updates https://www.bourbon.io/docs/latest/
 //If you fancy using Boubon Neat a simple grid system, start here https://neat.bourbon.io/docs/latest/
 
+//Bourbon Mixins for reference
 //Border
 //@include border-color(#a60b55 #76cd9c null #e8ae1a);
 //@include border-top-radius(4px);

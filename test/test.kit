@@ -3,7 +3,7 @@
 <!-- $description Set and preview the very basic settings and then remove the folder if you wish -->
 <!-- $keyword Test, preview, settings -->
 <!-- $url test.html -->
-<!-- $post-image nil -->
+<!-- $post-image ../tile-wide.png -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,18 +12,16 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="test.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Source+Code+Pro|Ubuntu+Condensed" />
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
-<body>
-	<div id="top" class="wrapper">
-	 <div class="loader" id="loader">
-          <span></span>
-          <span></span>
-          <span></span>
-      </div>
+<body onload="pageFunction()">
+	<div class="wrapper">
+	 
+	 <div class="loader" id="loader"></div>
 	
 	<main class="container" role="main">
+		<figure>
+<img src="<!-- $post-image -->" alt="Phone1st logo" />
+</figure>
 			<h1>Set the basics</h1>
 			<p>Use this page to set the basic elements before you start building your site.<br>
 			Link/button/table hovers don't come into effect until >900px
@@ -77,11 +75,11 @@
 		<p class="small"><a href="../index.html">Home</a></p>
 	</main>
 	<footer>
-		<a class="back-to-top" href="#top">Top</a>
+		<button onclick="topFunction()" id="topBtn" title="Back to top">Back to Top</button>
 		<p class="footer-info">&copy; 2019 bylucas <span>|</span> Phone1st Starter theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a></p>
 	</footer>
 	</div><!-- wrapper   -->
-		<script src="app-min.js"></script>
+		<script src="test-min.js"></script>
 
 </body>
 </html>

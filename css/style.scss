@@ -7,10 +7,12 @@
 //  ==================================
 @import "reset";
 @import "bourbon";
+//@import "neat";
 
 @import "base/variables";
 @import "base/mixins";
 @import "base/fonts";
+@import "base/utilities";
 
 
 // ===================================
@@ -41,7 +43,7 @@ body {
 	font-family: $font;
 	font-feature-settings: "kern", "liga", "pnum";
 	font-size: $font-size;
-	line-height: $line-height;
+	line-height: 1.6;
 	text-rendering: optimizeLegibility;
 }
 

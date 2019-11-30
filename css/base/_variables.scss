@@ -3,20 +3,17 @@
 // =======================
 
 // Typography
-$font: "Merriweather", serif;
+$font: "Raleway", sans-serif;
 $heading-font: "antonio", sans-serif;
 $alt-font: "Ubuntu Condensed", sans-serif;
 $code-font: "Source Code Pro", monospace;
 $icon-font: "";
 
-// Font Sizes
-$font-size: 1rem; // 16px
-$lead: $font-size*1.1;
-$secondary: $font-size/1.1;
-$third: $font-size/1.2;
+$font-size: 1.2rem;
 
-// Line height
-$line-height: 1.6;
+$lead: $font-size*1.134;
+$secondary: $font-size/1.125;
+$third: $font-size/1.255;
 
 // Other Sizes
 $radius: 5px;
