@@ -2,7 +2,7 @@
 var pageLoad
 
 function pageFunction() {
-  pageLoad = setTimeout(showPage, 2000);
+  pageLoad = setTimeout(showPage, 1000);
 }
 
 function showPage() {

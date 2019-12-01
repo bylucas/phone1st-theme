@@ -14,6 +14,8 @@
 
   a {
   display: block;
+  font-size: $secondary;
+  font-family: $alt-font;
 }
 }
 
@@ -106,13 +108,4 @@
 
 .success-color {
   background: $success-color;
-}
-
-.small {
-  font-size: $secondary;
-}
-
-.footer-info {
-  font-size: $third;
-
 }

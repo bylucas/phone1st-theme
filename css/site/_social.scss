@@ -19,3 +19,9 @@ svg {
 		fill: $error-color;
 	}
 }
+
+@include media(900) {
+	svg:hover {
+		fill: $success-color;
+	}
+}
