@@ -2,11 +2,11 @@
 var pageLoad
 
 function pageFunction() {
-  pageLoad = setTimeout(showPage, 1000);
+  pageLoad = setTimeout(showPage, 800);
 }
 
 function showPage() {
-  document.getElementById("loader").style.display = "none";
+  document.getElementById("loader").style.opacity = "0";
 }
 
 //Back to Top

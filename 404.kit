@@ -10,8 +10,16 @@
         div {
         text-align: center;
         }
+        figure {
+            margin-bottom: 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
         h1 {
         font-size: 40px;
+        margin-top: 0;
         }
         p {
         font-size: 20px;
@@ -19,10 +27,20 @@
         a {
         font-size: 15px;
         }
+
+        @media only screen and (min-width: 700px) {
+            img {
+            max-width: 300px;
+            height: auto;
+        }
+        }
         </style>      
     </head>
     <body>
-        <div>           
+        <div>
+        <figure>
+<img src="images/404.jpg" width="300" height="300" alt="Phone1st 404 image" />
+</figure>          
             <h1>Oops!</h1>
             <p>It seems the page you are looking for has gone astray</p>
             <a href="index.html">Go to the front page →</a>
