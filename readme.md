@@ -5,7 +5,7 @@
 
 >A light and basic html starter theme to get you off to a quick start with your web developments. The CSS is put together using SCSS, a popular way of creating quick, organised stylesheets. Using Phone1st will save you time, building quicker, smarter projects. Once you start using Phone1st you'll keep using it.
 
-All startup files are in place ready for building your site. You can view the theme [here](https://phone1st.org/)
+All startup files are in place ready for building your site. You can view the theme [here](https://phone1st-theme.netlify.com/)
 
 ### CodeKit
 Phone1st scripts are set to minify and the css styles are set to compress on output to the build folder.
@@ -58,5 +58,5 @@ __Important__ - Check the meta data in your _page head_ in the browser inspector
 
 ### Contact Info:   
 email [h@bylucas.co.uk](mailto:h@bylucas.co.uk)  
-View the theme [here](https://phone1st.org/)
+View the theme [here](https://phone1st-theme.netlify.com/)
 
