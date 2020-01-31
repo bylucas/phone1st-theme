@@ -1,14 +1,3 @@
-//Page loading
-var pageLoad
-
-function pageFunction() {
-  pageLoad = setTimeout(showPage, 800);
-}
-
-function showPage() {
-  document.getElementById("loader").style.opacity = "0";
-}
-
 //Back to Top
 backbutton = document.getElementById("topBtn");
 window.onscroll = function() {scrollFunction()};

@@ -20,7 +20,7 @@ To view the _test page_
 + Set test.kit to path /build/test/test.html
 + Set test.scss to path /build/test/test.css
 + Set app.js to path /build/test/app-min.js
-+ 
+ 
 ### Scss
 Phone1st uses _Scss_ to write css styles. If your not using scss you should be, _it’s a real time saver_.
 
