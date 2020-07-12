@@ -3,14 +3,11 @@
 // =======================
   
 .breadcrumb-box {
-  float: left;
-  width: 100%;
   margin-bottom: $spacer;
   
   p {
   font-family: $alt-font;
   font-size: $third;
-  margin-top: 0;
 }
 }
 
@@ -22,36 +19,31 @@
   margin: $spacer/2 auto $spacer auto;
   width: 95%;
   text-align: center;
-}
 
-.pagination ul {
+  ul {
 
-}
+    li {
+      display: inline;
+      font-family: $alt-font;
+      font-size: $third;
+      font-weight: bold;
 
-.pagination ul>li {
-  display: inline;
-  font-family: $alt-font;
-  font-size: $third;
-  font-weight: bold;
-}
+        &:first-child a,
+        &:first-child span,
+        &:last-child a,
+        &:last-child span {
+          @include background();
+          border-radius: $radius;
+      }
 
-.pagination ul>li:first-child>a,
-.pagination ul>li:first-child>span {
-  @include background();
-  border-radius: $radius;
-}
-
-.pagination ul>li:last-child>a,
-.pagination ul>li:last-child>span {
-  @include background();
-  border-radius: $radius;
-}
-
-.pagination ul>li>a,
-.pagination ul>li>span {
-  padding: .4rem .6rem;
-  @include background();
-  border-radius: $radius;
+      a,
+      span {
+        padding: .4rem .6rem;
+        @include background();
+        border-radius: $radius;
+      }
+    }
+  }
 }
 
 // ==================================
@@ -65,27 +57,19 @@
 .prev-next {
   font-family: $alt-font;
   font-size: $third;
-  
-  ul {
-  list-style: none;
-  padding-left: 0;
-
-  li i {
-  
 }
+
+.prev-link,
+.next-link {
+  @include background();
+  border-radius: $radius;
+  padding: .3rem .5rem;
 }
 
 .prev-link {
   float: left;
-  @include background();
-  border-radius: $radius;
-  padding: .3rem .5rem;
 }
 
 .next-link {
   float: right;
-  @include background();
-  border-radius: $radius;
-  padding: .3rem .5rem;
-}
 }

@@ -13,13 +13,13 @@ Phone1st scripts are set to minify and the css styles are set to compress on out
 The theme should build when added to Codekit, but if not:
 
 + Set style.scss to path /build/css/style.css
-+ Set app.js to path /build/js/app-min.js
++ Set app.js to path /build/js/app.js
 
 To view the _test page_
 
 + Set test.kit to path /build/test/test.html
 + Set test.scss to path /build/test/test.css
-+ Set app.js to path /build/test/app-min.js
++ Set app.js to path /build/test/app.js
  
 ### Scss
 Phone1st uses _Scss_ to write css styles. If your not using scss you should be, _it’s a real time saver_.

@@ -10,7 +10,7 @@ fieldset {
 }
 
 legend {
-  font-weight: 700;
+  font-weight: inherit;
 }
 
 label {
@@ -71,7 +71,7 @@ textarea {
   display: inline-block;
   font-family: $alt-font;
   font-size: $third;
-  font-weight: 700;
+  font-weight: bold;
   -webkit-font-smoothing: antialiased;
   line-height: 1;
   text-align: center;
