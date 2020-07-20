@@ -2,32 +2,15 @@
 // Forms
 // =======================
 
-fieldset {
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-legend {
-  font-weight: inherit;
-}
-
-label {
-  display: block;
-}
-
 input,
 select,
 textarea {
   outline: 0 none;
-  display: inline-block;
   font-family: $font;
   font-size: $secondary;
 }
 // Add your type inputs - Bourbon Mixin
 #{$all-text-inputs} {
-  appearance: none;
   background-color: $input-background;
   border: $border;
   border-radius: $radius;
@@ -59,7 +42,7 @@ textarea {
   resize: vertical;
 }
 
-////////////////////////////////////////////////////////////
+/////////////////////
 
 // buttons
 %btn {
@@ -71,7 +54,6 @@ textarea {
   display: inline-block;
   font-family: $alt-font;
   font-size: $third;
-  font-weight: bold;
   -webkit-font-smoothing: antialiased;
   text-align: center;
   text-decoration: none;
@@ -110,5 +92,4 @@ button,
 .submit {
   @extend %btn;
   @include button-bg($button-background);
-  margin: 0;
 }

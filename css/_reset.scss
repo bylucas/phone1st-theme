@@ -1,61 +1,56 @@
-// Reset Browser a personal version based on normalize
+// http://meyerweb.com/eric/tools/css/reset/ 
+//   v2.0 | 20110126
+//   License: none (public domain)
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// AND SOME EXTRAS ======================
 
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-  line-height: 1;
-}
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-figcaption,
-figure,
-main {
-  display: block;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
-}
-
-b,
-strong {
-  font-weight: inherit;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-i,
-em,
-dfn {
-  font-style: italic;
 }
 
 audio,
@@ -69,19 +64,8 @@ audio:not([controls]) {
 }
 
 img {
-  margin: 0;
   max-width: 100%;
   height: auto;
-  border-style: none;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
 }
 
 svg:not(:root) {
@@ -125,7 +109,6 @@ legend {
   box-sizing: border-box;
   display: table;
   max-width: 100%;
-  padding: 0;
   white-space: normal;
 }
 
@@ -164,11 +147,6 @@ textarea {
   font: inherit;
 }
 
-details,
-menu {
-  display: block;
-}
-
 summary {
   display: list-item;
 }
@@ -183,25 +161,4 @@ template {
 
 [hidden] {
   display: none;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
 }

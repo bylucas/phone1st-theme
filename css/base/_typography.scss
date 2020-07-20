@@ -4,10 +4,6 @@
 
 hr {
   display: block;
-  border-bottom: $border;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
   clear: both;
 }
 
@@ -18,12 +14,22 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
   hyphens: none;
   font-size: $font-size;//Remove to set browser default headings
-  font-weight: normal;
-  @include margin($spacer/2 null);//change browser default margins
 }
 
 p {
   hyphens: none;
+}
+
+b,
+strong,
+dt {
+  font-weight: bolder;
+}
+
+i,
+em,
+dfn {
+  font-style: italic;
 }
 
 small {
@@ -37,31 +43,6 @@ pre {
   white-space: -moz-pre-wrap; // fennec
   white-space: pre-wrap;
   white-space: pre\9; // IE7+
-}
-
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-dl {
-  margin: 0;
-}
-
-dt {
-  font-weight: bold;
-  margin: 0;
-}
-
-dd {
-  margin: 0;
-}
-
-blockquote {
-  margin: 0;
-  padding: 0;
 }
 
 pre,
@@ -78,7 +59,6 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
 }
 
 sup {

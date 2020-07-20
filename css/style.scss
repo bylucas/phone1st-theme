@@ -1,7 +1,6 @@
 //Phone1st
 //A super light developer theme
-//
-//
+
 // ===================================
 //   Import the basics
 //  ==================================
@@ -58,7 +57,7 @@ a {
 }
 }
 
-//Links hovers
+//Link hovers
 @include media(900) {
 a {
   transition: color 0.4s ease-in 0.1s;
@@ -70,7 +69,7 @@ a {
 }
 
 // ==========================
-//  Author's custom styles
+// Custom styles
 // ==========================
 
 @import "site/site";
