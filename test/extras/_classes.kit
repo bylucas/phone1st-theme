@@ -1,0 +1,11 @@
+<h3>Mixin Background</h3>
+
+<pre><code>// @include background(value);
+// example @include background(lighten($red, 20%));
+@mixin background($background-color: $background) {
+  background: $background-color;
+  box-shadow: inset 0 0 4px darken($background-color, 7%);
+}</code></pre>
+
+
+<div class="centered background"></div>

@@ -54,13 +54,10 @@
   @include clearfix;
 }
 
-.prev-next {
-  font-family: $alt-font;
-  font-size: $third;
-}
-
 .prev-link,
 .next-link {
+  font-family: $alt-font;
+  font-size: $third;
   @include background();
   border-radius: $radius;
   padding: .3rem .5rem;

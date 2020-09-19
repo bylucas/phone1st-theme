@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
   hyphens: none;
   font-size: $font-size;//Remove to set browser default headings
+  margin-bottom: $spacer/3;
 }
 
 p {
@@ -52,6 +53,47 @@ samp {
   font-family: $code-font;
   font-size: $secondary;
   line-height: 1.4;
+}
+
+//give the elements bottom margin
+p,
+pre,
+address,
+blockquote,
+ul,
+ol,
+dl {
+  margin-bottom: $spacer;
+}
+
+ul ul,
+ol ol {
+  margin-bottom: 8px;
+}
+
+li ul,
+li ol {
+  margin-top: 8px;
+}
+
+li {
+  font-size: $font-size/1.03;
+  margin-bottom: 5px;
+}
+
+li li {
+  font-size: $font-size/1.09;
+  margin-left: $spacer/2;
+}
+
+//inline list
+ul.inline li {
+  display: inline;
+  margin-right: $spacer/2;
+}
+
+dt {
+  margin-top: $spacer/4;
 }
 
 sub,
