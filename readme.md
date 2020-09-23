@@ -20,6 +20,8 @@ To view the _test page_
 + Set test.kit to path /build/test/test.html
 + Set test.scss to path /build/test/test.css
 + Set app.js to path /build/test/app.js
++ Set extras.kit to path /build/test/extras.html
++ Set extras.scss to path /build/test/extras.css
  
 ### Scss
 Phone1st uses _Scss_ to write css styles. If your not using scss you should be, _it’s a real time saver_.
@@ -29,6 +31,9 @@ The _test_ folder can be removed when no longer required it will not effect the 
 
 #### Test Page
 See the _test_ page before you start building your site. Use this page to set the basics.
+
+#### Extras Page
+See the _extras_ page for more theme information.
 
 ### No Menu
 Because of the many _responsive menus_ now available it’s pointless adding one to the theme.

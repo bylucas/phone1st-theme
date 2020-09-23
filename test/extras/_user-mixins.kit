@@ -1,0 +1,53 @@
+<h3>background</h3>
+
+<pre><code>.background {
+  @include background($success-color);
+  @include size(300px, 100px);
+  @include margin(null auto);
+}</code></pre>
+
+<div class="background"></div>
+<hr>
+
+<h3>hide from both screenreaders and browsers</h3>
+<pre><code>.hidden-box {
+  @include size(300px, 20px);
+  @include margin(null auto);
+    p:hover {
+    @include hidden;
+  }
+}</code></pre>
+<div class="hidden-box"><p>This text will hide on mouse hover</p></div>
+<hr>
+
+<h3>placeholders</h3>
+<pre><code>input class="inline" [type="text"] {
+  @include placeholder {
+    color: $medium-gray;
+  }
+}
+.inline {
+ display: inline !important;
+}// centers input box</code></pre>
+<input class="inline" type="text" placeholder="placeholder">
+<hr>
+<h3>media breakpoints</h3>
+<p>Base styles are phone first</p>
+
+<pre><code>.media-points p {
+  color: red;
+}
+
+@include media(700) {
+  .media-points p {
+    color: blue;
+  }
+}
+
+@include media(900) {
+  .media-points p {
+    color: rebeccapurple;
+  }
+}</code></pre>
+
+<div class="media-points"><p>This text will change color depending on the media breakpoint</p></div>

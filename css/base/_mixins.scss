@@ -158,7 +158,9 @@
 //@include position(relative, 0 null null 10em);
 
 //prefixer
-//to be looked at
+//.element {
+  //@include prefixer(appearance, none, ("webkit", "moz"));
+//}
 
 //shade
 //background-color: shade(#ffbb52, 60%);
@@ -196,9 +198,9 @@
 //triangle
 //.element {
 //  &::before {
-//    @include triangle("up", 2rem, 1rem, #b25c9c);
-//    content: "";
-//  }
+//   @include triangle("up", 2rem, 1rem, #b25c9c);
+//   content: "";
+// }
 //}
 
 //value prefixer
