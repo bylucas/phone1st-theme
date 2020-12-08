@@ -44,7 +44,7 @@ Same reason as _no menu_, there are too many _icon libraries_ around.
 ### Basic SEO
 The following _variables_ for Meta Data are available with some _Facebook_ and _Twitter_ meta. These are optional and you should add or subtract what you require.
 
-Meta variables available on the pages:
+Meta variables available:
 
 `<!-- $title Page title -->` - Basic page title for use with navigation etc. eg `Home` `About`
 `<!-- $SEO-title -->`- A more descriptive title - 60ish characters
