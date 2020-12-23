@@ -1,0 +1,56 @@
+// =======================
+// Start - remove
+// =======================
+
+.wrapper {
+	padding: $spacer 5%;
+}
+
+.start {
+	text-align: center;
+
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	figure {
+		margin-bottom: $spacer;
+	}
+
+	p {
+		font-size: $lead;
+		margin-bottom: $spacer;
+	}
+
+	h5 {
+		font-size: 1.4rem;
+		margin-bottom: $spacer;
+	}
+
+	.secondary {
+		font-size: $secondary;
+	}
+
+	button {
+		padding: 7px;
+		margin-top: 0;
+		margin-bottom: $spacer;
+
+		a {
+		color: $white;
+		font-size: .9rem;
+	}
+	}
+}
+
+@include media(700) {
+	.start h1 {
+		font-size: 2rem;
+	}
+}
+
+@include media(900) {
+	.start h1 {
+		font-size: 2.5rem;
+	}
+}

@@ -1,21 +1,24 @@
- <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Extra elements in Phone1st | phone1st-bylucas</title> <meta name="HandheldFriendly" content="True"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="description" content="A collection of extra elements including user and Bourbon mixins"> <meta name="author" content="h@bylucas.co.uk"> <meta name="robots" content="INDEX,FOLLOW"> <meta name="keywords" content="extras, mixins, bourbon"> <link rel="canonical" href="https://phone1st-theme.netlify.com/extras.html"> <link rel="apple-touch-icon" href="apple-touch-icon.png"> <meta property="og:site_name" content="phone1st-bylucas"> <meta property="og:type" content="website"> <meta property="og:title" content="Extra elements in Phone1st"> <meta property="og:description" content="A collection of extra elements including user and Bourbon mixins"> <meta property="og:url" content="https://phone1st-theme.netlify.com/extras.html"> <meta property="og:image" content="https://phone1st-theme.netlify.com/tile-wide.png"> <meta property="og:image:width" content="580"> <meta property="og:image:height" content="296"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Extra elements in Phone1st"> <meta name="twitter:description" content="A collection of extra elements including user and Bourbon mixins"> <meta name="twitter:url" content="https://phone1st-theme.netlify.com/extras.html"> <meta name="twitter:image:src" content="https://phone1st-theme.netlify.com/tile-wide.png"> <link rel="stylesheet" href="../css/style.css"> <link rel="stylesheet" href="extras.css"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap|Source+Code+Pro|Ubuntu+Condensed"> </head> <body> <div class="wrapper"> <div class="loader" id="loader"></div> <main class="container" role="main"> <figure> <img src="../tile-wide.png" alt="Phone1st logo"> </figure> <h1>Extras</h1> <p>To see the full code for the user mixins see <code>css/base/mixins.scss</code><br> To see the full code for the Bourbon mixins see <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code></p> <hr> <div class="links"> <a href="#bourbon-mixins">Bourbon Mixins</a> <a href="test.html">Test Page</a> <a href="../index.html">Home</a> </div> <hr> <div class="extras"> <h2>-- User Mixins --</h2> <h3>background</h3> <pre><code>.background {
+ <!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Extra elements in Phone1st | phone1st-bylucas</title> <meta name="HandheldFriendly" content="True"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="description" content="A collection of extra elements including user and Bourbon mixins"> <meta name="author" content="h@bylucas.co.uk"> <meta name="robots" content="INDEX,FOLLOW"> <meta name="keywords" content="extras, mixins, bourbon"> <link rel="canonical" href="https://phone1st-theme.netlify.com/extras.html"> <link rel="apple-touch-icon" href="apple-touch-icon.png"> <meta property="og:site_name" content="phone1st-bylucas"> <meta property="og:type" content="website"> <meta property="og:title" content="Extra elements in Phone1st"> <meta property="og:description" content="A collection of extra elements including user and Bourbon mixins"> <meta property="og:url" content="https://phone1st-theme.netlify.com/extras.html"> <meta property="og:image" content="https://phone1st-theme.netlify.com/tile-wide.png"> <meta property="og:image:width" content="580"> <meta property="og:image:height" content="296"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Extra elements in Phone1st"> <meta name="twitter:description" content="A collection of extra elements including user and Bourbon mixins"> <meta name="twitter:url" content="https://phone1st-theme.netlify.com/extras.html"> <meta name="twitter:image:src" content="https://phone1st-theme.netlify.com/tile-wide.png"> <link rel="stylesheet" href="../css/style.css"> <link rel="stylesheet" href="base.css"> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap|Source+Code+Pro|Ubuntu+Condensed"> </head> <body> <div class="wrapper"> <div class="loader" id="loader"></div> <main class="container" role="main"> <h1 class="intro-title">Extras</h1> <figure> <img src="../tile-wide.png" alt="Phone1st logo"> </figure> <p>To see the full code for the user mixins see <code>css/base/mixins.scss</code><br> To see the full code for the Bourbon mixins see <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code></p> <hr> <div class="links"> <a href="#user-mixins">User Mixins</a> <a href="#background">background</a> <a href="#hide">hide from screenreaders</a> <a href="#placeholders">placeholders</a> <a href="#breakpoints">media breakpoints</a> <a href="#bourbon-mixins">Bourbon Mixins</a> <a href="#buttons">buttons</a> <a href="#clearfix">clearfix</a> <a href="#contrast">contrast switch</a> <a href="#ellipsis">ellipsis</a> <a href="#fontface">@fontface</a> <a href="#stacks">font stacks</a> <a href="#hide-text">hide text</a> <a href="#visually">hide visually</a> <a href="#margin">margin</a> <a href="#modular">modular scale</a> <a href="#wrap">overflow wrap</a> <a href="#padding">padding</a> <a href="#position">position</a> <a href="#prefixer">prefixer</a> <a href="#shade">shade</a> <a href="#size">size</a> <a href="#unit">strip unit</a> <a href="#inputs">text inputs</a> <a href="#tint">tint</a> <a href="#triangle">triangle</a> <a href="#value">value prefixer</a> </div> <hr> <div class="extras"> <h2>-- User Mixins --</h2> <h3 id="background">background</h3> <pre><code>.background {
   @include background($success-color);
   @include size(300px, 100px);
   @include margin(null auto);
-}</code></pre> <div class="background"></div> <hr> <h3>hide from both screenreaders and browsers</h3> <pre><code>.hidden-box {
-  @include size(300px, 20px);
+}</code></pre> <div class="background"></div> <hr> <h3 id="hide">hide from both screenreaders and browsers</h3> <pre><code>.hidden-box {
+  @include size(300px, 70px);
   @include margin(null auto);
-    p:hover {
+  padding: 7px;
+  font-size: .9rem;
+  color: orange;
+  border: 1px solid blue;
+  
+  &:hover span {
     @include hidden;
   }
-}</code></pre> <div class="hidden-box"><p>This text will hide on mouse hover</p></div> <hr> <h3>placeholders</h3> <pre><code>input class="inline" [type="text"] {
-  @include placeholder {
-    color: $medium-gray;
-  }
 }
-.inline {
- display: inline !important;
-}// centers input box</code></pre> <input class="inline" placeholder="placeholder"> <hr> <h3>media breakpoints</h3> <p>Base styles are phone first</p> <pre><code>.media-points p {
+</code></pre> <div class="hidden-box"><span>This text will hide on hover and be invisible to screen readers and browsers</span></div> <hr> <h3 id="placeholders">placeholders</h3> <pre><code>input {
+ @include placeholder {
+  color: red;
+ }
+}</code></pre> <input placeholder="placeholder"> <hr> <h3 id="breakpoints">media breakpoints</h3> <p>Base styles are phone first</p> <pre><code>.media-points p {
   color: red;
 }
 
@@ -29,13 +32,11 @@
   .media-points p {
     color: rebeccapurple;
   }
-}</code></pre> <div class="media-points"><p>This text will change color depending on the media breakpoint</p></div> <p>To see the full code for the user mixins see <code>css/base/mixins.scss</code></p> <hr> <h2 id="bourbon-mixins">-- Bourbon Mixins --</h2> <h3>border</h3> <pre><code>@include border-color(#a60b55 #76cd9c null #e8ae1a);
-@include border-top-radius(4px);
-@include border-right-radius(3px);
-@include border-bottom-radius(2px);
-@include border-left-radius(1px);
-@include border-style(dashed null solid);
-@include border-width(1em null 20px);</code></pre> <hr> <h3>buttons</h3> <pre><code>#{$all-buttons} {
+}</code></pre> <div class="media-points"> <p>At base level this text is red<br> At 700px this text is blue<br> At 900px this text is purple</p> </div> <p>To see the full code for the user mixins see <code>css/base/mixins.scss</code></p> <hr> <h2 id="bourbon-mixins">-- Bourbon Mixins --</h2> <h3 id="border">border</h3> <pre><code>@include border-color(#a60b55 #76cd9c null #e8ae1a);
+@include border-top-radius(15px);
+@include border-bottom-radius(10px);
+@include border-style(dashed solid dotted);
+@include border-width(.7em 3px 10px);</code></pre> <div class="show-border"></div> <hr> <h3 id="buttons">buttons</h3> <pre><code>#{$all-buttons} {
 background-color: #f00;
 }
 
@@ -49,7 +50,9 @@ background-color: #0f0;
 
 #{$all-buttons-hover} {
  background-color: #0f0;
-}//See css/base/_form.scss to see how the themes uses buttons</code></pre> <hr> <h3>clearfix</h3> <pre><code>@include clearfix;</code></pre> <hr> <h3>constrast switch</h3> <pre><code>color: contrast-switch(#bae6e6);</code></pre> <hr> <h3>ellipses</h3> <pre><code>@include ellipsis;</code></pre> <hr> <h3>@fontface</h3> <pre><code>@include font-face(
+}//See css/base/_form.scss to see how the themes uses buttons</code></pre> <hr> <h3 id="clearfix">clearfix</h3> <pre><code>@include clearfix;</code></pre> <hr> <h3 id="contrast">constrast switch</h3> <pre><code>$button-color: #2d72d9;
+background-color: $button-color;
+color: contrast-switch($button-color, #222, #eee);</code></pre> <div class="contrast"><a href="https://www.bourbon.io/docs/latest/">See the Bourbon docs</a></div> <hr> <h3 id="ellipsis">ellipsis</h3> <pre><code>@include ellipsis;</code></pre> <div class="ellipsis"><span>Hover over me to see the ellipsis in action</span></div> <hr> <h3 id="fontface">@fontface</h3> <pre><code>@include font-face(
  "source-sans-pro",
  "fonts/source-sans-pro-regular",
  ("woff2", "woff")
@@ -57,7 +60,7 @@ background-color: #0f0;
   font-style: normal;
   font-weight: 400;
  }
-//See css/base/_fonts.scss to see the themes use of this mixin</code></pre> <hr> <h3>font-stacks</h3> <pre><code>font-family: $font-stack-helvetica;
+//See css/base/_fonts.scss to see the themes use of this mixin</code></pre> <hr> <h3 id="stacks">font-stacks</h3> <pre><code>font-family: $font-stack-helvetica;
 font-family: $font-stack-lucida-grande;
 font-family: $font-stack-verdana;
 font-family: $font-stack-system;
@@ -66,16 +69,26 @@ font-family: $font-stack-georgia;
 font-family: $font-stack-hoefler-text;
 font-family: $font-stack-consolas;
 font-family: $font-stack-courier-new;
-font-family: $font-stack-monaco;</code></pre> <hr> <h3>hide text</h3> <pre><code>@include hide-text;
-@include hide-visually;
-@include hide-visually("unhide");</code></pre> <hr> <h3>margin</h3> <pre><code>@include margin(null auto);</code></pre> <hr> <h3>module scale</h3> <pre><code>$bourbon: (
+font-family: $font-stack-monaco;</code></pre> <hr> <h3 id="hide-text">hide text</h3> <pre><code>@include hide-text;</code></pre> <div class="hide-text"> On hover replace text with image, text still available for SEO </div> <hr> <h3 id="visually">hide visually</h3> <pre><code>@include hide-visually;
+@include hide-visually("unhide");</code></pre> <div class="hide-visually"> Box title is hidden but still available to screen readers, hover to view<br> <span>Box Title</span> </div> <hr> <h3 id="margin">margin</h3> <pre><code>@include margin(10px null null 20px);</code></pre> <div class="margin"><p>MARGIN</p></div> <hr> <h3 id="modular">module scale</h3> <pre><code>$bourbon: (
 "modular-scale-ratio": 1.2,
 );
 .element {
 font-size: modular-scale(3);
-}</code></pre> <hr> <h3>overflow wrap (break word)</h3> <pre><code>@include overflow-wrap;</code></pre> <hr> <h3>padding</h3> <pre><code>@include padding(null 1rem);</code></pre> <hr> <h3>position</h3> <pre><code>@include position(relative, 0 null null 10em);</code></pre> <hr> <h3>prefixer</h3> <pre><code>.element {
+}</code></pre> <div class="modular">Modular Scale</div> <hr> <h3 id="wrap">overflow wrap (break word)</h3> <pre><code>@include overflow-wrap;
+//hover to see overflow-wrap</code></pre> <div class="wrap">Thisisaveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryverylongword</div> <hr> <h3 id="padding">padding</h3> <pre><code>@include padding(10px null null 20px);</code></pre> <div class="padding"><p>PADDING</p></div> <hr> <h3 id="position">position</h3> <pre><code>@include position(absolute, 20px null null 20px);</code></pre> <div class="position"><div></div></div> <hr> <h3 id="prefixer">prefixer</h3> <pre><code>.element {
  @include prefixer(appearance, none, ("webkit", "moz"));
-}</code></pre> <hr> <h3>shade</h3> <pre><code>background-color: shade(#ffbb52, 60%);</code></pre> <hr> <h3>size</h3> <pre><code>@include size(2em);</code></pre> <hr> <h3>strip unit</h3> <pre><code>$dimension: strip-unit(10em);</code></pre> <hr> <h3>text inputs</h3> <pre><code>#{$all-text-inputs} {
+}
+
+//CSS Output
+.element {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+}</code></pre> <hr> <h3 id="shade">shade</h3> <pre><code>background-color: shade(#ffbb52, 30%);</code></pre> <div class="shade"></div> <hr> <h3 id="size">size</h3> <pre><code>@include size(300px, 1.8em);</code></pre> <div class="size"></div> <hr> <h3 id="unit">strip unit</h3> <pre><code>$dimension: strip-unit(10em);
+
+//Output
+$dimension: 10;</code></pre> <hr> <h3 id="inputs">text inputs</h3> <pre><code>#{$all-text-inputs} {
  border: 1px solid #ccc;
 }
 
@@ -93,12 +106,28 @@ font-size: modular-scale(3);
 
 #{$all-text-inputs-invalid} {
  border: 1px solid #00f;
-}</code></pre> <hr> <h3>tint</h3> <pre><code>background-color: tint(#6ecaa6, 40%);</code></pre> <hr> <h3>triangle</h3> <pre><code>.element {
- &::before {
- @include triangle("up", 2rem, 1rem, #b25c9c);
- content: "";
- }
-}</code></pre> <hr> <h3>value prefixer</h3> <pre><code>@include value-prefixer(cursor, grab, ("webkit", "moz"));</code></pre> <p>To see the full code for the Bourbon mixins see <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code></p> </div> <hr> <p class="secondary"><a href="../index.html">Home</a> | <a href="test.html">Test Page</a></p> </main> <footer> <button onclick="topFunction()" id="topBtn" title="Back to top">Top</button> <p class="third">&copy; 2020 bylucas <span>|</span> Phone1st Starter theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a></p> </footer> </div> <script src="test.js"></script> <script>var _gaq=[['_setAccount','UA-139947881-1'],['_trackPageview']];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-g.src='//www.google-analytics.com/ga.js';
-s.parentNode.insertBefore(g,s)}(document,'script'));</script> </body> </html>
+}</code></pre> <hr> <h3 id="tint">tint</h3> <pre><code>background-color: tint(#ffbb52, 30%);</code></pre> <div class="tint"></div> <hr> <h3 id="triangle">triangle</h3> <pre><code>.element {
+ @include size(300px, 50px);
+ @include margin(null auto);
+ background-color: #b25c9c;
+ position: relative;
+  
+  &::before {
+   @include triangle("up", 2rem, 1rem, #b25c9c);
+   position: absolute;
+   content: "";
+   //position triangle on box
+   top:-1rem; 
+   left:6rem;
+  }
+}</code></pre> <div class="triangle"></div> <hr> <h3 id="value">value prefixer</h3> <pre><code>@include value-prefixer(cursor, grab, ("webkit", "moz"));
+
+//CSS Output
+.element {
+cursor: -webkit-grab;
+cursor: -moz-grab;
+cursor: grab;
+}</code></pre> <hr> <p>To see the full code for the Bourbon mixins see <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code></p> </div> <hr> <p class="secondary center"><a href="../index.html">Home</a> | <a href="test.html">Test Page</a></p> </main>  <footer> <button onclick="topFunction()" id="topBtn" title="Back to top">Top</button> <p class="third">&copy; 2020 bylucas <span>|</span> Phone1st Starter theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a></p> </footer> </div> <script src="test.js"></script> <script>var _gaq=[['_setAccount','UA-139947881-1'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src='//www.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));</script> </body> </html>

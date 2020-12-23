@@ -1,12 +1,12 @@
 // =======================
 // Test
 // =======================
-@import "bourbon";
-@import "../css/base/variables";
-@import "../css/base/mixins";
-@import "utilities";
 
-///////////
+.intro-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: $spacer/2;
+}
 
 .links {
   margin: $spacer/2 0 $spacer 0;
@@ -111,4 +111,16 @@
 
 .center {
   text-align: center;
+}
+
+@include media(700) {
+  .intro-title {
+    font-size: 2rem;
+  }
+}
+
+@include media(900) {
+  .intro-title {
+    font-size: 2.5rem;
+  }
 }

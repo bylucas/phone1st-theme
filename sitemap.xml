@@ -6,21 +6,21 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://phone1st-theme.netlify.com/</loc>
+  <loc>https://phone1st.org/</loc>
   <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>https://phone1st-theme.netlify.com/index.html</loc>
+  <loc>https://phone1st.org/index.html</loc>
   <changefreq>monthly</changefreq>
 </url>
 
 <url>
-  <loc>https://phone1st-theme.netlify.com/test/test.html</loc>
+  <loc>https://phone1st.org/test/test.html</loc>
   <changefreq>monthly</changefreq>
 </url>
 
 <url>
-  <loc>https://phone1st-theme.netlify.com/test/extras.html</loc>
+  <loc>https://phone1st.org/test/extras.html</loc>
   <changefreq>monthly</changefreq>
 </url>
 

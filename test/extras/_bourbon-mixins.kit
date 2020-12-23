@@ -1,15 +1,15 @@
-<h3>border</h3>
+<h3 id="border">border</h3>
 
 <pre><code>@include border-color(#a60b55 #76cd9c null #e8ae1a);
-@include border-top-radius(4px);
-@include border-right-radius(3px);
-@include border-bottom-radius(2px);
-@include border-left-radius(1px);
-@include border-style(dashed null solid);
-@include border-width(1em null 20px);</code></pre>
+@include border-top-radius(15px);
+@include border-bottom-radius(10px);
+@include border-style(dashed solid dotted);
+@include border-width(.7em 3px 10px);</code></pre>
+
+<div class="show-border"></div>
 
 <hr>
-<h3>buttons</h3>
+<h3 id="buttons">buttons</h3>
 
 <pre><code>#{$all-buttons} {
 background-color: #f00;
@@ -27,16 +27,24 @@ background-color: #0f0;
  background-color: #0f0;
 }//See css/base/_form.scss to see how the themes uses buttons</code></pre>
 <hr>
-<h3>clearfix</h3>
+
+<h3 id="clearfix">clearfix</h3>
 <pre><code>@include clearfix;</code></pre>
 <hr>
-<h3>constrast switch</h3>
-<pre><code>color: contrast-switch(#bae6e6);</code></pre>
+
+<h3 id="contrast">constrast switch</h3>
+<pre><code>$button-color: #2d72d9;
+background-color: $button-color;
+color: contrast-switch($button-color, #222, #eee);</code></pre>
+<div class="contrast"><a href="https://www.bourbon.io/docs/latest/">See the Bourbon docs</a></div>
 <hr>
-<h3>ellipses</h3>
+
+<h3 id="ellipsis">ellipsis</h3>
 <pre><code>@include ellipsis;</code></pre>
+<div class="ellipsis"><span>Hover over me to see the ellipsis in action</span></div>
 <hr>
-<h3>@fontface</h3>
+
+<h3 id="fontface">@fontface</h3>
 <pre><code>@include font-face(
  "source-sans-pro",
  "fonts/source-sans-pro-regular",
@@ -47,7 +55,8 @@ background-color: #0f0;
  }
 //See css/base/_fonts.scss to see the themes use of this mixin</code></pre>
 <hr>
-<h3>font-stacks</h3>
+
+<h3 id="stacks">font-stacks</h3>
 <pre><code>font-family: $font-stack-helvetica;
 font-family: $font-stack-lucida-grande;
 font-family: $font-stack-verdana;
@@ -59,55 +68,90 @@ font-family: $font-stack-consolas;
 font-family: $font-stack-courier-new;
 font-family: $font-stack-monaco;</code></pre>
 <hr>
-<h3>hide text</h3>
-<pre><code>@include hide-text;
-@include hide-visually;
-@include hide-visually("unhide");</code></pre>
-<hr>
-<h3>margin</h3>
-<pre><code>@include margin(null auto);</code></pre>
+
+<h3 id="hide-text">hide text</h3>
+<pre><code>@include hide-text;</code></pre>
+
+<div class="hide-text">
+  On hover replace text with image, text still available for SEO
+</div>
+
 <hr>
 
-<h3>module scale</h3>
+<h3 id="visually">hide visually</h3>
+<pre><code>@include hide-visually;
+@include hide-visually("unhide");</code></pre>
+
+<div class="hide-visually">
+  Box title is hidden but still available to screen readers, hover to view<br>
+  <span>Box Title</span>
+</div>
+<hr>
+
+<h3 id="margin">margin</h3>
+<pre><code>@include margin(10px null null 20px);</code></pre>
+<div class="margin"><p>MARGIN</p></div>
+<hr>
+
+<h3 id="modular">module scale</h3>
 <pre><code>$bourbon: (
 "modular-scale-ratio": 1.2,
 );
 .element {
 font-size: modular-scale(3);
 }</code></pre>
+
+<div class="modular">Modular Scale</div>
 <hr>
 
-<h3>overflow wrap (break word)</h3>
-<pre><code>@include overflow-wrap;</code></pre>
+<h3 id="wrap">overflow wrap (break word)</h3>
+<pre><code>@include overflow-wrap;
+//hover to see overflow-wrap</code></pre>
+<div class="wrap">Thisisaveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryverylongword</div>
 <hr>
 
-<h3>padding</h3>
-<pre><code>@include padding(null 1rem);</code></pre>
+<h3 id="padding">padding</h3>
+<pre><code>@include padding(10px null null 20px);</code></pre>
+<div class="padding"><p>PADDING</p></div>
 <hr>
 
-<h3>position</h3>
-<pre><code>@include position(relative, 0 null null 10em);</code></pre>
+<h3 id="position">position</h3>
+<pre><code>@include position(absolute, 20px null null 20px);</code></pre>
+<div class="position"><div></div></div>
 <hr>
 
-<h3>prefixer</h3>
+<h3 id="prefixer">prefixer</h3>
 <pre><code>.element {
  @include prefixer(appearance, none, ("webkit", "moz"));
+}
+
+//CSS Output
+.element {
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
 }</code></pre>
 <hr>
 
-<h3>shade</h3>
-<pre><code>background-color: shade(#ffbb52, 60%);</code></pre>
+<h3 id="shade">shade</h3>
+<pre><code>background-color: shade(#ffbb52, 30%);</code></pre>
+
+<div class="shade"></div>
 <hr>
 
-<h3>size</h3>
-<pre><code>@include size(2em);</code></pre>
+<h3 id="size">size</h3>
+<pre><code>@include size(300px, 1.8em);</code></pre>
+<div class="size"></div>
 <hr>
 
-<h3>strip unit</h3>
-<pre><code>$dimension: strip-unit(10em);</code></pre>
+<h3 id="unit">strip unit</h3>
+<pre><code>$dimension: strip-unit(10em);
+
+//Output
+$dimension: 10;</code></pre>
 <hr>
 
-<h3>text inputs</h3>
+<h3 id="inputs">text inputs</h3>
 <pre><code>#{$all-text-inputs} {
  border: 1px solid #ccc;
 }
@@ -129,18 +173,38 @@ font-size: modular-scale(3);
 }</code></pre>
 <hr>
 
-<h3>tint</h3>
-<pre><code>background-color: tint(#6ecaa6, 40%);</code></pre>
+<h3 id="tint">tint</h3>
+<pre><code>background-color: tint(#ffbb52, 30%);</code></pre>
+
+<div class="tint"></div>
 <hr>
 
-<h3>triangle</h3>
+<h3 id="triangle">triangle</h3>
 <pre><code>.element {
- &::before {
- @include triangle("up", 2rem, 1rem, #b25c9c);
- content: "";
- }
+ @include size(300px, 50px);
+ @include margin(null auto);
+ background-color: #b25c9c;
+ position: relative;
+  
+  &::before {
+   @include triangle("up", 2rem, 1rem, #b25c9c);
+   position: absolute;
+   content: "";
+   //position triangle on box
+   top:-1rem; 
+   left:6rem;
+  }
+}</code></pre>
+<div class="triangle"></div>
+<hr>
+
+<h3 id="value">value prefixer</h3>
+<pre><code>@include value-prefixer(cursor, grab, ("webkit", "moz"));
+
+//CSS Output
+.element {
+cursor: -webkit-grab;
+cursor: -moz-grab;
+cursor: grab;
 }</code></pre>
 <hr>
-
-<h3>value prefixer</h3>
-<pre><code>@include value-prefixer(cursor, grab, ("webkit", "moz"));</code></pre>
