@@ -1,11 +1,9 @@
-# Welcome to Phone1st - html
+# Welcome to Phone1st
 #### A light, clean, starter theme that starts _phone first_
 
 ![](tile-wide.png)
 
 >A light and basic html starter theme to get you off to a quick start with your web developments. The CSS is put together using SCSS, a popular way of creating quick, organised stylesheets. Using Phone1st will save you time, building quicker, smarter projects. Once you start using Phone1st you'll keep using it.
-
-All startup files are in place ready for building your site. You can view the theme [here](https://phone1st-theme.netlify.com/)
 
 ### CodeKit
 Phone1st scripts are set to minify and the css styles are set to compress on output to the build folder.
@@ -24,7 +22,7 @@ To view the _test page_
 + Set extras.scss to path /build/test/extras.css
  
 ### Scss
-Phone1st uses _Scss_ to write css styles. If your not using scss you should be, _it’s a real time saver_.
+Phone1st uses _Scss_ to write css styles. Scss can easily be removed if required.
 
 ### The Test Folder
 The _test_ folder can be removed when no longer required it will not effect the theme.
@@ -62,6 +60,5 @@ sitename is usually the name in your web address ie _www.mysitename.com_ - your 
 __Important__ - Check the meta data in your _page head_ in the browser inspector
 
 ### Contact Info:   
-email [h@bylucas.co.uk](mailto:h@bylucas.co.uk)  
-View the theme [here](https://phone1st-theme.netlify.com/)
+email [h@bylucas.co.uk](mailto:h@bylucas.co.uk)
 

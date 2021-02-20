@@ -1,0 +1,43 @@
+// =======================
+// About
+// =======================
+.about {
+  padding-top: $spacer;
+
+h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: $spacer;
+}
+
+h3 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: $medium-gray;
+}
+
+p {
+  font-size: $secondary;
+}
+
+li {
+  font-size: $secondary;
+}
+
+pre {
+  text-align: left;
+  padding: $spacer/2 $spacer;
+  @include background(tint($light-gray, 60%));
+  border-radius: $radius;
+  color: rgb(87, 127, 214);
+}
+
+code {
+  font-size: $third;
+}
+}

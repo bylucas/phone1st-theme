@@ -8,3 +8,8 @@ article,
 footer {
     @include clearfix;
 }
+
+.wrapper {
+	max-width: 900px;
+	@include margin(null auto);
+}

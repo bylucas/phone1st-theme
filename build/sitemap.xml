@@ -15,6 +15,11 @@
 </url>
 
 <url>
+  <loc>https://phone1st.org/test/about.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
   <loc>https://phone1st.org/test/test.html</loc>
   <changefreq>monthly</changefreq>
 </url>
