@@ -1,63 +1,85 @@
 <!-- $title Extras -->
-<!-- $SEO-title Extra elements in Phone1st -->
-<!-- $description A collection of extra elements including user and Bourbon mixins -->
-<!-- $keyword extras, mixins, bourbon -->
+<!-- $SEO-title Extras including javascript elements -->
+<!-- $description Extra javascript elements to start user interaction -->
+<!-- $keyword extras, javascript, js -->
 <!-- $url extras.html -->
 <!-- $post-image tile-wide.png -->
 
-<!-- @import templates/_test-header -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- @import ../includes/_meta -->
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/extras.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap|Source+Code+Pro|Ubuntu+Condensed" />
+</head>
+<body>
+	<!-- @import extras/_active-header -->
+	<div class="wrapper">
+		<div class="main">
+		<figure>
+<img src="../<!-- $post-image -->" alt="Phone1st logo" />
+</figure>
 
-<p class="intro-para">To see the full code for the user mixins see <code>css/base/mixins.scss</code><br>
-	To see the full code for the Bourbon mixins see <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code></p>
+<p class="intro-para">Basic javascript elements to get you started</p>
+			
 <hr>
 <h2 class="links-title">-- Links --</h2>
 	<div class="links">
-
 		<div>
-		<a href="#user-mixins">User Mixins</a>
-		<a href="#background">background</a>
-		<a href="#hide">hide from screenreaders</a>
-		<a href="#placeholders">placeholders</a>
-		<a href="#breakpoints">media breakpoints</a>
-		<a href="#bourbon-mixins">Bourbon Mixins</a>
-		<a href="#buttons">buttons</a>
-		<a href="#clearfix">clearfix</a>
-		<a href="#contrast">contrast switch</a>
-		<a href="#ellipsis">ellipsis</a>
-		<a href="#fontface">@fontface</a>
-		<a href="#stacks">font stacks</a>
-		<a href="#hide-text">hide text</a>
-		<a href="#visually">hide visually</a>
+		<a href="#dropdowns">Dropdowns</a>
+		<a href="#tabs">Tabs</a>
+		<a href="#tooltip">Tooltip</a>
 		</div>
 		<div>
-		<a href="#margin">margin</a>
-		<a href="#modular">modular scale</a>
-		<a href="#wrap">overflow wrap</a>
-		<a href="#padding">padding</a>
-		<a href="#position">position</a>
-		<a href="#prefixer">prefixer</a>
-		<a href="#shade">shade</a>
-		<a href="#size">size</a>
-		<a href="#unit">strip unit</a>
-		<a href="#inputs">text inputs</a>
-		<a href="#tint">tint</a>
-		<a href="#triangle">triangle</a>
-		<a href="#value">value prefixer</a>
-</div>
-		
-</div>
+		<a href="#snackbar">Snackbar</a>
+		<a href="#form">Forms</a>
+		<a href="#modal">Modal</a>
+		</div>
+	</div>
 <hr>
-<div class="extras">
-		<h2>-- User Mixins --</h2>
-<!-- @import extras/_user-mixins -->
-<p>To see the full code for the user mixins see <code>css/base/mixins.scss</code></p>
+		<h2 id="dropdowns">Dropdowns</h2>
+		<!-- @import extras/_dropdowns -->
 <hr>
-<h2 id="bourbon-mixins">-- Bourbon Mixins --</h2>
-<!-- @import extras/_bourbon-mixins -->
-<p>To see the full code for the Bourbon mixins see <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code></p>
-</div>
+	<h2 id="tabs">Tabs</h2>
+	<!-- @import extras/_tabs -->
 <hr>
-		<p class="secondary center"><a href="../index.html">Home</a> | <a href="about.html">About</a> | <a href="test.html">Test</a></p>
-	</main>
+	<h2 id="tooltip">Tooltip</h2>
+<!-- @import extras/_tooltip -->
+<hr>
+	<h2 id="snackbar">Snackbar</h2>
+	<!-- @import extras/_snackbar -->
+<hr>
+	<h2 id="form">Forms</h2>
+	<!-- @import extras/_form -->
+<hr>
+	<h2 id="modal">Modal</h2>
+	<!-- @import extras/_modal -->
+<hr>
+		<p class="secondary center"><a href="../index.html">Home</a> | <a href="about.html">About</a> | <a href="test.html">Test</a> | <a href="scss.html">Scss</a></p>
+		</div>
 	
-	<!-- @import templates/_test-footer -->
+	<footer>
+		<button id="topBtn" title="Back to top">Top</button>
+		<p class="third">&copy;2022 bylucas <span>|</span> Phone1st Starter theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a></p>
+	</footer>
+	</div><!-- wrapper   -->
+	<!-- loader needed -->
+		<script src="js/back-top.js"></script>
+		<script src="js/active-header.js"></script>
+		<script src="js/dropdown.js"></script>
+		<script src="js/tabs.js"></script>
+		<script src="js/tooltip.js"></script>
+		<script src="js/snackbar.js"></script>
+		<script src="js/form.js"></script>
+		<script src="js/modal.js"></script>
+
+		<script>var _gaq=[['_setAccount','UA-139947881-1'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src='//www.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));</script>
+
+</body>
+</html>

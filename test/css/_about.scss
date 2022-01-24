@@ -21,17 +21,13 @@ h4 {
   color: $medium-gray;
 }
 
-p {
-  font-size: $secondary;
-}
-
 li {
   font-size: $secondary;
 }
 
 pre {
   text-align: left;
-  padding: $spacer/2 $spacer;
+  padding: math.div($spacer, 2) $spacer;
   @include background(tint($light-gray, 60%));
   border-radius: $radius;
   color: rgb(87, 127, 214);

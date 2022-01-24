@@ -1,0 +1,37 @@
+// =======================
+// Form
+// =======================
+
+.signup-form {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: nowrap;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+ max-width: 400px;
+ border: $border;
+ @include padding(20px null);
+ @include margin(math.div($spacer, 2) auto);
+
+  input {
+  margin: math.div($spacer, 2) 0;
+  padding: 10px 5px;
+ }
+
+ .feedback {
+  text-align: center;
+  font-size: $third;
+  padding: 0 20px;
+ }
+}
+
+.signup-form .success {
+ border: 2px solid $success-color;
+ color: $success-color;
+}
+
+.signup-form .error {
+ border: 2px solid $error-color;
+ color: $error-color;
+}

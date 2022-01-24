@@ -1,0 +1,40 @@
+// =======================
+// Snackbar
+// =======================
+
+.snackbar-area {
+  max-width: 600px;
+  @include margin(0 auto $spacer auto);
+  text-align: center;
+  padding: math.div($spacer, 2);
+
+  p {
+    font-size: $secondary;
+    @include margin( 10px null 0 null);
+  }
+}
+
+.snackbar-trigger {
+  width: 200px;
+  height: 40px;
+}
+
+.snackbar{
+  width: 200px;
+  padding: 20px;
+  position: fixed;
+  left: 50%;
+  margin-left: -120px;
+  top: 0;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+  background: #ff6565;
+  text-align: center;
+  color: #fff;
+  margin-top: -100%;
+  transition: all 0.2s;
+  z-index: 2000;
+}
+.snackbar.active{
+  margin-top: 0;
+}

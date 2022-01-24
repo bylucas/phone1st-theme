@@ -25,6 +25,11 @@
 </url>
 
 <url>
+  <loc>https://phone1st.org/test/scss.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
   <loc>https://phone1st.org/test/extras.html</loc>
   <changefreq>monthly</changefreq>
 </url>

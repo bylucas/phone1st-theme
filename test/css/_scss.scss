@@ -1,7 +1,7 @@
 // =======================
-// Xtras
+// Scss Mixins
 // =======================
-.extras {
+.scss-extras {
 text-align: center;
 
 h2 {
@@ -21,7 +21,7 @@ p {
 
 pre {
   text-align: left;
-  padding: $spacer/2 $spacer;
+  padding: math.div($spacer, 2) $spacer;
   @include background(tint($light-gray, 60%));
   border-radius: $radius;
   color: rgb(87, 127, 214);

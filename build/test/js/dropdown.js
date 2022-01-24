@@ -1,0 +1,1 @@
+class Dropdown{constructor(t){this.container=t,this.trigger=t.querySelector(".trigger"),this.content=t.querySelector(".content")}init(){this.trigger.addEventListener("click",(()=>{this.trigger.classList.toggle("active"),this.content.classList.toggle("active")}))}}const dropdowns=document.querySelectorAll(".dropdown");dropdowns.forEach((t=>{new Dropdown(t).init()}));

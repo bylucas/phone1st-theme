@@ -1,9 +1,15 @@
 //Phone1st
 //A super light developer theme
 
+//compiling scss with Dart Sass
+//math div(divide) - eg math.div($font-size, 1.03)
+//https://sass-lang.com/documentation/breaking-changes/slash-div
+@use "sass:math";
+
 // ====================
 //   Import the basics
 //  ===================
+
 @import "reset";
 @import "bourbon";
 
@@ -12,48 +18,48 @@
 @import "base/fonts";
 
 html {
-		-webkit-overflow-scrolling: touch;
-		-webkit-tap-highlight-color: $light-gray;
-		box-sizing: border-box;
-		height: 100%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: $light-gray;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 *,
 *::before,
 *::after {
-		box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-	height: 100%;
-	color: $font-color;
-	font-family: $font;
-	font-feature-settings: "kern", "liga", "pnum";
-	font-size: $font-size;
-	line-height: 1.5;
-	text-rendering: optimizeLegibility;
+  height: 100%;
+  color: $font-color;
+  font-family: $font;
+  font-feature-settings: "kern", "liga", "pnum";
+  font-size: $font-size;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
 a {
-	color: $link-color;
-	text-decoration: none;
-	
-	&:active,
-	&:focus,
-	&:hover {
-		color: $link-color;
-}
+  color: $link-color;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $link-color;
+  }
 }
 
 //Link hovers
 @include media(900) {
-a {
-  transition: color 0.4s ease-in 0.1s;
-    
-  &:hover {
-    color: $hover-color;
-}
-}
+  a {
+    transition: color 0.4s ease-in 0.1s;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
 }
 
 // ==============
@@ -76,7 +82,6 @@ a {
 
 //temporary - remove
 @import "start";
-
 
 // =============
 // Print styles

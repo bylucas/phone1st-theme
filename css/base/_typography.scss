@@ -7,14 +7,19 @@ hr {
   clear: both;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $heading-font;
   color: $font-color;
   clear: both; // remember this!
   line-height: 1.4;
   hyphens: none;
-  font-size: $font-size;//Remove to set browser default headings
-  margin-bottom: $spacer/3;
+  font-size: $font-size; //Remove to set browser default headings
+  margin-bottom: math.div($spacer, 3);
 }
 
 p {
@@ -29,12 +34,15 @@ dt {
 
 i,
 em,
-dfn {
+dfn,
+cite,
+abbr,
+address {
   font-style: italic;
 }
 
 small {
-  font-size: $font-size / 1.25;
+  font-size: math.div($font-size, 1.25);
 }
 
 pre {
@@ -43,7 +51,6 @@ pre {
   white-space: pre;
   white-space: -moz-pre-wrap; // fennec
   white-space: pre-wrap;
-  white-space: pre\9; // IE7+
 }
 
 pre,
@@ -77,23 +84,23 @@ li ol {
 }
 
 li {
-  font-size: $font-size/1.03;
+  font-size: math.div($font-size, 1.03);
   margin-bottom: 5px;
 }
 
 li li {
-  font-size: $font-size/1.09;
-  margin-left: $spacer/2;
+  font-size: math.div($font-size, 1.09);
+  margin-left: math.div($spacer, 2);
 }
 
 //inline list
 ul.inline li {
   display: inline;
-  margin-right: $spacer/2;
+  margin-right: math.div($spacer, 2);
 }
 
 dt {
-  margin-top: $spacer/4;
+  margin-top: math.div($spacer, 4);
 }
 
 sub,

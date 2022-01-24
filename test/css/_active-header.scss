@@ -1,0 +1,146 @@
+// =======================
+// Active Header
+// =======================
+
+.active-header {
+  background-color: #988dff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 10vh;
+  overflow: hidden;
+  padding:2%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transform-origin: 50% 0;
+  transition: 0.33s ease;
+
+  h1 {
+    margin-top: 8px;
+  }
+}
+
+/* active header - active */
+.display_menu .active-header {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* hamburger */
+
+#hamburger {
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 200;
+  left: 3%;
+  top: 30px;
+  transform: translateY(-50%);
+}
+
+#hamburger span {
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #3E3A37;
+  display: block;
+  transition: 0.33s;
+}
+
+#hamburger span:nth-child(1) {
+  width: 12px;
+}
+
+#hamburger span:nth-child(2) {
+  width: 24px;
+}
+
+#hamburger span:nth-child(3) {
+  width: 12px;
+}
+
+.display_menu #hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 1px);
+}
+
+.display_menu #hamburger span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.display_menu #hamburger span:nth-child(3) {
+  transform: rotate(45deg) translate(6px, -9px);
+}
+
+// menu
+
+#menu {
+  width: 300px;
+  margin: 70px auto;
+  border: 1px solid #494ED7;
+  padding: 10px;
+
+  li {
+  list-style: none;
+  margin-bottom: 5px;
+  //color: #494ED7;
+  }
+  
+  a {
+  cursor: pointer;
+  color: #494ED7;
+  font-size: 1.1rem;
+  position: relative;
+  }
+
+  span {
+  display: inline-block;
+  font-size: 1.3rem;
+  position: absolute;
+  right: -25px;
+  top: -4px;
+  transform: rotate(90deg);
+  font-weight: bold;
+  transition: transform 0.3s;
+  }
+
+  .drop_menu {
+  padding: 0;
+  margin: 3px 0;
+  display: none;
+
+  a {
+  font-size: .9rem;
+  margin-bottom: 5px;
+  display: block;
+    }
+  }
+
+  .drop_menu.display {
+  display: block;
+}
+
+.open span {
+    transform: rotate(-90deg);
+  }
+}
+
+.main {
+  margin-top: $spacer*3;
+}
+
+@include media(700) {
+  .active-header {
+    height: 12vh;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+}
+
+@include media(900) {
+  .active-header {
+    padding: 1% 2%;
+  }
+}

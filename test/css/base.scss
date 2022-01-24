@@ -1,11 +1,13 @@
 // =======================
 // Test
 // =======================
-@import "bourbon";
-@import "../css/base/variables";
-@import "../css/base/mixins";
+@use "sass:math";
 
-@import "utilities";
+@import "bourbon";
+@import "../../css/base/variables";
+@import "../../css/base/mixins";
+
 @import "test";
 @import "about";
-@import "extras";
+@import "scss";
+@import "back-top";

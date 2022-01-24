@@ -1,10 +1,12 @@
-//Back to Top
+// =======================
+// Back to Top
+// =======================
 #topBtn {
   font-family: $alt-font;
   text-align: center;
   @include border-right-radius(0);
   position: fixed;
-  top: 275px;
+  bottom: 50px;
   right: 0;
   background: $black;
   display: none;
