@@ -1,0 +1,93 @@
+<h3 id="background">background</h3>
+
+<pre><code>@mixin background($background-color: $background) {
+  background: $background-color;
+  box-shadow: inset 0 0 4px darken($background-color, 7%);
+}
+
+.background {
+  @include background($success-color);//mixin
+  @include size(300px, 100px);
+  @include center-block;
+}</code></pre>
+
+<div class="background"></div>
+
+<hr />
+
+<h3 id="center">Center Elements</h3>
+
+<pre><code>.center-element {
+  @include center-block;//mixin
+  @include background(#E03D44);
+  @include size(80%, 60px);
+}</code></pre>
+
+<div class="center-element"></div>
+
+<hr />
+
+<h3 id="hide">hide from both screenreaders and browsers</h3>
+<pre><code>@mixin hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.hidden-box {
+  @include size(300px, 70px);
+  @include center-block;
+  padding: 7px;
+  font-size: .9rem;
+  color: orange;
+  border: 1px solid blue;
+  
+  &:hover span {
+    @include hidden;//mixin
+  }
+}</code></pre>
+
+<div class="hidden-box">
+  <span
+    >This text will hide on hover and be invisible to screen readers and
+    browsers</span
+  >
+</div>
+
+<hr />
+
+<h3 id="placeholders">placeholders</h3>
+<pre><code>input {
+  @include placeholder {
+  color: red;
+  }
+}</code></pre>
+
+<input type="text" placeholder="placeholder" />
+
+<hr />
+<h3 id="breakpoints">media breakpoints</h3>
+<p>Base styles are phone-first</p>
+
+<pre><code>.media-points p {
+  color: red;
+}
+
+@include media(700) {
+  .media-points p {
+    color: blue;
+  }
+}
+
+@include media(900) {
+  .media-points p {
+    color: rebeccapurple;
+  }
+}</code></pre>
+
+<div class="media-points">
+  <p>
+    At base level this text is red<br />
+    At 700px this text is blue<br />
+    At 900px this text is purple
+  </p>
+</div>

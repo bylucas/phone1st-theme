@@ -8,7 +8,7 @@
 
 <div class="show-border"></div>
 
-<hr>
+<hr />
 <h3 id="buttons">buttons</h3>
 
 <pre><code>#{$all-buttons} {
@@ -16,45 +16,56 @@ background-color: #f00;
 }
 
 #{$all-buttons-active} {
- background-color: #00f;
+    background-color: #00f;
 }
 
 #{$all-buttons-focus} {
-background-color: #0f0;
+  background-color: #0f0;
 }
 
 #{$all-buttons-hover} {
- background-color: #0f0;
+  background-color: #0f0;
 }//See css/base/_form.scss to see how the themes uses buttons</code></pre>
-<hr>
+<hr />
 
 <h3 id="clearfix">clearfix</h3>
 <pre><code>@include clearfix;</code></pre>
-<hr>
+<hr />
 
 <h3 id="contrast">constrast switch</h3>
-<pre><code>$button-color: #2d72d9;
-background-color: $button-color;
-color: contrast-switch($button-color, #222, #eee);</code></pre>
-<div class="contrast"><a href="https://www.bourbon.io/docs/latest/">See the Bourbon docs</a></div>
-<hr>
+<pre><code>.contrast {
+  @include size(300px, 30px);
+  @include center-block;
+  $button-color: #2d72d9;
+  background-color: $button-color;
+  a {
+    color: contrast-switch($button-color, #222, #eee);//mixin
+  }
+}</code></pre>
+
+<div class="contrast">
+  <a href="https://www.bourbon.io/docs/latest/">See the Bourbon docs</a>
+</div>
+<hr />
 
 <h3 id="ellipsis">ellipsis</h3>
 <pre><code>@include ellipsis;</code></pre>
-<div class="ellipsis"><span>Hover over me to see the ellipsis in action</span></div>
-<hr>
+<div class="ellipsis">
+  <span>Hover over me to see the ellipsis in action</span>
+</div>
+<hr />
 
 <h3 id="fontface">@fontface</h3>
 <pre><code>@include font-face(
- "source-sans-pro",
- "fonts/source-sans-pro-regular",
- ("woff2", "woff")
- {
+  "source-sans-pro",
+  "fonts/source-sans-pro-regular",
+  ("woff2", "woff")
+  {
   font-style: normal;
   font-weight: 400;
- }
+  }
 //See css/base/_fonts.scss to see the themes use of this mixin</code></pre>
-<hr>
+<hr />
 
 <h3 id="stacks">font-stacks</h3>
 <pre><code>font-family: $font-stack-helvetica;
@@ -67,31 +78,57 @@ font-family: $font-stack-hoefler-text;
 font-family: $font-stack-consolas;
 font-family: $font-stack-courier-new;
 font-family: $font-stack-monaco;</code></pre>
-<hr>
+<hr />
 
 <h3 id="hide-text">hide text</h3>
-<pre><code>@include hide-text;</code></pre>
+<pre><code>.hide-text {
+  @include size(220px, 120px);
+  @include center-block;
+  padding: 7px;
+  border: 1px solid blue;
+
+  &:hover {
+    @include hide-text;//mixin
+    background: url(../test-images/taj-mahal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}</code></pre>
 
 <div class="hide-text">
   On hover replace text with image, text still available for SEO
 </div>
 
-<hr>
+<hr />
 
 <h3 id="visually">hide visually</h3>
-<pre><code>@include hide-visually;
-@include hide-visually("unhide");</code></pre>
+<pre><code>.hide-visually {
+  @include size(220px, 120px);
+  @include center-block;
+  font-size: .9rem;
+  padding: 7px;
+  border: 1px solid blue;
+  
+  span {
+    font-size: 1.3rem;
+    color:#a60b55;
+    @include hide-visually;//mixin
+  }
+  &:hover span {
+    @include hide-visually("unhide");//alt mixin
+  }
+}</code></pre>
 
 <div class="hide-visually">
-  Box title is hidden but still available to screen readers, hover to view<br>
+  Box title is hidden but still available to screen readers, hover to view<br />
   <span>Box Title</span>
 </div>
-<hr>
+<hr />
 
 <h3 id="margin">margin</h3>
 <pre><code>@include margin(10px null null 20px);</code></pre>
 <div class="margin"><p>MARGIN</p></div>
-<hr>
+<hr />
 
 <h3 id="modular">module scale</h3>
 <pre><code>$bourbon: (
@@ -102,62 +139,64 @@ font-size: modular-scale(3);
 }</code></pre>
 
 <div class="modular">Modular Scale</div>
-<hr>
+<hr />
 
 <h3 id="wrap">overflow wrap (break word)</h3>
 <pre><code>@include overflow-wrap;
 //hover to see overflow-wrap</code></pre>
-<div class="wrap">Thisisaveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryverylongword</div>
-<hr>
+<div class="wrap">
+  Thisisaveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryverylongword
+</div>
+<hr />
 
 <h3 id="padding">padding</h3>
 <pre><code>@include padding(10px null null 20px);</code></pre>
 <div class="padding"><p>PADDING</p></div>
-<hr>
+<hr />
 
 <h3 id="position">position</h3>
 <pre><code>@include position(absolute, 20px null null 20px);</code></pre>
 <div class="position"><div></div></div>
-<hr>
+<hr />
 
 <h3 id="prefixer">prefixer</h3>
 <pre><code>.element {
- @include prefixer(appearance, none, ("webkit", "moz"));
+  @include prefixer(appearance, none, ("webkit", "moz"));
 }
 
 //CSS Output
 .element {
- -webkit-appearance: none;
- -moz-appearance: none;
- appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }</code></pre>
-<hr>
+<hr />
 
 <h3 id="shade">shade</h3>
 <pre><code>background-color: shade(#ffbb52, 30%);</code></pre>
 
 <div class="shade"></div>
-<hr>
+<hr />
 
 <h3 id="size">size</h3>
 <pre><code>@include size(300px, 1.8em);</code></pre>
 <div class="size"></div>
-<hr>
+<hr />
 
 <h3 id="unit">strip unit</h3>
 <pre><code>$dimension: strip-unit(10em);
 
 //Output
 $dimension: 10;</code></pre>
-<hr>
+<hr />
 
 <h3 id="inputs">text inputs</h3>
 <pre><code>#{$all-text-inputs} {
- border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
 #{$all-text-inputs-active} {
- border: 1px solid #aaa;
+  border: 1px solid #aaa;
 }
 
 #{$all-text-inputs-focus} {
@@ -165,38 +204,38 @@ $dimension: 10;</code></pre>
 }
 
 #{$all-text-inputs-hover} {
- border: 1px solid #aaa;
+  border: 1px solid #aaa;
 }
 
 #{$all-text-inputs-invalid} {
- border: 1px solid #00f;
+  border: 1px solid #00f;
 }</code></pre>
-<hr>
+<hr />
 
 <h3 id="tint">tint</h3>
 <pre><code>background-color: tint(#ffbb52, 30%);</code></pre>
 
 <div class="tint"></div>
-<hr>
+<hr />
 
 <h3 id="triangle">triangle</h3>
 <pre><code>.element {
- @include size(300px, 50px);
- @include margin(null auto);
- background-color: #b25c9c;
- position: relative;
+  @include size(300px, 50px);
+  @include center-block;
+  background-color: #b25c9c;
+  position: relative;
   
   &::before {
-   @include triangle("up", 2rem, 1rem, #b25c9c);
-   position: absolute;
-   content: "";
-   //position triangle on box
-   top:-1rem; 
-   left:6rem;
+    @include triangle("up", 2rem, 1rem, #b25c9c);//mixin
+    position: absolute;
+    content: "";
+    //position triangle on box
+    top:-1rem; 
+    left:6rem;
   }
 }</code></pre>
 <div class="triangle"></div>
-<hr>
+<hr />
 
 <h3 id="value">value prefixer</h3>
 <pre><code>@include value-prefixer(cursor, grab, ("webkit", "moz"));
@@ -207,4 +246,4 @@ cursor: -webkit-grab;
 cursor: -moz-grab;
 cursor: grab;
 }</code></pre>
-<hr>
+<hr />

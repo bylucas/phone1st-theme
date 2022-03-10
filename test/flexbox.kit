@@ -1,0 +1,161 @@
+<!-- $title Flexbox -->
+<!-- $SEO-title Examples of css Flexbox -->
+<!-- $description A basic guide and working example to css flexbox with links to further information -->
+<!-- $keyword flexbox, css, guide -->
+<!-- $url flexbox.html -->
+<!-- $post-image tile-wide.png -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- @import ../includes/_meta -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/flexbox.css">
+  
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap|Source+Code+Pro|Ubuntu+Condensed" />
+  <title>Basic Layout</title>
+  </head>
+  <body>
+  <div class="wrapper">
+  <header class="flex-header">
+      <h1><!-- $title --></h1>
+  </header>
+<div class="flex-wrap">
+<p>Below shows a basic introduction to '<em>Flexbox</em>'. See more information on the <strong>"Css-Tricks"</strong> website <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></p>
+	<hr>
+<div class="flexbox-one">
+	<div><span>1</span></div>
+	<div><span>2</span></div>
+	<div><span>3</span></div>
+	<div><span>4</span></div>
+</div>
+
+<div class="results">
+	<form class="justify">
+
+<div class="content-wrap">
+    <div class="content-direction">
+    <p>flex-direction</p>
+    <div class="form-wrap">
+  <input type="radio" name="three" value="AAA" checked>
+  <label>row</label>
+</div>
+<div class="form-wrap">
+  <input type="radio" name="three" value="BBB">
+  <label>row-reverse</label>
+</div>
+<div class="form-wrap">
+  <input type="radio" name="three" value="CCC">
+  <label>column</label>
+</div>
+<div class="form-wrap">
+  <input type="radio" name="three" value="DDD">
+  <label>column-reverse</label>
+</div>
+</div>
+
+<div class="content-flex-wrap">
+<p>flex-wrap</p>
+
+<div class="form-wrap">
+  <input type="radio" name="four" value="AAAA">
+  <label>nowrap</label>
+</div>
+<div class="form-wrap">
+  <input type="radio" name="four" value="BBBB" checked>
+  <label>wrap</label>
+</div>
+<div class="form-wrap">
+  <input type="radio" name="four" value="CCCC">
+  <label>wrap-reverse</label>
+</div>
+</div>
+</div><!-- content-wrap -->
+
+<div class="content-wrap">
+    <div class="content-justify">
+    <p>justify-content &#8594;</p>
+    <div class="form-wrap">
+	<input type="radio" name="one" value="A">
+	<label>flex-start</label>
+</div>
+<div class="form-wrap">
+	<input type="radio" name="one" value="B">
+	<label>flex-end</label>
+</div>
+<div class="form-wrap">
+	<input type="radio" name="one" value="C">
+	<label>center</label>
+</div>
+<div class="form-wrap">
+	<input type="radio" name="one" value="D" checked>
+	<label>space-between</label>
+</div>
+<div class="form-wrap">
+	<input type="radio" name="one" value="E">
+	<label>space-around</label>
+</div>
+<div class="form-wrap">
+	<input type="radio" name="one" value="F">
+	<label>space-evenly</label>
+</div>
+</div>
+<div class="content-align">
+<p>align-items &#8595;</p>
+
+<div class="form-wrap">
+  <input type="radio" name="two" value="AA">
+  <label>flex-start</label>
+</div>
+<div class="form-wrap">
+  <input type="radio" name="two" value="BB">
+  <label>flex-end</label>
+</div>
+<div class="form-wrap">
+  <input type="radio" name="two" value="CC" checked>
+  <label>center</label>
+</div>
+<div class="form-wrap">
+  <input type="radio" name="two" value="DD">
+  <label>baseline</label>
+</div>
+<div class="form-wrap">
+  <input type="radio" name="two" value="EE">
+  <label>stretch</label>
+</div>
+</div>
+</div><!-- content-wrap -->
+	<input type="submit" class="but"> 
+	</form>
+  <div class="css-output">
+        <p>//Css Output</p>
+        <p>.element {</p>
+        <p>display: flex;</p>
+        <p class="flexdirection">flex-direction: row;</p>
+        <p class="flexwrap">flex-wrap: wrap;</p>
+        <p class="justifycontent">justify-content: space-between;</p>
+        <p class="alignitems">align-items: center;</p>
+      <p>}</p>
+
+  </div>
+</div>
+
+<hr>
+</div>
+	<p class="secondary center"><a href="../index.html">Home</a> | <a href="about.html">About</a> | <a href="scss.html">Scss</a> | <a href="extras.html">Extras</a> | <a href="layout.html">Layout</a></p>
+	
+	</main>
+	<footer>
+		<button id="topBtn" title="Back to top">Top</button>
+		<p class="third">&copy;2022 bylucas <span>|</span> Phone1st Starter theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a> | <a href="../privacy.html">Privacy</a></p>
+	</footer>
+	</div><!-- wrapper   -->
+		<script src="js/back-top.js"></script>
+		<script src="js/flex.js"></script>
+		<script>var _gaq=[['_setAccount','UA-139947881-1'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src='//www.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));</script>
+
+</body>
+</html>

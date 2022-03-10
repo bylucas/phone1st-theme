@@ -15,7 +15,7 @@ h5,
 h6 {
   font-family: $heading-font;
   color: $font-color;
-  clear: both; // remember this!
+  clear: both;
   line-height: 1.4;
   hyphens: none;
   font-size: $font-size; //Remove to set browser default headings
@@ -41,8 +41,24 @@ address {
   font-style: italic;
 }
 
+abbr,
+acronym {
+  border-bottom: 1px dotted $medium-gray;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: $light-gray;
+  text-decoration: none;
+}
+
 small {
-  font-size: math.div($font-size, 1.25);
+  font-size: 85%;
+}
+
+big {
+  font-size: 125%;
 }
 
 pre {
@@ -56,7 +72,8 @@ pre {
 pre,
 code,
 kbd,
-samp {
+tt,
+var {
   font-family: $code-font;
   font-size: $secondary;
   line-height: 1.4;
@@ -78,9 +95,21 @@ ol ol {
   margin-bottom: 8px;
 }
 
-li ul,
-li ol {
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
   margin-top: 8px;
+}
+
+li > ul {
+  list-style: circle;
 }
 
 li {

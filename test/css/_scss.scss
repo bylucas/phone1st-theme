@@ -2,222 +2,228 @@
 // Scss Mixins
 // =======================
 .scss-extras {
-text-align: center;
-
-h2 {
-  font-size: 1.6rem;
   text-align: center;
-  margin-bottom: $spacer;
-}
 
-h3 {
-  font-size: 1.4rem;
-  text-align: center;
-}
-
-p {
-  font-size: $secondary;
-}
-
-pre {
-  text-align: left;
-  padding: math.div($spacer, 2) $spacer;
-  @include background(tint($light-gray, 60%));
-  border-radius: $radius;
-  color: rgb(87, 127, 214);
-}
-
-code {
-  font-size: $third;
-}
-
-.background {
-	@include background($success-color);
-  @include size(300px, 100px);
-  @include margin(null auto);
-}
-
-.hidden-box {
-  @include size(300px, 70px);
-  @include margin(null auto);
-  padding: 7px;
-  font-size: .9rem;
-  color: orange;
-  border: 1px solid blue;
-  
-  &:hover span {
-    @include hidden;
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: $spacer;
   }
-}
 
-input {
- @include placeholder {
-  color: red;
- }
-}
+  h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
 
-.media-points p {
-  color: red;
-}
+  p {
+    font-size: $secondary;
+  }
 
-@include media(700) {
+  pre {
+    text-align: left;
+    padding: math.div($spacer, 2) $spacer;
+    @include background(tint($light-gray, 60%));
+    border-radius: $radius;
+    color: rgb(87, 127, 214);
+  }
+
+  code {
+    font-size: $third;
+  }
+
+  .background {
+    @include background($success-color);
+    @include size(300px, 100px);
+    @include center-block;
+  }
+
+  .center-element {
+    @include center-block;
+    @include background(#e03d44);
+    @include size(80%, 60px);
+  }
+
+  .hidden-box {
+    @include size(300px, 70px);
+    @include center-block;
+    padding: 7px;
+    font-size: 0.9rem;
+    color: orange;
+    border: 1px solid blue;
+
+    &:hover span {
+      @include hidden;
+    }
+  }
+
+  input {
+    @include placeholder {
+      color: red;
+    }
+  }
+
   .media-points p {
-    color: blue;
+    color: red;
   }
-}
 
-@include media(900) {
-  .media-points p {
-    color: rebeccapurple;
+  @include media(700) {
+    .media-points p {
+      color: blue;
+    }
   }
-}
 
-.show-border {
-  @include size(300px, 80px);
-  @include margin(null auto);
-  @include border-color(#a60b55 #76cd9c null #e8ae1a);
-  @include border-top-radius(15px);
-  @include border-bottom-radius(10px);
-  @include border-style(dashed solid dotted);
-  @include border-width(.7em 3px 10px);
-}
-
-.contrast {
-  @include size(300px, 30px);
-  @include margin(null auto);
-  $button-color: #2d72d9;
-  background-color: $button-color;
-  a {
-  color: contrast-switch($button-color, #222, #eee);
+  @include media(900) {
+    .media-points p {
+      color: rebeccapurple;
+    }
   }
-}
 
-.hide-text {
-  @include size(220px, 120px);
-  @include margin(null auto);
-  padding: 7px;
-  border: 1px solid blue;
-
-  &:hover {
-    @include hide-text;
-    background: url(https://phone1st.org/test/test-images/taj-mahal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  .show-border {
+    @include size(300px, 80px);
+    @include center-block;
+    @include border-color(#a60b55 #76cd9c null #e8ae1a);
+    @include border-top-radius(15px);
+    @include border-bottom-radius(10px);
+    @include border-style(dashed solid dotted);
+    @include border-width(0.7em 3px 10px);
   }
-}
 
-.hide-visually {
-  @include size(220px, 120px);
-  @include margin(null auto);
-  font-size: .9rem;
-  padding: 7px;
-  border: 1px solid blue;
-
-  span {
-    font-size: 1.3rem;
-    color:#a60b55;
-    @include hide-visually;
+  .contrast {
+    @include size(300px, 30px);
+    @include center-block;
+    $button-color: #2d72d9;
+    background-color: $button-color;
+    a {
+      color: contrast-switch($button-color, #222, #eee);
+    }
   }
+
+  .hide-text {
+    @include size(220px, 120px);
+    @include center-block;
+    padding: 7px;
+    border: 1px solid blue;
+
+    &:hover {
+      @include hide-text;
+      background: url(../test-images/taj-mahal.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .hide-visually {
+    @include size(220px, 120px);
+    @include center-block;
+    font-size: 0.9rem;
+    padding: 7px;
+    border: 1px solid blue;
+
+    span {
+      font-size: 1.3rem;
+      color: #a60b55;
+      @include hide-visually;
+    }
     &:hover span {
       @include hide-visually("unhide");
     }
-}
-
-.ellipsis {
-  @include size(300px, 80px);
-  @include margin(null auto);
-  font-size: 1.1rem;
-  padding: 10px;
-  border: 1px solid blue;
-  &:hover span {
-    @include ellipsis;
   }
-}
 
-.margin {
-  @include size(300px, 60px);
-  @include margin(null auto);
-  border: 1px solid blue;
-  p {
-    text-align: left;
-    @include margin(10px null null 20px);
+  .ellipsis {
+    @include size(300px, 80px);
+    @include center-block;
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid blue;
+    &:hover span {
+      @include ellipsis;
+    }
   }
-}
 
-$bourbon: ("modular-scale-ratio": 1.2, );
+  .margin {
+    @include size(300px, 60px);
+    @include center-block;
+    border: 1px solid blue;
+    p {
+      text-align: left;
+      @include margin(10px null null 20px);
+    }
+  }
 
-.modular {
+  $bourbon: (
+    "modular-scale-ratio": 1.2,
+  );
+
+  .modular {
     font-size: modular-scale(3);
-}
-
-.wrap {
-  border: $border;
-  font-size: .9rem;
-  &:hover {
-    @include overflow-wrap;
   }
-}
 
-.padding {
-   @include size(300px, 60px);
-   @include margin(null auto);
-   border: 1px solid blue;
-
-   p {
-     text-align: left;
-     @include padding(10px null null 20px);
-   }
-}
-.position {
-  @include size(300px, 100px);
-  @include margin(null auto);
-  border: 1px solid blue;
-  position: relative;
-
-  div {
-    @include position(absolute, 20px null null 20px);
-    @include size(50px);
-    background: #b61e33;
+  .wrap {
+    border: $border;
+    font-size: 0.9rem;
+    &:hover {
+      @include overflow-wrap;
+    }
   }
-}
 
-.shade {
-  @include size(300px, 50px);
-  @include margin(null auto);
-  background-color: shade(#ffbb52, 30%);
-}
+  .padding {
+    @include size(300px, 60px);
+    @include center-block;
+    border: 1px solid blue;
 
-.size {
-  @include size(300px, 1.8em);
-  @include margin(null auto);
-  border: 1px solid blue;
-}
-
-.tint {
-  @include size(300px, 50px);
-  @include margin(null auto);
-  background-color: tint(#ffbb52, 30%);
-}
-
-.triangle {
-  @include size(300px, 50px);
-  @include margin(null auto);
-  background-color: #b25c9c;
-  position: relative;
-  
-  &::before {
-    @include triangle("up", 2rem, 1rem, #b25c9c);
-    position: absolute;
-    content: "";
-    //position triangle on box
-    top:-1rem; 
-    left:6rem;
+    p {
+      text-align: left;
+      @include padding(10px null null 20px);
+    }
   }
-}
+  .position {
+    @include size(300px, 100px);
+    @include center-block;
+    border: 1px solid blue;
+    position: relative;
 
-.inline {
-  display: inline !important;
-}
+    div {
+      @include position(absolute, 20px null null 20px);
+      @include size(50px);
+      background: #b61e33;
+    }
+  }
 
-//Bourbon Mixins
+  .shade {
+    @include size(300px, 50px);
+    @include center-block;
+    background-color: shade(#ffbb52, 30%);
+  }
+
+  .size {
+    @include size(300px, 1.8em);
+    @include center-block;
+    border: 1px solid blue;
+  }
+
+  .tint {
+    @include size(300px, 50px);
+    @include center-block;
+    background-color: tint(#ffbb52, 30%);
+  }
+
+  .triangle {
+    @include size(300px, 50px);
+    @include center-block;
+    background-color: #b25c9c;
+    position: relative;
+
+    &::before {
+      @include triangle("up", 2rem, 1rem, #b25c9c);
+      position: absolute;
+      content: "";
+      //position triangle on box
+      top: -1rem;
+      left: 6rem;
+    }
+  }
+
+  .inline {
+    display: inline !important;
+  }
 }

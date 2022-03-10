@@ -1,1 +1,38 @@
-class Tabs{constructor(t){this.container=t,this.tabs=t.querySelectorAll(".trigger")}init(){this.tabs.forEach((t=>{t.addEventListener("click",(t=>{"LI"===t.target.tagName&&(this.toggleTabs(t),this.toggleContent(t))}))}))}toggleTabs(t){this.tabs.forEach((t=>t.classList.remove("active"))),t.target.classList.add("active")}toggleContent(t){this.container.querySelectorAll(".content").forEach((t=>{t.classList.remove("active")}));const e=t.target.getAttribute("data-target");this.container.querySelector(e).classList.add("active")}}const tabs=new Tabs(document.querySelector(".tabs"));tabs.init();
+//Tabs
+
+class Tabs {
+  constructor(container) {
+    this.container = container
+    this.tabs = container.querySelectorAll(".trigger")
+  }
+  init() {
+    this.tabs.forEach((tab) => {
+      tab.addEventListener("click", (e) => {
+        if (e.target.tagName === "LI") {
+          this.toggleTabs(e)
+          this.toggleContent(e)
+        }
+      })
+    })
+  }
+  toggleTabs(e) {
+    // remove current active classes
+    this.tabs.forEach((tab) => tab.classList.remove("active"))
+    // add new active class
+    e.target.classList.add("active")
+  }
+  toggleContent(e) {
+    // remove current active classes
+    this.container.querySelectorAll(".content").forEach((item) => {
+      item.classList.remove("active")
+    })
+    // add new active class
+    const selector = e.target.getAttribute("data-target")
+    const content = this.container.querySelector(selector)
+    content.classList.add("active")
+  }
+}
+
+// create tabs
+const tabs = new Tabs(document.querySelector(".tabs"))
+tabs.init()

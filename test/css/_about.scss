@@ -16,9 +16,19 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center;
   color: $medium-gray;
+}
+
+.about-wrap {
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+ul {
+  list-style: none;
 }
 
 li {
@@ -35,5 +45,35 @@ pre {
 
 code {
   font-size: $third;
+}
+}
+
+@include media(700) {
+  .about {
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+}
+}
+
+@include media(900) {
+  .about {
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+}
 }
 }

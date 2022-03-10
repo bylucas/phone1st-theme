@@ -63,6 +63,12 @@ audio:not([controls]) {
   height: 0;
 }
 
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -264,8 +270,24 @@ address {
   font-style: italic;
 }
 
+abbr,
+acronym {
+  border-bottom: 1px dotted #999;
+  cursor: help;
+}
+
+mark,
+ins {
+  background: #ddd;
+  text-decoration: none;
+}
+
 small {
-  font-size: 0.96rem;
+  font-size: 85%;
+}
+
+big {
+  font-size: 125%;
 }
 
 pre {
@@ -279,7 +301,8 @@ pre {
 pre,
 code,
 kbd,
-samp {
+tt,
+var {
   font-family: "Source Code Pro", monospace;
   font-size: 1.0666666667rem;
   line-height: 1.4;
@@ -300,9 +323,21 @@ ol ol {
   margin-bottom: 8px;
 }
 
-li ul,
-li ol {
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
   margin-top: 8px;
+}
+
+li > ul {
+  list-style: circle;
 }
 
 li {
@@ -381,6 +416,7 @@ figcaption {
 .alignleft,
 .alignright,
 .aligncenter {
+  clear: both;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -419,6 +455,7 @@ textarea {
 
 [type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], input:not([type]), textarea {
   background-color: #fdfdfd;
+  width: 100%;
   border: 1px solid #999;
   border-radius: 5px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
@@ -502,6 +539,7 @@ button,
       -ms-user-select: none;
           user-select: none;
   white-space: nowrap;
+  padding: 10px;
 }
 button:disabled,
 .but:disabled,
@@ -593,21 +631,61 @@ tbody tr:hover th {
   background-color: #f9f9f9;
 }
 
-.wrapper::after,
-header::after,
-article::after,
-footer::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
 .wrapper {
   max-width: 900px;
   margin-right: auto;
   margin-left: auto;
 }
 
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  grid-template-areas: "header" "main" "sidebar" "footer";
+  align-items: center;
+}
+
+.site-header {
+  grid-area: header;
+  background: #D1C3E3;
+  padding: 2rem 0;
+}
+.site-header h1 {
+  text-align: center;
+}
+
+.site-main {
+  grid-area: main;
+  background: #D1C3E3;
+  padding: 2rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #D1C3E3;
+  padding: 20px;
+}
+.sidebar ul {
+  list-style: none;
+}
+
+.site-footer {
+  grid-area: footer;
+  background: #D1C3E3;
+  padding: 2rem 0 0 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .site {
+    grid-template-columns: auto 25%;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+  }
+}
 .breadcrumb-box {
   margin-bottom: 2rem;
 }
@@ -646,6 +724,7 @@ footer::after {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
 }
 
 .prev-link,
@@ -682,6 +761,39 @@ footer::after {
     fill: #3f913a;
   }
 }
+.privacy {
+  text-align: center;
+  margin: 1rem 0;
+}
+.privacy h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.privacy h2 {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+.privacy h3 {
+  font-size: 1.3rem;
+}
+.privacy p {
+  font-size: 1.0666666667rem;
+}
+.privacy hr {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .privacy h1 {
+    font-size: 2rem;
+  }
+  .privacy h2 {
+    font-size: 1.7rem;
+  }
+  .privacy h3 {
+    font-size: 1.5rem;
+  }
+}
 .wrapper {
   padding: 2rem 5%;
 }
@@ -699,6 +811,16 @@ footer::after {
   font-size: 1.3608rem;
   margin-bottom: 2rem;
 }
+.start h2 {
+  font-size: 1.6rem;
+}
+.start .features {
+  margin: 20px 0 30px 0;
+}
+.start .features p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
 .start h5 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
@@ -715,15 +837,24 @@ footer::after {
   color: #fff;
   font-size: 0.9rem;
 }
+.start hr {
+  margin-bottom: 2rem;
+}
 
 @media only screen and (min-width: 700px) {
   .start h1 {
     font-size: 2rem;
   }
+  .start h2 {
+    font-size: 1.7rem;
+  }
 }
 @media only screen and (min-width: 900px) {
   .start h1 {
     font-size: 2.5rem;
+  }
+  .start h2 {
+    font-size: 2rem;
   }
 }
 @media print {

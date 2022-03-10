@@ -1,68 +1,145 @@
 <!-- $title About Phone1st -->
-<!-- $SEO-title About Phone1st -->
-<!-- $description The Phone1st readme page -->
-<!-- $keyword About, Phone1st, readme -->
+<!-- $SEO-title About Phone1st theme information and usage-->
+<!-- $description About Phone1st - A light and basic html starter theme to get you off to a quick start with your web developments. -->
+<!-- $keyword About, Phone1st, information, usage -->
 <!-- $url about.html -->
 <!-- $post-image tile-wide.png -->
 
-<!-- @import templates/_test-header -->
+<!-- @import templates-kit/_test-header -->
 <div class="about">
-<h3>A light, clean, starter theme that starts... <em>phone1st</em></h3>
+  <h2>A light, clean, starter theme that starts... <em>phone1st</em></h2>
 
-<blockquote>
-<p>A light and basic html starter theme to get you off to a quick start with your web developments. The CSS is put together using SCSS, a popular way of creating quick, organised stylesheets. Using Phone1st will save you time, building quicker, smarter projects. Once you start using Phone1st you&#8217;ll keep using it.</p>
-</blockquote>
+  <blockquote>
+    <p>
+      A light and basic html starter theme to get you off to a quick start with
+      your web developments. The CSS is put together using SCSS, a popular way
+      of creating quick, organised stylesheets. Using Phone1st will save you
+      time, building quicker, smarter projects. Once you start using Phone1st
+      you&#8217;ll keep using it.
+    </p>
+  </blockquote>
+  <hr />
 
-<hr>
-<h3>CodeKit</h3>
+  <h3>Quick Start</h3>
+  <div class="about-wrap">
+    <p>
+      <strong>Download</strong> - <strong>Rename the folder</strong> -
+      <strong>Import into CodeKit</strong>
+    </p>
 
-<p>Phone1st is designed to be used with <a href="https://codekitapp.com/">CodeKit</a> (<em>Mac only</em>). Taking advantage of <em>CodeKits</em> - <em>kit</em> templates and <em>kit</em> variables.</p>
+    <p>Remove <strong>css/_start.scss</strong></p>
 
-<p>If you don&#8217;t have <em>CodeKit</em> the <em>css</em> folder could be adapted to suit your use. </p>
+    <p>Build your site with the help of the <strong>test folder</strong></p>
 
-<p>The theme should build correctly when imported into Codekit, but if not:</p>
+    <p>Remove the <strong>test folder</strong></p>
 
-<ul>
-<li>Set style.scss to path /build/css/style.css</li>
-<li>Set app.js to path /build/js/app.js</li>
-<li>Set images to path /build/images/</li>
-</ul>
+    <p>Upload the <strong>build folder</strong> to your server</p>
+  </div>
+  <hr />
 
-<p><strong>To view the <em>test folder pages</em></strong></p>
+  <h3>CodeKit</h3>
+  <div class="about-wrap">
+    <p>
+      Phone1st is designed to be used with
+      <a href="https://codekitapp.com/">CodeKit</a> (<em>Mac only</em>). Taking
+      advantage of <em>CodeKits</em> - <em>kit</em> templates and
+      <em>kit</em> variables.
+    </p>
 
-<ul>
-<li>Set test.kit to path /build/test/test.html</li>
-<li>Set about.kit to path /build/test/about.html</li>
-<li>Set scss.kit to path /build/test/scss.html</li>
-<li>Set extras.kit to path /build/test/extras.html</li>
-<li>Set base.scss to path /build/test/css/base.css</li>
-<li>Set extras.scss to path /build/test/css/extras.css</li>
-<li>Set app.js to path /build/test/app.js</li>
-<li><em>all javascript extra files go into the js folder</em> /build/test/js/</li>
-<li>Set all test images to path /build/test/test-images/</li>
-</ul>
+    <p>
+      If you don&#8217;t have <em>CodeKit</em> the <em>css</em> folder could be
+      adapted to suit your use.
+    </p>
 
-<hr />
+    <p>
+      The theme should build correctly when imported into Codekit, but if not:
+    </p>
 
-<h3>The Test Folder</h3>
+    <p>
+      <em
+        >You can delete the <strong>build</strong> folder and
+        <strong>re-build</strong>.</em
+      >
+    </p>
 
-<p>The <em>test</em> folder can be removed when no longer required it will not effect the theme.</p>
+    <p>
+      <em
+        >Remove the <strong>config.codekit3</strong> file and re-import into
+        <strong>CodeKit</strong> using your CodeKit settings.</em
+      >
+    </p>
 
-<p><strong>Test Page</strong> - Use the <em>test</em> page to set the basic elements.</p>
+    <p><em>You can set the paths to suit yourself but phone1st uses:</em></p>
+  </div>
+  <ul>
+    <li>style.scss - /build/css/style.css</li>
+    <li>app.js - /build/js/app.js</li>
+    <li>images - /build/images/</li>
+    <li>index.kit - /build/index.html</li>
+    <li>privacy.kit - /build/privacy.html</li>
+  </ul>
 
-<p><strong>Extras Page</strong> - A few javascript extras to start you off.</p>
+  <p>
+    <strong>To view the <em>test folder pages</em></strong>
+  </p>
 
-<p><strong>Scss Page</strong> - User and <em>Bourbon</em> mixins.</p>
+  <ul>
+    <li>test.kit - /build/test/test.html</li>
+    <li>about.kit - /build/test/about.html</li>
+    <li>scss.kit - /build/test/scss.html</li>
+    <li>extras.kit - /build/test/extras.html</li>
+    <li>layout.kit - /build/test/layout.html</li>
+    <li>flexbox.kit - /build/test/flexbox.html</li>
+  </ul>
 
-<hr />
+  <ul>
+    <li>base.scss - /build/test/css/base.css</li>
+    <li>extras.scss - /build/test/css/extras.css</li>
+    <li>layout.scss - /build/test/css/layout.css</li>
+    <li>flexbox.scss - /build/test/css/flexbox.css</li>
+  </ul>
 
-<h3>Basic SEO</h3>
+  <ul>
+    <li>all extras js files go into the js folder /build/test/js/</li>
+    <li>all test images to /build/test/test-images/</li>
+  </ul>
 
-<p>The following <em>variables</em> for Meta Data are available with some <em>Facebook</em> and <em>Twitter</em> meta. These are optional and you should add or subtract what you require.</p>
+  <hr />
 
-<p><strong>Meta variables available:</strong></p>
+  <h3>The Test Folder</h3>
+  <div class="about-wrap">
+    <p>
+      The <em>test</em> folder can be removed when no longer required it will
+      not effect the theme.
+    </p>
 
-<pre><code>&lt;!-- $title Page title --&gt;// - Basic page title for use with navigation etc. eg <em>Home About</em>
+    <p>
+      <strong>Test Page</strong> - Use the test page to set the basic elements.
+    </p>
+
+    <p>
+      <strong>Extras Page</strong> - A few javascript extras to start you off.
+    </p>
+
+    <p><strong>Scss Page</strong> - User and Bourbon mixins.</p>
+
+    <p><strong>Layout Page</strong> - Basic Grid Css page layout.</p>
+
+    <p><strong>Flexbox Page</strong> - Basic Flexbox introduction.</p>
+  </div>
+  <hr />
+
+  <h3>Basic SEO</h3>
+
+  <p>
+    The following <em>variables</em> for Meta Data are available with some
+    <em>Facebook</em> and <em>Twitter</em> meta. These are optional and you
+    should add or subtract what you require.
+  </p>
+
+  <p><strong>Meta variables available:</strong></p>
+
+  <pre><code>&lt;!-- $title Page title --&gt;// - Basic page title for use with navigation etc. eg <em>Home, About, etc</em>
 
 &lt;!-- $SEO-title --&gt;//- A more descriptive title - 60ish characters
 
@@ -75,22 +152,33 @@
 &lt;!-- $url index.html --&gt;// - exact url
 
 &lt;!-- $post-image eg tile-wide.png --&gt;// - image to use for Facebook and Twitter meta image</code></pre>
+  <div class="about-wrap">
+    <p>
+      See <em>includes/_meta.kit</em>, set the website path and sitename at the
+      top of the page. The page variables <em>(from the top of each page)</em>,
+      along with your website path and sitename will be used to set the meta
+      data.
+    </p>
 
-<p>See <em>includes/_meta.kit</em>, set the website path and sitename at the top of the page. The page variables <em>(from the top of each page)</em>, along with your website path and sitename will be used to set the meta data.</p>
+    <p>
+      sitename is usually the name in your web address ie
+      <em>www.mysitename.com</em> - your sitename would be <em>mysitename</em>
+    </p>
 
-<p>sitename is usually the name in your web address ie <em>www.mysitename.com</em> - your sitename would be <em>mysitename</em></p>
+    <p>
+      <strong>Important</strong> - Check the meta data in your
+      <em>page head</em> with the browser inspector
+    </p>
+  </div>
+  <hr />
 
-<p><strong>Important</strong> - Check the meta data in your <em>page head</em> with the browser inspector</p>
+  <h3>NOTES</h3>
 
-<hr />
+  <h4>Dart Scss</h4>
 
-<h3>NOTES</h3>
+  <p>The math division is changing in <em>Dart Scss</em></p>
 
-<h4>Dart Scss</h4>
-
-<p>The math division is changing in <em>Dart Scss</em></p>
-
-<pre><code>@use &quot;sass:math&quot;;//already in style.scss
+  <pre><code>@use &quot;sass:math&quot;;//already in style.scss
 
 // WRONG, will not work in future Sass versions.
 @debug (12px/4px); // 3
@@ -98,13 +186,22 @@
 // RIGHT, will work in future Sass versions.
 @debug math.div(12px, 4px); // 3</code></pre>
 
-<p>for more information <a href="https://sass-lang.com/documentation/breaking-changes/slash-div">click here</a></p>
+  <p>
+    for more information
+    <a href="https://sass-lang.com/documentation/breaking-changes/slash-div"
+      >click here</a
+    >
+  </p>
 
-<h3>Contact Info:</h3>
+  <h3>Contact Info:</h3>
 
-<p>email: <a href="mailto:h@bylucas.co.uk">h@bylucas.co.uk</a></p>
+  <p>email: <a href="mailto:h@bylucas.co.uk">h@bylucas.co.uk</a></p>
 </div>
-<hr>
-		<p class="secondary center"><a href="../index.html">Home</a> | <a href="test.html">Test</a> | <a href="scss.html">Scss</a> | <a href="extras.html">Extras</a></p>
-	
-	<!-- @import templates/_test-footer -->
+<hr />
+<p class="secondary center">
+  <a href="../index.html">Home</a> | <a href="test.html">Test</a> |
+  <a href="scss.html">Scss</a> | <a href="extras.html">Extras</a> |
+  <a href="layout.html">Layout</a> | <a href="flexbox.html">Flexbox</a>
+</p>
+
+<!-- @import templates-kit/_test-footer -->

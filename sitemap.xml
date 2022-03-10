@@ -15,6 +15,11 @@
 </url>
 
 <url>
+  <loc>https://phone1st.org/privacy.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
   <loc>https://phone1st.org/test/about.html</loc>
   <changefreq>monthly</changefreq>
 </url>
@@ -31,6 +36,16 @@
 
 <url>
   <loc>https://phone1st.org/test/extras.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
+  <loc>https://phone1st.org/test/layout.html</loc>
+  <changefreq>monthly</changefreq>
+</url>
+
+<url>
+  <loc>https://phone1st.org/test/flexbox.html</loc>
   <changefreq>monthly</changefreq>
 </url>
 

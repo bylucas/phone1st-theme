@@ -9,6 +9,18 @@
   box-shadow: inset 0 0 4px darken($background-color, 7%);
 }
 
+// Center Elements
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+  width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
 // Hide from both screenreaders and browsers: h5bp.com/u
 // @include hidden;
 @mixin hidden {

@@ -1,15 +1,5 @@
 // =======================
-// Site
+// Site - site basics
 // =======================
 
-.wrapper,
-header,
-article,
-footer {
-  @include clearfix;
-}
-
-.wrapper {
-	max-width: 900px;
-	@include margin(null auto);
-}
+//start with the layouts in the 'base' folder
