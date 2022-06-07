@@ -161,6 +161,8 @@
   .wrap {
     border: $border;
     font-size: 0.9rem;
+    max-width: 400px;
+    
     &:hover {
       @include overflow-wrap;
     }

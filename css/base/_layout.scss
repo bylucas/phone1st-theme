@@ -2,32 +2,26 @@
 // Layout
 // =======================
 //Start with laying out your basic site using css grids
-
-//This site just uses a .wrapper div
+//All pages use div.wrapper
 .wrapper {
   max-width: 900px;
   @include margin(null auto);
+  padding: $spacer 5%;
+}
+//set some grid variables
+$main: 100%;
+$sidebar: 25%;
+$grid-color: #CDCDCD;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  row-gap: 20px;
+  grid-template-areas: "header" "main" "sidebar" "footer";
 }
 
-$site-main: 100%;
-$site-sidebar: 25%;
-$grid-color: #D1C3E3;
-
-//This grid only affects the 'layout page' in the 'test' folder.
-  .site {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    row-gap: 20px;
-    grid-template-areas:
-      "header"
-      "main"
-      "sidebar"
-      "footer";
-    align-items: center;
-  }
-
-.site-header {
+.header {
   grid-area: header;
   background: $grid-color;
   padding: $spacer 0;
@@ -37,35 +31,54 @@ $grid-color: #D1C3E3;
   }
 }
 
-.site-main {
+.main {
   grid-area: main;
   background: $grid-color;
-  padding: $spacer;
+  padding: 15px;
 }
 
 .sidebar {
   grid-area: sidebar;
   background: $grid-color;
-padding: 20px;
-ul {
-  list-style: none;
-}
+  padding: 20px;
+
+  ul {
+    list-style: none;
+  }
 }
 
-.site-footer {
+.footer {
   grid-area: footer;
   background: $grid-color;
-  padding: $spacer 0 0 0;
+  padding: $spacer 0 0;
   text-align: center;
 }
 
 @include media(900) {
-.site {
-  grid-template-columns: auto ($site-sidebar);
-  column-gap: 20px;
-  grid-template-areas:
-    "header header"
-    "main sidebar"
-    "footer footer";
+  .wrapper {
+    grid-template-columns: auto ($sidebar);
+    column-gap: 20px;
+    align-items: start;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+  }
 }
+
+.no-sidebar {
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 0;
+    grid-template-areas: "header" "main" "footer";
+  }
+
+  .footer,
+  .header,
+  .main {
+    background: 0;
+  }
+
+  .main {
+    padding: 0 15px 15px;
+  }
 }

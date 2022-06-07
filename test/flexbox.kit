@@ -15,11 +15,12 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap|Source+Code+Pro|Ubuntu+Condensed" />
   <title>Basic Layout</title>
   </head>
-  <body>
+  <body class="no-sidebar">
   <div class="wrapper">
-  <header class="flex-header">
+  <header class="header">
       <h1><!-- $title --></h1>
   </header>
+  <section class="main">
 <div class="flex-wrap">
 <p>Below shows a basic introduction to '<em>Flexbox</em>'. See more information on the <strong>"Css-Tricks"</strong> website <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></p>
 	<hr>
@@ -142,20 +143,12 @@
 
 <hr>
 </div>
-	<p class="secondary center"><a href="../index.html">Home</a> | <a href="about.html">About</a> | <a href="scss.html">Scss</a> | <a href="extras.html">Extras</a> | <a href="layout.html">Layout</a></p>
+	<p class="secondary center"><a href="../index.html">Home</a> | <a href="about.html">About</a> | <a href="test.html">Test</a> | <a href="scss.html">Scss</a> | <a href="extras.html">Extras</a> | <a href="layout.html">Layout</a></p>
 	
-	</main>
-	<footer>
-		<button id="topBtn" title="Back to top">Top</button>
-		<p class="third">&copy;2022 bylucas <span>|</span> Phone1st Starter theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a> | <a href="../privacy.html">Privacy</a></p>
-	</footer>
-	</div><!-- wrapper   -->
+	</section>
+	<!-- @import templates-kit/_test-footer -->
+
 		<script src="js/back-top.js"></script>
 		<script src="js/flex.js"></script>
-		<script>var _gaq=[['_setAccount','UA-139947881-1'],['_trackPageview']];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-g.src='//www.google-analytics.com/ga.js';
-s.parentNode.insertBefore(g,s)}(document,'script'));</script>
-
 </body>
 </html>

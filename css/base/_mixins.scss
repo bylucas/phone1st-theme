@@ -16,11 +16,6 @@
   margin-right: auto;
 }
 
-// Column width with margin
-@mixin column-width($numberColumns: 3) {
-  width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
-}
-
 // Hide from both screenreaders and browsers: h5bp.com/u
 // @include hidden;
 @mixin hidden {
@@ -44,7 +39,6 @@
   @content;
 }
 }
-
 
 // Simple breakpoints - base styles are phone first
 // eg @include media(500)
@@ -210,5 +204,3 @@
 
 //value prefixer
 //@include value-prefixer(cursor, grab, ("webkit", "moz"));
-
-

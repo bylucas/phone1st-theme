@@ -10,7 +10,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="description" content="javascript elements to enhance user interaction and experience">
-    <meta name="author" content="h@bylucas.co.uk">
+    <meta name="author" content="h@phone1st.org">
     <meta name="robots" content="INDEX,FOLLOW">
     <meta name="keywords" content="extras, javascript, js">
     <link rel="canonical" href="https://phone1st.org/extras.html" />
@@ -40,10 +40,10 @@
       href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap|Source+Code+Pro|Ubuntu+Condensed"
     />
   </head>
-  <body>
+  <body class="no-sidebar">
     <div class="active-header">
-      <header>
-        <h1 class="intro-title">Extras</h1>
+      <header class="header">
+        <h1>Extras</h1>
     
         <div id="hamburger">
           <span></span>
@@ -89,7 +89,7 @@
     </div>
     
     <div class="wrapper">
-      <div class="main">
+       <section class="main">
         <figure>
           <img src="../tile-wide.png" alt="Phone1st logo" />
         </figure>
@@ -111,7 +111,7 @@
           </div>
         </div>
         <hr />
-        <h2 id="dropdowns">Dropdowns</h2>
+        <h2 class="links-title" id="dropdowns">Dropdowns</h2>
         <div class="dropdown-area">
           <div class="dropdown">
             <div class="trigger">Dropdown One</div>
@@ -163,7 +163,7 @@
         </div>
         
         <hr />
-        <h2 id="tabs">Tabs</h2>
+        <h2 class="links-title" id="tabs">Tabs</h2>
         <div class="tabs-area">
           <!-- tabs -->
           <div class="tabs">
@@ -206,17 +206,17 @@
         </div>
         
         <hr />
-        <h2 id="tooltip">Tooltip</h2>
+        <h2 class="links-title" id="tooltip">Tooltip</h2>
         <p>Lorem dolor sit amet consectetur adipisicing elit. Voluptate sequi odit totam. Quod maiores saepe sequi. <span class="tooltip" data-message="I'm a tooltip!!">Illum aspernatur</span> aut voluptatum, sequi quibusdam laudantium? Laborum asperiores consequuntur eum corporis exercitationem debitis.</p>
         <hr />
-        <h2 id="snackbar">Snackbar</h2>
+        <h2 class="links-title" id="snackbar">Snackbar</h2>
         <div class="snackbar-area">
           <button class="snackbar-trigger">Snackbar Button</button>
           <p>Snackbar displays for 4 seconds</p>
         </div>
         
         <hr />
-        <h2 id="form">Forms</h2>
+        <h2 class="links-title" id="form">Forms</h2>
         <form class="signup-form">
           <h2>Signup with feedback</h2>
           <input type="text" id="username" placeholder="username" />
@@ -225,7 +225,7 @@
         </form>
         
         <hr />
-        <h2 id="modal">Modal</h2>
+        <h2 class="links-title" id="modal">Modal</h2>
         <div class="popup-content-area">
         <button class="submit-button">Click for Modal</button>
         
@@ -246,22 +246,15 @@
           <a href="test.html">Test</a> | <a href="scss.html">Scss</a> |
           <a href="layout.html">Layout</a> | <a href="flexbox.html">Flexbox</a>
         </p>
-      </div>
+      </section>
 
-      <footer>
-        <button id="topBtn" title="Back to top">Top</button>
-        <p class="third">
-          &copy;2022 bylucas <span>|</span> Phone1st Starter theme for html
-          <a
-            href="https://github.com/bylucas/phone1st-theme"
-            title="Phone1st Starter Theme for html available on Github"
-            >available on Github</a
-          >
-          | <a href="../privacy.html">Privacy</a>
-        </p>
-      </footer>
-    </div>
-    <!-- wrapper   -->
+    <footer class="footer">
+    	<button id="topBtn" title="Back to top">Top</button>
+    		<p class="third">&copy;2022 Phone1st Starter theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a></p>
+    	</footer>
+    </div><!-- wrapper   -->
+    
+    
     <!-- loader needed -->
     <script src="js/back-top.js"></script>
     <script src="js/active-header.js"></script>
@@ -271,15 +264,5 @@
     <script src="js/snackbar.js"></script>
     <script src="js/form.js"></script>
     <script src="js/modal.js"></script>
-
-    <script>
-      var _gaq = [["_setAccount", "UA-139947881-1"], ["_trackPageview"]]
-      ;(function (d, t) {
-        var g = d.createElement(t),
-          s = d.getElementsByTagName(t)[0]
-        g.src = "//www.google-analytics.com/ga.js"
-        s.parentNode.insertBefore(g, s)
-      })(document, "script")
-    </script>
   </body>
 </html>

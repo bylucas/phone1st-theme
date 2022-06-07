@@ -105,7 +105,7 @@
     margin-right: 20px;
   }
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
   .flex-header h1 {
     font-size: 2rem;
   }
@@ -123,6 +123,16 @@
     width: 50px;
   }
 
+  .results .content-direction,
+.results .content-justify {
+    margin-left: 50px;
+  }
+  .results .content-flex-wrap,
+.results .content-align {
+    margin-right: 50px;
+  }
+}
+@media only screen and (min-width: 700px) {
   .results .content-direction,
 .results .content-justify {
     margin-left: 120px;

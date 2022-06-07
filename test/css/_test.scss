@@ -2,14 +2,9 @@
 // Test
 // =======================
 
-.intro-title {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: math.div($spacer, 2);
-}
-
 .intro-para {
   text-align: center;
+  margin-top: $spacer;
 }
 
 hr {
@@ -32,7 +27,6 @@ hr {
 }
 }
 
-//If you have a alternative font alter the style to suite
 .alt {
   font-family: $alt-font;
 }
@@ -128,9 +122,6 @@ hr {
 }
 
 @include media(700) {
-  .intro-title {
-    font-size: 2rem;
-  }
 
   .links {
     display: flex;
@@ -141,8 +132,3 @@ align-items: flex-start;
   }
 }
 
-@include media(900) {
-  .intro-title {
-    font-size: 2.5rem;
-  }
-}

@@ -2,16 +2,14 @@
 // Start - remove
 // =======================
 
-.wrapper {
-	padding: $spacer 5%;
+.header {
+	h1 {
+		font-size: 1.8rem;
+	}
 }
 
 .start {
 	text-align: center;
-
-	h1 {
-		font-size: 1.8rem;
-	}
 
 	figure {
 		margin-bottom: $spacer;
@@ -27,7 +25,7 @@
 	}
 
 	.features {
-		margin: 20px 0 30px 0;
+		margin: 20px 0 30px;
 
 		p {
 			font-size: 1.2rem;
@@ -50,33 +48,38 @@
 		margin-bottom: $spacer;
 
 		a {
-		color: $white;
-		font-size: .9rem;
+			color: $white;
+			font-size: 0.9rem;
+		}
 	}
-	}
+
 	hr {
-    margin-bottom: $spacer;
-  }
+		margin-bottom: $spacer;
+	}
 }
-
 @include media(700) {
-	.start {
+	.header {
 		h1 {
-		font-size: 2rem;
+			font-size: 2rem;
+		}
 	}
-	h2 {
-		font-size: 1.7rem;
-	}
-}
-}
 
-@include media(900) {
 	.start {
-		h1 {
-		font-size: 2.5rem;
-	}
-	h2 {
-		font-size: 2rem;
+		h2 {
+			font-size: 1.7rem;
+		}
 	}
 }
+@include media(900) {
+	.header {
+		h1 {
+			font-size: 2.5rem;
+		}
+	}
+
+	.start {
+		h2 {
+			font-size: 2rem;
+		}
+	}
 }

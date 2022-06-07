@@ -6,7 +6,7 @@
 
 > A light and basic html starter theme to get you off to a quick start with your web developments. The CSS is put together using SCSS, a popular way of creating quick, organised stylesheets. Using Phone1st will save you time, building quicker, smarter projects. Once you start using Phone1st you'll keep using it.
 
----
+* * *
 
 ### Quick Start
 
@@ -20,7 +20,7 @@ Remove the **test folder**
 
 Upload the **build folder** to your server
 
----
+* * *
 
 ### CodeKit
 
@@ -42,7 +42,9 @@ _You can set the paths to suit yourself but phone1st uses:_
 - index.kit - /build/index.html
 - privacy.kit - /build/privacy.html
 
-\_To view the \_test folder pages\_\_
+
+To view the _test folder pages_
+
 
 - test.kit - /build/test/test.html
 - about.kit - /build/test/about.html
@@ -51,41 +53,37 @@ _You can set the paths to suit yourself but phone1st uses:_
 - layout.kit - /build/test/layout.html
 - flexbox.kit - /build/test/flexbox.html
 
+
 - base.scss - /build/test/css/base.css
 - extras.scss - /build/test/css/extras.css
 - layout.scss - /build/test/css/layout.css
 - flexbox.scss - /build/test/css/flexbox.css
 
+
 - all extras js files go into the js folder /build/test/js/
 - all test images to /build/test/test-images/
 
----
+* * *
 
 ### The Test Folder
-
 The _test_ folder can be removed when no longer required it will not effect the theme.
 
 #### Test Page
-
 Use the _test_ page to set the basic elements.
 
 #### Extras Page
-
 A few javascript extras to start you off.
 
 #### Scss Page
-
-User and _Bourbon_ mixins.
+User and _Bourbon_ mixins used with the _Phone1st_ theme.
 
 #### Layout Page
-
 Basic _Grid Css_ page layout.
 
 #### Flexbox Page
-
 Basic _Flexbox_ introduction.
 
----
+* * *
 
 ### Basic SEO
 
@@ -93,19 +91,19 @@ The following _variables_ for Meta Data are available with some _Facebook_ and _
 
 Meta variables available:
 
-`<!-- $title Page title -->` - Basic page title for use with navigation etc. eg _Home, About, etc_
+	<!-- $title Page Title --> - //Basic page title for use with navigation etc. eg _Home, About, etc
+	
+	<!-- $SEO-title A Longer Title--> - //A more descriptive title - 60ish characters
+	
+	//Note: Your sitename is added after the $SEO-title
 
-`<!-- $SEO-title -->`- A more descriptive title - 60ish characters
+	<!-- $description Page Description --> - //120ish characters
 
-> Note: Your sitename is added after the $SEO-title
+	<!-- $keyword Home, About --> - //word or words
 
-`<!-- $description Page description -->` - 120ish characters
+	<!-- $url index.html --> - //exact url - canonical
 
-`<!-- $keyword Home, index -->` - word or words
-
-`<!-- $url index.html -->` - exact url - _canonical_
-
-`<!-- $post-image eg tile-wide.png -->` - image to use for Facebook and Twitter meta image
+	<!-- $post-image eg tile-wide.png --> - //image to use for Facebook and Twitter meta image
 
 See _includes/\_meta.kit_, set the website path and sitename at the top of the page. The page variables _(from the top of each page)_, along with your website path and sitename will be used to set the meta data.
 
@@ -113,7 +111,7 @@ sitename is usually the name in your web address ie _www.mysitename.com_ - your 
 
 **Important** - Check the meta data in your _page head_ with the browser inspector
 
----
+* * *
 
 ### NOTES
 
@@ -121,16 +119,16 @@ sitename is usually the name in your web address ie _www.mysitename.com_ - your 
 
 The math division is changing in _Dart Scss_
 
-`@use "sass:math";//already in style.scss`
-
-`// WRONG, will not work in future Sass versions. @debug (12px/4px); // 3`
-
-`// RIGHT, will work in future Sass versions. @debug math.div(12px, 4px); // 3`
+	@use "sass:math";//already in style.scss
+	
+	//WRONG, will not work in future Sass versions. @debug (12px/4px); //3
+	
+	// RIGHT, will work in future Sass versions. @debug math.div(12px, 4px); //3
 
 for more information [click here](https://sass-lang.com/documentation/breaking-changes/slash-div)
 
----
+* * *
 
 ### Contact Info
 
-email: [h@bylucas.co.uk](mailto:h@bylucas.co.uk)
+email: <mailto:h@phone1st.org>

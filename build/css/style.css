@@ -635,57 +635,74 @@ tbody tr:hover th {
   max-width: 900px;
   margin-right: auto;
   margin-left: auto;
+  padding: 2rem 5%;
 }
 
-.site {
+.wrapper {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   row-gap: 20px;
   grid-template-areas: "header" "main" "sidebar" "footer";
-  align-items: center;
 }
 
-.site-header {
+.header {
   grid-area: header;
-  background: #D1C3E3;
+  background: #CDCDCD;
   padding: 2rem 0;
 }
-.site-header h1 {
+.header h1 {
   text-align: center;
 }
 
-.site-main {
+.main {
   grid-area: main;
-  background: #D1C3E3;
-  padding: 2rem;
+  background: #CDCDCD;
+  padding: 15px;
 }
 
 .sidebar {
   grid-area: sidebar;
-  background: #D1C3E3;
+  background: #CDCDCD;
   padding: 20px;
 }
 .sidebar ul {
   list-style: none;
 }
 
-.site-footer {
+.footer {
   grid-area: footer;
-  background: #D1C3E3;
-  padding: 2rem 0 0 0;
+  background: #CDCDCD;
+  padding: 2rem 0 0;
   text-align: center;
 }
 
 @media only screen and (min-width: 900px) {
-  .site {
+  .wrapper {
     grid-template-columns: auto 25%;
     -webkit-column-gap: 20px;
        -moz-column-gap: 20px;
             column-gap: 20px;
+    align-items: start;
     grid-template-areas: "header header" "main sidebar" "footer footer";
   }
 }
+.no-sidebar .wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  row-gap: 0;
+  grid-template-areas: "header" "main" "footer";
+}
+.no-sidebar .footer,
+.no-sidebar .header,
+.no-sidebar .main {
+  background: 0;
+}
+.no-sidebar .main {
+  padding: 0 15px 15px;
+}
+
 .breadcrumb-box {
   margin-bottom: 2rem;
 }
@@ -794,15 +811,12 @@ tbody tr:hover th {
     font-size: 1.5rem;
   }
 }
-.wrapper {
-  padding: 2rem 5%;
+.header h1 {
+  font-size: 1.8rem;
 }
 
 .start {
   text-align: center;
-}
-.start h1 {
-  font-size: 1.8rem;
 }
 .start figure {
   margin-bottom: 2rem;
@@ -815,7 +829,7 @@ tbody tr:hover th {
   font-size: 1.6rem;
 }
 .start .features {
-  margin: 20px 0 30px 0;
+  margin: 20px 0 30px;
 }
 .start .features p {
   font-size: 1.2rem;
@@ -842,17 +856,19 @@ tbody tr:hover th {
 }
 
 @media only screen and (min-width: 700px) {
-  .start h1 {
+  .header h1 {
     font-size: 2rem;
   }
+
   .start h2 {
     font-size: 1.7rem;
   }
 }
 @media only screen and (min-width: 900px) {
-  .start h1 {
+  .header h1 {
     font-size: 2.5rem;
   }
+
   .start h2 {
     font-size: 2rem;
   }

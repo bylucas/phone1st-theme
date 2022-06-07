@@ -112,7 +112,7 @@
   }
 }
 
-@include media(700) {
+@include media(600) {
   .flex-header {
     h1 {
       font-size: 2rem;
@@ -133,6 +133,20 @@
     }
   }
 
+  .results {
+    .content-direction,
+    .content-justify {
+      margin-left: 50px;
+    }
+
+    .content-flex-wrap,
+    .content-align {
+      margin-right: 50px;
+    }
+  }
+}
+
+@include media(700) {
   .results {
     .content-direction,
     .content-justify {
