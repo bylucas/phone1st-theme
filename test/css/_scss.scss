@@ -3,6 +3,7 @@
 // =======================
 .scss-extras {
   text-align: center;
+  overflow: hidden;
 
   h2 {
     font-size: 1.6rem;
@@ -161,7 +162,7 @@
   .wrap {
     border: $border;
     font-size: 0.9rem;
-    max-width: 400px;
+    max-width: 300px;
     
     &:hover {
       @include overflow-wrap;

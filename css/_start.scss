@@ -33,18 +33,13 @@
 		}
 	}
 
-	h5 {
-		font-size: 1.4rem;
-		margin-bottom: $spacer;
-	}
-
-	.secondary {
-		font-size: $secondary;
+	.third {
+		font-size: $third;
 	}
 
 	button {
 		padding: 7px;
-		margin-top: 0;
+		margin-top: 20px;
 		margin-bottom: $spacer;
 
 		a {

@@ -26,17 +26,24 @@
 }
 
 .flexbox-one {
-  border: 1px solid $light-gray;
-  margin: $spacer 10px;
-
-  div {
-    background: orange;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    margin-top: $spacer * 2;
     border: 1px solid $light-gray;
-    text-align: center;
-    padding: 8px 0;
-    vertical-align: middle;
+
+    div {
+      width: 50px;
+      background: orange;
+     border: 1px solid $light-gray;
+     text-align: center;
+     padding: 8px 0;
+     vertical-align: middle;
+    }
   }
-}
 
 .results {
   p {
@@ -88,12 +95,13 @@
     border: 1px solid $light-gray;
     border-radius: $radius;
 
-    p {
+    p, span {
       font-family: $code-font;
       font-style: italic;
       margin-bottom: 3px;
       margin-left: 10px;
       color: $medium-gray;
+      font-size: $secondary;
     }
   }
 }
@@ -119,20 +127,6 @@
     }
   }
 
-  .flexbox-one {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 300px;
-    margin-top: $spacer * 2;
-
-    div {
-      width: 50px;
-    }
-  }
-
   .results {
     .content-direction,
     .content-justify {
@@ -143,6 +137,10 @@
     .content-align {
       margin-right: 50px;
     }
+
+    .css-output {
+    max-width: 500px;
+  }
   }
 }
 

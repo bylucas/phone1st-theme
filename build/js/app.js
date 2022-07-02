@@ -1,3 +1,3 @@
 //Set your scripts here
-//h@bylucas.co.uk
+//h@phone1st.org
 //https://phone1st.org
