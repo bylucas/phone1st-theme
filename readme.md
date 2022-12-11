@@ -14,6 +14,10 @@
 
 Remove **css/\_start.scss**
 
+Alter/Remove **google site verification** - includes/\_header.kit
+
+Alter/Remove **google analylitics** - includes/\_scripts.kit
+
 Build your site with the help of the **test folder**
 
 Remove the **test folder**
@@ -131,10 +135,10 @@ for more information [click here](https://sass-lang.com/documentation/breaking-c
 
 ### View Phone1st Theme
 
-[Phone1st Starter Theme](https://phone1st.org/themes/phone1st/)
+[Phone1st Starter Theme](https://phone1st.org/)
 
 * * *
 
 ### Contact Info
 
-email: <mailto:h@phone1st.org>
+email: <mailto:h@howardlucas.co.uk>
