@@ -45,8 +45,7 @@ a {
   text-decoration: none;
 
   &:active,
-  &:focus,
-  &:hover {
+  &:focus {
     color: $link-color;
   }
 }
