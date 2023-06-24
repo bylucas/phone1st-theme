@@ -135,7 +135,7 @@ for more information [click here](https://sass-lang.com/documentation/breaking-c
 
 ### View Phone1st Theme
 
-[Phone1st Starter Theme](https://phone1st.org/)
+[Phone1st Starter Theme](https://phone1st-theme.netlify.app/)
 
 * * *
 
