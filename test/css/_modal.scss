@@ -8,9 +8,6 @@ position: relative;
 .submit-button {
   display: block;
   margin: 20px auto;
-  background: crimson;
-  color: white;
-  border: 0;
   padding: 6px 10px;
 }
 
@@ -35,9 +32,6 @@ position: relative;
   height: 300px;
 
   a {
-  background: crimson;
-  color: white;
-  text-decoration: none;
   padding: 6px 10px;
   font-size: $third;
 }

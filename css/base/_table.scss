@@ -32,9 +32,11 @@ table {
   tbody tr th {
   }
 
+@media (hover: hover) {
   tbody tr:hover td,
   tbody tr:hover th {
   }
+ }
 }
 
 table caption {
@@ -50,10 +52,12 @@ table caption {
     transition: background-color 1s ease-in-out;
   }
 
+@media (hover: hover) {
   tbody tr:hover td,
   tbody tr:hover th {
     background-color: $light-background;
   }
+ }
 }
 
 // CONDENSED ============================

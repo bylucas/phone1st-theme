@@ -223,6 +223,8 @@ a:active, a:focus {
   a {
     transition: color 0.4s ease-in 0.1s;
   }
+}
+@media (hover: hover) {
   a:hover {
     color: #af0c22;
   }
@@ -458,8 +460,10 @@ textarea {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   transition: background-color 0.8s ease-in 0.1s;
 }
-[type=color]:hover, [type=date]:hover, [type=datetime]:hover, [type=datetime-local]:hover, [type=email]:hover, [type=month]:hover, [type=number]:hover, [type=password]:hover, [type=search]:hover, [type=tel]:hover, [type=text]:hover, [type=time]:hover, [type=url]:hover, [type=week]:hover, input:not([type]):hover, textarea:hover {
-  border-color: #cacaca;
+@media (hover: hover) {
+  [type=color]:hover, [type=date]:hover, [type=datetime]:hover, [type=datetime-local]:hover, [type=email]:hover, [type=month]:hover, [type=number]:hover, [type=password]:hover, [type=search]:hover, [type=tel]:hover, [type=text]:hover, [type=time]:hover, [type=url]:hover, [type=week]:hover, input:not([type]):hover, textarea:hover {
+    border-color: #cacaca;
+  }
 }
 [type=color]:focus, [type=date]:focus, [type=datetime]:focus, [type=datetime-local]:focus, [type=email]:focus, [type=month]:focus, [type=number]:focus, [type=password]:focus, [type=search]:focus, [type=tel]:focus, [type=text]:focus, [type=time]:focus, [type=url]:focus, [type=week]:focus, input:not([type]):focus, textarea:focus {
   border-color: #2365c0;
@@ -470,8 +474,10 @@ textarea {
   cursor: not-allowed;
   opacity: 0.5;
 }
-[type=color]:disabled:hover, [type=date]:disabled:hover, [type=datetime]:disabled:hover, [type=datetime-local]:disabled:hover, [type=email]:disabled:hover, [type=month]:disabled:hover, [type=number]:disabled:hover, [type=password]:disabled:hover, [type=search]:disabled:hover, [type=tel]:disabled:hover, [type=text]:disabled:hover, [type=time]:disabled:hover, [type=url]:disabled:hover, [type=week]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
-  border-color: #ba221d;
+@media (hover: hover) {
+  [type=color]:disabled:hover, [type=date]:disabled:hover, [type=datetime]:disabled:hover, [type=datetime-local]:disabled:hover, [type=email]:disabled:hover, [type=month]:disabled:hover, [type=number]:disabled:hover, [type=password]:disabled:hover, [type=search]:disabled:hover, [type=tel]:disabled:hover, [type=text]:disabled:hover, [type=time]:disabled:hover, [type=url]:disabled:hover, [type=week]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
+    border-color: #ba221d;
+  }
 }
 [type=color]::-webkit-input-placeholder, [type=date]::-webkit-input-placeholder, [type=datetime]::-webkit-input-placeholder, [type=datetime-local]::-webkit-input-placeholder, [type=email]::-webkit-input-placeholder, [type=month]::-webkit-input-placeholder, [type=number]::-webkit-input-placeholder, [type=password]::-webkit-input-placeholder, [type=search]::-webkit-input-placeholder, [type=tel]::-webkit-input-placeholder, [type=text]::-webkit-input-placeholder, [type=time]::-webkit-input-placeholder, [type=url]::-webkit-input-placeholder, [type=week]::-webkit-input-placeholder, input:not([type])::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #999;
@@ -529,10 +535,12 @@ button:disabled,
   cursor: not-allowed;
   opacity: 0.5;
 }
-button:disabled:hover,
+@media (hover: hover) {
+  button:disabled:hover,
 .but:disabled:hover,
 .submit:disabled:hover {
-  background-color: #ba221d;
+    background-color: #ba221d;
+  }
 }
 
 button,
@@ -541,12 +549,16 @@ button,
   background: #2365c0;
   margin-bottom: 0;
 }
-@media only screen and (min-width: 900px) {
+@media (hover: hover) {
+  button,
+.but,
+.submit {
+    transition: all 0.3s ease;
+  }
   button:hover,
 .but:hover,
 .submit:hover {
     background: #af0c22;
-    transition: all 0.3s ease;
   }
 }
 
@@ -582,6 +594,8 @@ table caption {
 tbody tr th {
     transition: background-color 1s ease-in-out;
   }
+}
+@media only screen and (min-width: 900px) and (hover: hover) {
   tbody tr:hover td,
 tbody tr:hover th {
     background-color: #f9f9f9;
@@ -752,12 +766,12 @@ tbody tr:hover th {
 .social svg {
   height: 1.2rem;
   width: 1.2rem;
-  fill: #ba221d;
+  fill: #2365c0;
 }
 
-@media only screen and (min-width: 900px) {
+@media (hover: hover) {
   svg:hover {
-    fill: #3f913a;
+    fill: #af0c22;
   }
 }
 .privacy {

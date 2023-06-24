@@ -19,26 +19,25 @@
   white-space: nowrap;
   padding: 10px;
 
-  &:hover,
-  &:focus {
-  }
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
-
-    &:hover {
-      background-color: $error-color;
-    }
+  
+  @media (hover: hover) {
+  &:hover {
+    background-color: $error-color;
+   }
   }
+ }
 }
 
 @mixin button-bg($bg) {
   background: $bg;
 
-  @include media(900) {
+  @media (hover: hover) {
+    transition: all 0.3s ease;
     &:hover {
-      background: $hover-color;
-      transition: all 0.3s ease;
+     background: $hover-color;
     }
   }
 }

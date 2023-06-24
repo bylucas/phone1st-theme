@@ -16,9 +16,11 @@
   color: $white;
   opacity: .7;
 
+@media (hover: hover) {
   &:active,
   &:focus,
   &:hover {
     opacity: 1;
   }
+}
 }

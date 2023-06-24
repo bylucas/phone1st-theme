@@ -54,10 +54,13 @@ a {
 @include media(900) {
   a {
     transition: color 0.4s ease-in 0.1s;
+  }
+}
 
-    &:hover {
-      color: $hover-color;
-    }
+//Link hovers
+@media (hover: hover) {
+  a:hover {
+    color: $hover-color;
   }
 }
 

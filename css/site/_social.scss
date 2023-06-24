@@ -19,12 +19,12 @@
   }
   svg {
     @include size(1.2rem); //if using svg
-    fill: $error-color;
+    fill: $link-color;
   }
 }
 
-@include media(900) {
+@media (hover: hover) {
   svg:hover {
-    fill: $success-color;
+    fill: $hover-color;
   }
 }
