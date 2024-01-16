@@ -1,0 +1,90 @@
+// =======================
+// Firebase
+// =======================
+
+.firebase {
+  text-align: center;
+  h2 {
+  letter-spacing: 2px;
+  margin-top: math.div($spacer, 2);
+}
+
+hr {
+  @include margin(0 10px null 10px);
+}
+}
+
+.showcontacts {
+
+div {
+  margin-bottom: math.div($spacer, 2);
+}
+
+h3 {
+  font-size: $secondary;
+  margin-bottom: 5px;
+
+  &:hover {
+    text-decoration: line-through double red;
+    cursor: pointer;
+  }
+}
+
+p {
+  font-size: $third;
+  margin-bottom: 5px;
+}
+}
+
+.contact-form {
+  margin-bottom: math.div($spacer, 1.5);
+
+  input {
+    width: 80%;
+    @include margin(null auto null auto);
+  }
+}
+
+
+.feedback {
+    font-size: $secondary;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: $success-color;
+    margin-bottom: math.div($spacer, 2);
+    display: none;
+  }
+
+  @include media(480) {
+
+    .showcontacts {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      div {
+        width: 50%;
+        flex-grow: 1;
+      }
+    }
+
+    .contact-form {
+
+  input {
+    width: 300px;
+  }
+}
+
+  }
+
+  @include media(900) {
+
+    .showcontacts {
+      div {
+        width: 33%;
+      }
+    }
+    
+  }

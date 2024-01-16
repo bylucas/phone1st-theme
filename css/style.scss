@@ -4,7 +4,15 @@
 //compiling scss with Dart Sass
 //math div(divide) - eg math.div($font-size, 1.03)
 //https://sass-lang.com/documentation/breaking-changes/slash-div
+
+//Can use calc as an alternative to math.div()
+//$secondary: calc($font-size/1.125);
+
+//Needed to use math.div()
 @use "sass:math";
+
+//import Google Fonts
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&family=Source+Code+Pro:wght@400&family=Ubuntu+Condensed&display=swap');
 
 // ====================
 //   Import the basics

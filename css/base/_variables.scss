@@ -12,7 +12,8 @@ $icon-font: "";
 $font-size: 1.2rem;
 
 $lead: $font-size * 1.134;
-$secondary: math.div($font-size, 1.125);
+//$secondary: math.div($font-size, 1.125);
+$secondary: calc($font-size/1.125);//alternative to math.div
 $third: math.div($font-size, 1.255);
 
 // SIZE ==================================

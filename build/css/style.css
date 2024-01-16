@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&family=Source+Code+Pro:wght@400&family=Ubuntu+Condensed&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -204,8 +205,7 @@ body {
   height: 100%;
   color: #464747;
   font-family: "Raleway", sans-serif;
-  -webkit-font-feature-settings: "kern", "liga", "pnum";
-          font-feature-settings: "kern", "liga", "pnum";
+  font-feature-settings: "kern", "liga", "pnum";
   font-size: 1.2rem;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
@@ -433,11 +433,11 @@ figcaption {
     float: left;
   }
   figure.alignright,
-img.alignright {
+  img.alignright {
     margin: 0 0 0 2rem;
   }
   figure.alignleft,
-img.alignleft {
+  img.alignleft {
     margin: 0 2rem 0 0;
   }
 }
@@ -478,10 +478,6 @@ textarea {
   [type=color]:disabled:hover, [type=date]:disabled:hover, [type=datetime]:disabled:hover, [type=datetime-local]:disabled:hover, [type=email]:disabled:hover, [type=month]:disabled:hover, [type=number]:disabled:hover, [type=password]:disabled:hover, [type=search]:disabled:hover, [type=tel]:disabled:hover, [type=text]:disabled:hover, [type=time]:disabled:hover, [type=url]:disabled:hover, [type=week]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
     border-color: #ba221d;
   }
-}
-[type=color]::-webkit-input-placeholder, [type=date]::-webkit-input-placeholder, [type=datetime]::-webkit-input-placeholder, [type=datetime-local]::-webkit-input-placeholder, [type=email]::-webkit-input-placeholder, [type=month]::-webkit-input-placeholder, [type=number]::-webkit-input-placeholder, [type=password]::-webkit-input-placeholder, [type=search]::-webkit-input-placeholder, [type=tel]::-webkit-input-placeholder, [type=text]::-webkit-input-placeholder, [type=time]::-webkit-input-placeholder, [type=url]::-webkit-input-placeholder, [type=week]::-webkit-input-placeholder, input:not([type])::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #999;
-  opacity: 1; /* Firefox */
 }
 [type=color]::-moz-placeholder, [type=date]::-moz-placeholder, [type=datetime]::-moz-placeholder, [type=datetime-local]::-moz-placeholder, [type=email]::-moz-placeholder, [type=month]::-moz-placeholder, [type=number]::-moz-placeholder, [type=password]::-moz-placeholder, [type=search]::-moz-placeholder, [type=tel]::-moz-placeholder, [type=text]::-moz-placeholder, [type=time]::-moz-placeholder, [type=url]::-moz-placeholder, [type=week]::-moz-placeholder, input:not([type])::-moz-placeholder, textarea::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #999;
@@ -537,8 +533,8 @@ button:disabled,
 }
 @media (hover: hover) {
   button:disabled:hover,
-.but:disabled:hover,
-.submit:disabled:hover {
+  .but:disabled:hover,
+  .submit:disabled:hover {
     background-color: #ba221d;
   }
 }
@@ -551,13 +547,13 @@ button,
 }
 @media (hover: hover) {
   button,
-.but,
-.submit {
+  .but,
+  .submit {
     transition: all 0.3s ease;
   }
   button:hover,
-.but:hover,
-.submit:hover {
+  .but:hover,
+  .submit:hover {
     background: #af0c22;
   }
 }
@@ -591,13 +587,13 @@ table caption {
 
 @media only screen and (min-width: 900px) {
   tbody tr td,
-tbody tr th {
+  tbody tr th {
     transition: background-color 1s ease-in-out;
   }
 }
 @media only screen and (min-width: 900px) and (hover: hover) {
   tbody tr:hover td,
-tbody tr:hover th {
+  tbody tr:hover th {
     background-color: #f9f9f9;
   }
 }
@@ -633,70 +629,45 @@ tbody tr:hover th {
   padding: 2rem 5%;
 }
 
-.wrapper {
+.with-sidebar .wrapper {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
-  row-gap: 20px;
+  row-gap: 40px;
   grid-template-areas: "header" "main" "sidebar" "footer";
 }
-
-.header {
+.with-sidebar .header {
   grid-area: header;
   background: #CDCDCD;
   padding: 2rem 0;
 }
-.header h1 {
-  text-align: center;
-}
-
-.main {
+.with-sidebar .main {
   grid-area: main;
   background: #CDCDCD;
   padding: 15px;
 }
-
-.sidebar {
+.with-sidebar .sidebar {
   grid-area: sidebar;
   background: #CDCDCD;
   padding: 20px;
 }
-.sidebar ul {
+.with-sidebar .sidebar ul {
   list-style: none;
 }
-
-.footer {
+.with-sidebar .footer {
   grid-area: footer;
   background: #CDCDCD;
   padding: 2rem 0 0;
   text-align: center;
 }
-
 @media only screen and (min-width: 900px) {
-  .wrapper {
+  .with-sidebar .wrapper {
     grid-template-columns: auto 25%;
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
     align-items: start;
     grid-template-areas: "header header" "main sidebar" "footer footer";
   }
-}
-.no-sidebar .wrapper {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  row-gap: 0;
-  grid-template-areas: "header" "main" "footer";
-}
-.no-sidebar .footer,
-.no-sidebar .header,
-.no-sidebar .main {
-  background: 0;
-}
-.no-sidebar .main {
-  padding: 0 15px 15px;
-  overflow: hidden;
 }
 
 .breadcrumb-box {
@@ -809,6 +780,7 @@ tbody tr:hover th {
 }
 .header h1 {
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .start {
@@ -865,17 +837,17 @@ tbody tr:hover th {
 }
 @media print {
   *,
-*:before,
-*:after,
-*:first-letter,
-*:first-line {
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
     background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
   }
   a,
-a:visited {
+  a:visited {
     text-decoration: underline;
   }
   a[href]:after {
@@ -885,11 +857,11 @@ a:visited {
     content: " (" attr(title) ")";
   }
   a[href^="#"]:after,
-a[href^="javascript:"]:after {
+  a[href^="javascript:"]:after {
     content: "";
   }
   pre,
-blockquote {
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -897,20 +869,20 @@ blockquote {
     display: table-header-group;
   }
   tr,
-img {
+  img {
     page-break-inside: avoid;
   }
   img {
     max-width: 100% !important;
   }
   p,
-h2,
-h3 {
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
   h2,
-h3 {
+  h3 {
     page-break-after: avoid;
   }
 }
