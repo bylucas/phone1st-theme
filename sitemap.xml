@@ -2,48 +2,53 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc>https://phone1st-theme.netlify.app/</loc>
-	<lastmod>2023-06-29T03:51:21+01:00</lastmod>
+	<loc>https://phone1st.org/</loc>
+	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://phone1st-theme.netlify.app/test/about.html</loc>
-	<lastmod>2023-06-29T03:51:21+01:00</lastmod>
+	<loc>https://phone1st.org/test/about.html</loc>
+	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st-theme.netlify.app/test/test.html</loc>
-	<lastmod>2023-06-29T03:51:21+01:00</lastmod>
+	<loc>https://phone1st.org/test/test.html</loc>
+	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st-theme.netlify.app/test/scss.html</loc>
-	<lastmod>2023-06-29T03:51:21+01:00</lastmod>
+	<loc>https://phone1st.org/test/scss.html</loc>
+	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st-theme.netlify.app/test/extras.html</loc>
-	<lastmod>2023-06-29T03:51:21+01:00</lastmod>
+	<loc>https://phone1st.org/test/extras.html</loc>
+	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st-theme.netlify.app/test/layout.html</loc>
-	<lastmod>2023-06-29T03:51:21+01:00</lastmod>
+	<loc>https://phone1st.org/test/layout.html</loc>
+	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st-theme.netlify.app/test/flexbox.html</loc>
-	<lastmod>2023-06-29T03:51:21+01:00</lastmod>
+	<loc>https://phone1st.org/test/flexbox.html</loc>
+	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st-theme.netlify.app/index.html</loc>
-	<lastmod>2023-06-29T03:51:21+01:00</lastmod>
+	<loc>https://phone1st.org/test/contact.html</loc>
+	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://phone1st.org/index.html</loc>
+	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://phone1st-theme.netlify.app/404.html</loc>
-	<lastmod>2023-06-29T03:51:23+01:00</lastmod>
+	<loc>https://phone1st.org/404.html</loc>
+	<lastmod>2024-01-31T03:51:23+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 </urlset>

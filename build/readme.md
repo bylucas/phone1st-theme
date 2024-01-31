@@ -44,11 +44,9 @@ _You can set the paths to suit yourself but phone1st uses:_
 - app.js - /build/js/app.js
 - images - /build/images/
 - index.kit - /build/index.html
-- privacy.kit - /build/privacy.html
 
 
 To view the _test folder pages_
-
 
 - test.kit - /build/test/test.html
 - about.kit - /build/test/about.html
@@ -56,16 +54,17 @@ To view the _test folder pages_
 - extras.kit - /build/test/extras.html
 - layout.kit - /build/test/layout.html
 - flexbox.kit - /build/test/flexbox.html
+- contact.kit - /build/test/contact.html
 
 
 - base.scss - /build/test/css/base.css
 - extras.scss - /build/test/css/extras.css
-- layout.scss - /build/test/css/layout.css
 - flexbox.scss - /build/test/css/flexbox.css
 
 
 - all extras js files go into the js folder /build/test/js/
 - all test images to /build/test/test-images/
+- Contact page uses /build/test/firestore/contact.js
 
 * * *
 
@@ -141,4 +140,4 @@ for more information [click here](https://sass-lang.com/documentation/breaking-c
 
 ### Contact Info
 
-email: <mailto:h@howardlucas.co.uk>
+email: <mailto:h@howardl.org>

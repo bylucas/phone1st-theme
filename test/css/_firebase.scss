@@ -4,9 +4,8 @@
 
 .firebase {
   text-align: center;
-  h2 {
-  letter-spacing: 2px;
-  margin-top: math.div($spacer, 2);
+  p {
+  margin: math.div($spacer, 2) auto $spacer*1.2 auto;
 }
 
 hr {
@@ -14,77 +13,42 @@ hr {
 }
 }
 
-.showcontacts {
-
-div {
-  margin-bottom: math.div($spacer, 2);
+.contact {
+  margin-bottom: $spacer;
 }
 
-h3 {
-  font-size: $secondary;
-  margin-bottom: 5px;
+.subscribe {
+  border: none;
+  border-radius: none !important;
+  border-bottom: 1px solid $link-color;
+  margin: 10px auto 30px auto;
+  padding: 10px;
+  background: none;
+  outline: none;
+  box-shadow: none;
+  max-width: 400px;
 
-  &:hover {
-    text-decoration: line-through double red;
-    cursor: pointer;
+&:hover {
+  border-bottom: 1px solid $hover-color;
+}
+
+&:focus {
+  border-bottom: 1px solid #7AABDA;
+  box-shadow: none;
+}
+}
+
+.contact-submit {
+    width: 120px;
+    margin: 10px auto;
   }
-}
 
-p {
-  font-size: $third;
-  margin-bottom: 5px;
-}
-}
-
-.contact-form {
-  margin-bottom: math.div($spacer, 1.5);
-
-  input {
-    width: 80%;
-    @include margin(null auto null auto);
-  }
-}
-
-
-.feedback {
+  .feedback {
     font-size: $secondary;
     letter-spacing: 2px;
-    font-weight: 600;
-    color: $success-color;
-    margin-bottom: math.div($spacer, 2);
+    font-weight: 500;
+    color: #51B924;
+    padding-bottom: 6px;
     display: none;
   }
 
-  @include media(480) {
-
-    .showcontacts {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-
-      div {
-        width: 50%;
-        flex-grow: 1;
-      }
-    }
-
-    .contact-form {
-
-  input {
-    width: 300px;
-  }
-}
-
-  }
-
-  @include media(900) {
-
-    .showcontacts {
-      div {
-        width: 33%;
-      }
-    }
-    
-  }
