@@ -1,7 +1,4 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
+User-Agent: *
+Disallow:
 
-User-agent: *
-Allow: /
-
-Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://www.phone1st.org/sitemap.xml

@@ -7,47 +7,42 @@
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/about.html</loc>
+	<loc>https://phone1st.org/test/about/</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/test.html</loc>
+	<loc>https://phone1st.org/test/test/</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/scss.html</loc>
+	<loc>https://phone1st.org/test/scss/</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/extras.html</loc>
+	<loc>https://phone1st.org/test/extras/</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/layout.html</loc>
+	<loc>https://phone1st.org/test/layout/</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/flexbox.html</loc>
+	<loc>https://phone1st.org/test/flexbox/</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/contact.html</loc>
+	<loc>https://phone1st.org/test/contact/</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/index.html</loc>
-	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://phone1st.org/404.html</loc>
+	<loc>https://phone1st.org/404/</loc>
 	<lastmod>2024-01-31T03:51:23+01:00</lastmod>
 	<priority>1.0</priority>
 </url>

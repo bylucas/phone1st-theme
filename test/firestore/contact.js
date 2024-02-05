@@ -30,7 +30,8 @@ form.addEventListener("submit", (e) => {
   feedback.style.display = 'none',
   form.reset()
   }, 3000 )
-
-
 })
+  .catch(err => {
+      console.log(err.message)
+    })
 })
