@@ -2,47 +2,47 @@
 		<!--	created with www.mysitemapgenerator.com	-->
 		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-	<loc>https://phone1st.org/</loc>
+	<loc>https://www.phone1st.org/</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/about/</loc>
+	<loc>https://www.phone1st.org/test/about.html</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/test/</loc>
+	<loc>https://www.phone1st.org/test/test.html</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/scss/</loc>
+	<loc>https://www.phone1st.org/test/scss.html</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/extras/</loc>
+	<loc>https://www.phone1st.org/test/extras.html</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/layout/</loc>
+	<loc>https://www.phone1st.org/test/layout.html</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/flexbox/</loc>
+	<loc>https://www.phone1st.org/test/flexbox.html</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/test/contact/</loc>
+	<loc>https://www.phone1st.org/test/contact.html</loc>
 	<lastmod>2024-01-31T03:51:21+01:00</lastmod>
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://phone1st.org/404/</loc>
+	<loc>https://www.phone1st.org/404.html</loc>
 	<lastmod>2024-01-31T03:51:23+01:00</lastmod>
 	<priority>1.0</priority>
 </url>
