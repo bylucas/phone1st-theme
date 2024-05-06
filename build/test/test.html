@@ -1,5 +1,629 @@
- <!DOCTYPE html> <html lang="en"> <head> <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"></script> <script> window.dataLayer = window.dataLayer || [];
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-7WCWMB5E47'); </script> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Set the basic html theme settings using this test page</title> <meta name="HandheldFriendly" content="True"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="description" content="Set and preview the very basic html elements and theme settings and then remove the test folder if you wish"> <meta name="author" content="h@howardl.org"> <meta name="robots" content="INDEX,FOLLOW"> <meta name="keywords" content="Test"> <link rel="canonical" href="https://phone1st.org/test/test.html"> <link rel="apple-touch-icon" href="apple-touch-icon.png"> <meta property="og:site_name" content="Phone1st Starter Theme"> <meta property="og:type" content="website"> <meta property="og:title" content="Set the basic html theme settings using this test page"> <meta property="og:description" content="Set and preview the very basic html elements and theme settings and then remove the test folder if you wish"> <meta property="og:url" content="https://phone1st.org/test/test.html"> <meta property="og:image" content="https://phone1st.org/tile-wide.png"> <meta property="og:image:width" content="580"> <meta property="og:image:height" content="296"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Set the basic html theme settings using this test page"> <meta name="twitter:description" content="Set and preview the very basic html elements and theme settings and then remove the test folder if you wish"> <meta name="twitter:url" content="https://phone1st.org/test/test.html"> <meta name="twitter:image:src" content="https://phone1st.org/tile-wide.png"> <meta name="google-site-verification" content="TvuzHUBIxICVdbTVw1poUSZv8eYF7RmjWccv_0kBoFc"> <link rel="stylesheet" href="../css/style.css"> <link rel="stylesheet" href="css/base.css"> </head> <body class=""> <div class="wrapper"> <header class="header"> <h1> Test Page </h1> </header> <section class="main"> <figure> <img src="../tile-wide.png" alt="Phone1st logo"> </figure> <p class="intro-para"> The <em>default style sheet</em> formats this page.<br> Use this page to set the basic elements before you start building your site.<br> Link/button/table hovers don't come into effect until >900px <br> The <em>test</em> folder can be deleted and <strong>will not</strong> effect your site. <br> -- So start your website by making this page look pretty! </p> <hr> <h2 class="links-title">-- Links --</h2> <div class="links"> <div> <a href="#typography">Typography</a> <a href="#forms">Forms</a> <a href="#tables">Tables</a> <a href="#images">Images</a> </div> <div> <a href="#navigation">Page Navigation</a> <a href="#social">Social Buttons</a> <a href="#404">404 Page Not Found</a> </div> </div> <hr> <h2>Theme Variables</h2> <hr> <div class="theme-variables"> <h2>Colors</h2> <p>The default colors - see <em>css/base/_variables.scss</em> to change</p> <div class="black-color"> <p>$black</p> </div> <div class="white-color"> <p>$white</p> </div> <p>Set the grays</p> <div class="dark-gray"> <p>$dark-gray</p> </div> <div class="medium-gray"> <p>$medium-gray</p> </div> <div class="light-gray"> <p>$light-gray</p> </div> <div class="font-color"> <p>$font-color</p> </div> <div class="link-color"> <p>$link-color</p> </div> <div class="hover-color"> <p>$hover-color</p> </div> <div class="input-color"> <p>$input-background</p> </div> <div class="button-color"> <p>$button-background</p> </div> <div class="background"> <p>$background color</p> </div> <div class="light-background"> <p>$light background color</p> </div> <div class="border"> <p>$border and $radius</p> </div> <div class="error-color"> <p>$error-color</p> </div> <div class="alert-color"> <p>$alert-color</p> </div> <div class="success-color"> <p>$success-color</p> </div> </div> <hr> <h2 id="typography">Typography</h2> <hr> <p>The heading font-sizes are not set - see <em>css/base/_typography.scss</em></p> <h1>Heading 1</h1> <h2>Heading 2</h2> <h2 style="font-weight: 300;">Heading h2 weight 300</h2> <h2>Heading h2 check line-height with this really long, I mean really long, I really mean this really long title. The same line-height effects all headings.</h2> <h3>Heading 3</h3> <h4>Heading 4</h4> <h5>Heading 5</h5> <h6>Heading 6</h6> <hr> <p> <strong>Normal Paragraph</strong> Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. </p> <p class="lead"> <strong>Lead Paragraph</strong> Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis <strong>strong</strong> dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. </p> <p class="secondary"> <strong>Secondary Paragraph</strong> Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. </p> <p class="third"> <strong>Third Paragraph</strong> Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis <strong>strong</strong> dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. </p> <p class="alt"> <strong>Alternative Font</strong> Do you have an extra - alternative font? <em>(Ubuntu Condensed - used here)</em>. Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis <strong>strong</strong> dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. </p> <hr> <h2>Basic Tags</h2> <h3>big</h3> <p><big>This is big, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. </big></p> <h3>small</h3> <p><small>This is small, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. </small></p> <h3>Definition (dfn).</h3> <p>They parked the truck on the side of the road trying to park off the road as much as they could, and the definition - <dfn>but usually without much success and then placed large stones around the side of the truck that was still on the road.</dfn> - end definition. They then try and repair the truck behind this barrier of stone</p> <h3>pre (pre)</h3> <pre>Another surprise was how much water there was. Water was pumped around fields for irrigation, where the water forms largish ponds women washed clothes or men showered at the water pumps in the hot sun.</pre> <h3>Blockquotes (blockquote)</h3> <blockquote> <p>Blockquote - The roads were still crazy and I was still forced off the road from time to time by the odd 'Blow Horn' truck. I call them 'Blow Horn' because at the back of every truck there was a sign in big letters, "BLOW HORN OK PLEASE"</p> </blockquote> <h3>Blockquotes with Cite (blockquote)</h3> <blockquote> <p>Blockquote with p and small - cite at the bottom - The roads were still crazy and I was still forced off the road from time to time by the odd 'Blow Horn' truck. I call them 'Blow Horn' because at the back of every truck there was a sign in big letters, "BLOW HORN OK PLEASE"</p> <p><small><cite>blockquote cite</cite></small></p> </blockquote> <h3>Address (address)</h3> <address>Some Name <br>Some Street <br>Some City <br>Tel: 0123 456 789 <br>email: mail@someexample.com <br>web: example.com </address> <h3>Abbreviation (abbr)</h3> <p>By the time I got to <abbr title="This is the name of a town in India">Alwar</abbr> it was<abbr title="Pitch Black"> well dark</abbr>. I'd cycled about 12km in the dark with no <abbr title="There are very few street lights in India">lights, </abbr>very difficult with no or very poor street lights.</p> <h3>Cite (cite)</h3> <p>I thought I'd found a good, and the cite - <cite>hotel</cite> - end cite, that was cheap and clean but I couldn't stay there, the guy didn't have the, a longer cite - <cite>official form for tourists</cite> - end long cite, so, and a final short cite - <cite>India</cite> - end short cite, being so keen on paperwork made it impossible for me to stay.</p> <h3>Mark (mark)</h3> <p>The next day I had a bit of trouble getting out of Alwar, <mark>surprise, the lack of directions out of town was unbelievable.</mark> My route meant <mark>I had to back-track about 12km</mark> to join the road to Deeg.</p> <h3>Ins (ins)</h3> <p>The next day I had a bit of trouble getting out of Alwar, <ins>surprise, the lack of directions out of town was unbelievable.</ins> My route meant <ins>I had to back-track about 12km</ins> to join the road to Deeg.</p> <h3>Code (code)</h3> <code>&lt;p&gt;This is the basic code tag.&lt;/p&gt;</code> <hr> <h2>Ordered List</h2> <ol> <li>List Item 1</li> <li>List Item 2 <ol> <li>List Item 2-I</li> <li>List Item 2-II</li> <li>List Item 2-III</li> </ol> </li> <li>List Item 3</li> <li>List Item 4</li> <li>List Item 5</li> </ol> <h2>Unordered List</h2> <ul> <li>List Item 1</li> <li>List Item 2</li> <li>List Item 3 <ul> <li>List Item 3-I</li> <li>List Item 3-II</li> <li>List Item 3-III</li> </ul> </li> <li>List Item 4</li> <li>List Item 5</li> </ul> <h2>The inline list (ul class="inline"...)</h2> <ul class="inline"> <li>Item one</li> <li>Item two</li> <li>Item three</li> </ul> <h2>Definition List</h2> <dl> <dt>Definition Title 1</dt> <dd>Definition description</dd> <dd>Definition description</dd> <dd>Definition description</dd> <dt>Definition Title 2</dt> <dd>Definition description 2</dd> <dd>Definition description 2</dd> <dt>Definition Title 3</dt> <dd>Definition description 3</dd> </dl> <hr> <h2 id="forms">Forms</h2> <hr> <form> <label for="text-field">Text Field</label> <input id="text-field"> <label for="disabled-text-field">Disabled Text Field</label> <input id="disabled-text-field" disabled="disabled"> <label for="text-area">Text Area</label> <textarea id="text-area"></textarea> <label for="password">Password</label> <input id="password" type="password"> <label for="search">Search</label> <input id="search" type="search"> <input id="file" type="file"> <label for="select">Select</label> <select id="select"> <optgroup label="Group 1"> <option value="1">Option 1</option> <option value="2">Option 2</option> <option value="3">Option 3</option> </optgroup> <optgroup label="Group 2"> <option value="1">Option 1</option> <option value="2">Option 2</option> <option value="3">Option 3</option> </optgroup> </select> <label for="select-multiple">Select Multiple</label> <select id="select-multiple" multiple="multiple"> <option value="1">Option 1</option> <option value="2">Option 2</option> <option value="3">Option 3</option> </select> <fieldset> <legend>Fieldset</legend> <label for="first-name">First Name</label> <input id="first-name" placeholder="Fred"> <label for="last-name">Last Name</label> <input id="last-name" placeholder="Done"> </fieldset> <fieldset> <legend>Radio Fieldset</legend> <label> <input type="radio" name="radio-buttons" value="radio-1" checked="checked"> Radio 1 </label> <label> <input type="radio" name="radio-buttons" value="radio-2"> Radio 2 </label> <label> <input type="radio" name="radio-buttons" value="radio-3"> Radio 3 </label> </fieldset> <fieldset> <legend>Checkbox Fieldset</legend> <label> <input type="checkbox" name="checkboxes" value="check-1" checked="checked"> Checkbox 1 </label> <label> <input type="checkbox" name="checkboxes" value="check-2"> Checkbox 2 </label> <label> <input type="checkbox" name="checkboxes" value="check-3"> Checkbox 3 </label> </fieldset> <button>Reset</button> <input type="submit" class="but" value="Submit"> <input type="submit" class="but" value="Disabled" disabled="disabled"> </form> <hr> <h3>Search Form</h3> <div class="search-box"> <form class="search-and-submit"> <input type="search" placeholder="Search this site"> <input type="submit" class="but"> </form> </div> <hr> <h2 id="tables">Tables</h2> <hr> <h4>Basic table</h4> <table> <caption>Table Caption</caption> <tr> <th>Table Header 1</th> <th>Table Header 2</th> <th>Table Header 3</th> </tr> <tr> <td>Division 1</td> <td>Division 2</td> <td>Division 3</td> </tr> <tr> <td>Division 1</td> <td>Division 2</td> <td>Division 3</td> </tr> <tr> <td>Division 1</td> <td>Division 2</td> <td>Division 3</td> </tr> </table> <h4>General table</h4> <table> <thead> <tr> <th scope="col">Header</th> <th>Header</th> <th>Header</th> </tr> </thead> <tbody> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> </tbody> </table> <hr> <h4>Condensed table</h4> <table class="table-condensed"> <thead> <tr> <th scope="col">Header</th> <th>Header</th> <th>Header</th> </tr> </thead> <tbody> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> </tbody> </table> <hr> <h4>Table (table-striped)</h4> <table class="table-striped"> <thead> <tr> <th scope="col">Header</th> <th>Header</th> <th>Header</th> </tr> </thead> <tbody> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> </tbody> </table> <hr> <h4>Table (table-bordered)</h4> <table class="table-bordered"> <thead> <tr> <th scope="col">Header</th> <th>Header</th> <th>Header</th> </tr> </thead> <tbody> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> </tbody> </table> <hr> <h4>Table (table-bordered and table-striped)</h4> <table class="table-bordered table-striped"> <thead> <tr> <th scope="col">Header</th> <th>Header</th> <th>Header</th> </tr> </thead> <tbody> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> <tr> <th scope="row">Data</th> <td>Data</td> <td>Data</td> </tr> </tbody> </table> <hr> <h2 id="images">Images</h2> <hr> <blockquote><p> - Images use <em>figure</em> and <em>figcaption</em> with the classes <em>alignleft, aligncenter</em> and <em>alignright</em>. All images are centered at base with the align's taking affect at <em>>900px</em>.</p></blockquote> <figure class="alignleft"><img src="test-images/taj-mahal.jpg" alt="Taj Mahal image" width="300" height="257"> <figcaption>The Taj Mahal</figcaption> </figure> <p>I liked <strong>Agra</strong>, not the city, but the area around the <strong>Taj Mahal</strong>. <strong>Agra city</strong> is a typical Indian city, <em>chaotic, big</em> and <em>busy</em>. It's still chaotic around the <strong>Taj Mahal</strong> but there are some cheap hotels and cheap places to eat. You can relax on the roof top restaurants with the <strong>Taj Mahal</strong> shimmering in the background. I was staying at a hotel 1.5 km back towards the city. About 200 metres from the hotel were I was staying there was a <em>'Pizza Hut'</em>, I tried it and I had one of the best meals I have had in <strong>India</strong>. Their pizza's were lovely and crispy served with crisp salad and fries.</p> <p>The Tuk Tuk's were out in force hassling as were the Rickshaw's, it's hard to get rid of them. I got one to the <strong>Taj</strong> and when he insisted on waiting I insisted he didn't. The <strong>Taj</strong> looked like a ghost, the effect of the sun shinning on it's white marble. It glistened in a hazy mist of pollution which gave it a mirage effect. The charge for tourists was <em>750 rupees</em> for Indians it's a fraction of this price. There were a lot of souvenir sellers and guides hassling the tourists and some will even take pictures of you against the <strong>Taj</strong> background for a price of course. After the <strong>Taj</strong> I visited <strong>Agra Fort</strong>, the outside looked impressive but inside was a bit of a let down. It cost <em>250 rupees</em> but if your not really into ruins, then going into the fort is a waste of time. But it was nice at the end of the day to go to a restaurant by the <strong>Taj</strong> <cite>'Lonely Planet recommended' </cite>according to the signs and relax away from the crowds.</p> <figure class="alignright"><img src="test-images/two-indian-men.jpg" alt="Guards at the Palace of Winds" width="254" height="300"> <figcaption>Guards at the Palace of Winds</figcaption> </figure> <p>Getting out of <strong>Agra</strong> was hard. It was <em>misty, smelly</em> and <em>big</em>. I had to keep asking the way as I was following a secondary road to <strong>Bharatpur</strong>. <strong>Bharatpur</strong> was only <em>40 miles</em> away and from what I had read has a pretty impressive bird sanctuary. On the way I passed <strong>Fatehpur Sikri</strong>, which had a very impressive looking temple but I decided against going inside. On reaching <strong>Bharatpur</strong> I found a hotel at the end of town, I was drawn to it because of it's very colourful garden. It was cheap and clean and did a good breakfast, very relaxing after the big towns. There is a main town which is quite big and busy like any other Indian town, the good thing was it was <em>2km</em> away.</p> <p>The bird sanctuary cost <em>200 rupees</em> plus <em>25 rupees</em> for the bike. The main entrance ticket was small and came from a machine. The entrance ticket for the bike was A5 size and filled in by hand, it took ten times longer to issue the bike ticket just for the extra <em>25 rupees</em>. After passing the gauntlet of guides and rickshaw cycles I entered the park. A tarmac road takes you through the centre of the park for about <em>6km</em> with trees and what should have been marsh land on either side. There was a lack of water due to climate change which is affecting the monsoons. As a result there was a lack of birds and a lack of tourists. <strong>Bharatpur</strong> is really struggling for tourists, it should be booked solid with bird watchers but there were none.</p> <figure class="aligncenter"><img src="test-images/guruvayur.jpg" alt="Guruvayur Elephant Santuary" width="300" height="210"> <figcaption>Guruvayur Elephant Santuary</figcaption> </figure> <p>There were a few waders and other smaller birds, even owls and birds of prey along the banks of the few small ponds. In the ponds you could see turtles with very long necks and some ugly cat fish, but the water looked murky, like something out of <em>Murdor</em>, <cite>'Lord Of The Rings'</cite>, thick with mud. There were bridle tracks leading off the main tarmac road. These roads went for miles into the parks remote areas. I ended up doing about <em>20 miles</em> in the park on the first day. There wasn't much more wildlife in the remote areas but I did surprise a few big lizards basking in the sun. The park had a wall going round the perimeter with a few small villages scattered along the edges. The people from the villages worked in the park clearing reeds, it seemed like the women did the work while the men sat and watched from the shade. I stayed at <strong>Bharatpur</strong> for two days and went in the park again on the second day. As I cycled up the tarmac road I could hear the rickshaw drivers/guides point out to the few tourists the same owls and same birds in distant trees, and when I looked they did look the same as the previous day. I began to think maybe they were nailed in position. At the end of the tarmac road I met another cyclist touring <em>India</em>, but he was going in the opposite direction, heading for <strong>Agra</strong>. He was carrying camping equipment and tried to camp where possible. He camped far from the towns and made sure there were no people around. He then went into the fields and tried to hide his position from the road. But within <em>15 minutes</em> of pitching the tent a head popped inside the tent <em>"hello how are you?".</em> Soon after a crowd gathered and he soon found out why camping wasn't popular in <em>India</em>.</p> <img src="test-images/auroville-matri-mandir.jpg" alt="Auroville Matri Mandir" width="300" height="270" class="alignleft"> <p><strong>Tonk</strong> seems to be an up and coming town with lots of building going on. I didn't see much of the town as the hotel was on the highway about <em>3km</em> away. It seemed a bit weird, the hotel built on baron land with a bit of a pond next to it was very isolated. The nearest building looked to be about a kilometre away. On a stroll to the local <em>Hero Honda shop</em> which was on the edge of town, I learned that I could have purchased a brand new <em>Hero Honda</em> for <em>38,000 Rupee (about 500 Pounds)</em>, the same price as my bike. No wonder the Indians look at me as if I am mad, why would a westerner with supposedly lots of money want to cycle in India when an Indian with not so much money can afford a motorcycle and there are thousands of these <em>Hero Hondas</em> on the road.</p> <img src="test-images/murudeshwar.jpg" alt="Murudeshwar" width="300" height="330" class="alignright"> <p>It was another easy ride to <strong>Sawai Madopur</strong> along a quiet secondary road, with fields of various vegetables on either side. I stayed at <strong>Sawai Madopur</strong> for two days and went to see the tigers in the park on the second day. I would recommend a visit to <em>Ranthambore National Park</em> early in the morning <em>6.30 am</em>. I paid <em>550 Rupees</em> for a seat on the tourist jeep which looked like an old army wagon that seated about <em>15</em> people. The park was about <em>12km</em> away, we picked up people from various isolated hotels on the way. It took about an hour to reach the park which was in the mountains. It was quite cold, we were wrapped up in blankets and I wore a fleece top for the first time since arriving in India. There were five or six tourist jeeps and a few smaller jeeps all full with people, camera ready to spot the tiger. It wasn't long before one came into view, the chase was on, all the jeeps headed for the tiger, wheels bouncing over the rough tracks trying to get the best position. The tiger although still quite far away didn't seem to mind the commotion of vehicles and carried on walking slowly and casually until it went out of view into the reed bed. Spotted deer, monkeys and many birds could be seen as the vehicles made there way through the rugged landscape searching for more tigers.</p> <img src="test-images/sawai-medhopur.jpg" alt="Sawai Medhopur" width="300" height="207" class="aligncenter"> <p>We stopped by a lake where there were plenty of birds, a couple of crocodiles could be seen, they looked like logs drifting in the water. Another tiger came into view and the chase was on again. This time the tiger was a lot closer and posed for some very good pictures. It wasn't concerned with the commotion and stayed in view walking along the edge of the reed bed. It then disappeared into the reed bed and we heard the cry of a young deer. The tiger had caught the deer and seemed to be playing with it's victim as cats do. The adult deers and the monkeys were making very loud cries as if to try and frighten the tiger into letting it's prey go. Although we couldn't see what was happening we could hear the young deer cry and the tiger growl for what seemed to go on for a long time. Even though I had seen this before on wildlife programmes seeing it live was both sad and thrilling. The safari lasted about <em>4 hours</em> and was worth the money and the tip of about a <em>100 rupee</em> off each person to the guides/driver. They don't guarantee a tiger sighting but if you go in the morning you stand a better chance, <dfn>(they do morning and afternoon trips)</dfn>. I would not miss <em>Ranthambore National Park</em> if you're in the area.</p> <figure class="alignleft"><img src="test-images/auroville-banyan-tree.jpg" alt="Banyan Tree" width="320" height="240" class="img-framed"> <figcaption>Banyan Tree</figcaption> </figure> <p><mark><em>These two images have the class="img-framed".</em></mark> The next day I cycled to <strong>Jaipur</strong>. The ride was easy, very flat but I still arrived a little late, it was dark when I reached the outskirts of the city. I had looked for a hotel in <strong>Deuce</strong> a town <em>51km</em> before <strong>Jaipur</strong>, but the one I looked at was very scruffy and a bit overpriced. Staying at this hotel was another cyclist, he was cycling from the east coast to the west coast. If I hadn’t have spent time in <strong>Deuce</strong> I would have made Jaipur in the light and would have seen some buildings that seem to have been cut into the rock on a hilly road into the city.</p> <figure class="alignright"><img src="test-images/palace-of-winds.jpg" alt="Palace of Winds" width="200" height="150" class="img-framed"></figure> <p>These buildings looked impressive, even though I couldn't fully see them in the dark, and I got quite excited about <strong>Jaipur</strong>. Maybe I had come to a city that wasn't a clone of <strong>Delhi</strong>, that had these impressive old buildings. When I got to the city centre I was to be disappointed again. From the hotel, the palace and other tourist attractions were about <em>2km</em>. They were interesting and a nice colour of pink and very crowded. I could have reached <strong>Sawai Madopur, Ranthambore National Park</strong> a day earlier by using the secondary road from <strong>Bharatpur</strong>. Instead from <strong>Jaipur</strong> I cycled to <strong>Tonk</strong> on the national highway.</p> <figure class="alignleft"><img src="test-images/delhi-gate-small.jpg" alt="Delhi Gate" class="img-circle"> <figcaption>Delhi Gate</figcaption> </figure> <p><mark><em>And square images with the class="img-circle".</em></mark> The next day I cycled to <strong>Jaipur</strong>. The ride was easy, very flat but I still arrived a little late, it was dark when I reached the outskirts of the city. I had looked for a hotel in <strong>Deuce</strong> a town <em>51km</em> before <strong>Jaipur</strong>, but the one I looked at was very scruffy and a bit overpriced. Staying at this hotel was another cyclist, he was cycling from the east coast to the west coast. If I hadn’t have spent time in <strong>Deuce</strong> I would have made Jaipur in the light and would have seen some buildings that seem to have been cut into the rock on a hilly road into the city.</p> <figure class="alignright"><img src="test-images/delhi-gate-small.jpg" alt="Delhi Gate" width="100" height="100" class="img-circle"></figure> <p>These buildings looked impressive, even though I couldn't fully see them in the dark, and I got quite excited about <strong>Jaipur</strong>. Maybe I had come to a city that wasn't a clone of <strong>Delhi</strong>, that had these impressive old buildings. When I got to the city centre I was to be disappointed again. From the hotel, the palace and other tourist attractions were about <em>2km</em>. They were interesting and a nice colour of pink and very crowded. I could have reached <strong>Sawai Madopur, Ranthambore National Park</strong> a day earlier by using the secondary road from <strong>Bharatpur</strong>. Instead from <strong>Jaipur</strong> I cycled to <strong>Tonk</strong> on the national highway.</p> <hr> <h2 id="navigation">Page Navigation</h2> <hr> <h5>Breadcrumbs</h5> <div class="breadcrumb-box"> <p><a href="">home</a> > <strong>breadcrumbs</strong></p> </div> <h5>Pagination</h5> <div class="pagination"> <ul> <li><a class="next page-numbers" href="#">&laquo; Prev</a></li> <li><span>2 of 3</span></li> <li><a class="page-numbers" href="#">1</a></li> <li><span class="page-numbers current">2</span></li> <li><a class="page-numbers" href="#">3</a></li> <li><a class="next page-numbers" href="#">Next &raquo;</a></li> </ul> </div> <h5>Previous/Next Page</h5> <ul class="prev-next"> <li class="prev-link"><a href="#" rel="prev">Previous</a></li> <li class="next-link"><a href="#" rel="next">Next</a></li> </ul> <hr> <h2 id="social">Social Buttons</h2> <hr> <div class="social"> <p>Set your icons - Combine the code here with your preferred icon library or the now popular <em>SVG</em>, facebook icon shown is an <em>in-line SVG</em></p> <a href=""><span class=""></span>Home</a> <a href="mailto:your email address"><span class=""></span>Email</a> <a href="#"><span class=""></span>Facebook</a> <a href="#"><span class=""></span>Twitter</a> <a href="#"><span class=""></span>LinkedIn</a> <a href="#"><span class=""></span>Google+</a> <a href="#"><span class=""></span>Github</a> <a href="#"><span class=""></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg></a> </div> <hr> <h2 id="404">404 Page Not Found</h2> <p>Change the 404 to your liking</p> <a class="secondary" href="../404.html">404.html</a> <hr> <p class="third center"> <a href="https://phone1st.org/">Home</a> | <a href="about.html">About</a> | <a href="scss.html">Scss</a> | <a href="extras.html">Extras</a> | <a href="layout.html">Layout</a> | <a href="flexbox.html">Flexbox</a> </p> </section> <footer class="footer"> <button id="topBtn" title="Back to top">Top</button> <p class="third">&copy;2024 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a> . <a href="contact.html">Contact</a></p> </footer> </div> <script src="js/back-top.js"></script> <script src="js/scroll.js"></script> </body> </html> 
+  gtag('config', 'G-7WCWMB5E47');
+</script>
+
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Set the basic html theme settings using this test page</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Set and preview the very basic html elements and theme settings and then remove the test folder if you wish">
+  <meta name="author" content="h@howardl.org">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="keywords" content="Test">
+  <link rel="canonical" href="https://phone1st.org/test/test.html" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
+  <meta property="og:site_name" content="Phone1st Starter Theme" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Set the basic html theme settings using this test page" />
+  <meta property="og:description" content="Set and preview the very basic html elements and theme settings and then remove the test folder if you wish" />
+  <meta property="og:url" content="https://phone1st.org/test/test.html" />
+  <meta property="og:image" content="https://phone1st.org/tile-wide.png" />
+  <meta property="og:image:width" content="580"/>
+  <meta property="og:image:height" content="296"/>
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Set the basic html theme settings using this test page" />
+  <meta name="twitter:description" content="Set and preview the very basic html elements and theme settings and then remove the test folder if you wish" />
+  <meta name="twitter:url" content="https://phone1st.org/test/test.html" />
+  <meta name="twitter:image:src" content="https://phone1st.org/tile-wide.png" />
+  
+   <!-- google url verification - remove or update to your site -->
+    <meta name="google-site-verification" content="TvuzHUBIxICVdbTVw1poUSZv8eYF7RmjWccv_0kBoFc" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <header class="header">
+      <h1>
+        Test Page
+      </h1>
+    </header>
+
+
+<section class="main">
+        
+        <figure>
+          <img src="../tile-wide.png" alt="Phone1st logo" />
+        </figure>
+
+<p class="intro-para">
+  The <em>default style sheet</em> formats this page.<br />
+  Use this page to set the basic elements before you start building your
+  site.<br />
+  Link/button/table hovers don't come into effect until >900px
+  <br />
+  The <em>test</em> folder can be deleted and <strong>will not</strong> effect
+  your site. <br />
+  -- So start your website by making this page look pretty!
+</p>
+
+<hr />
+<h2 class="links-title">-- Links --</h2>
+<div class="links">
+  <div>
+    <a href="#typography">Typography</a>
+    <a href="#forms">Forms</a>
+    <a href="#tables">Tables</a>
+    <a href="#images">Images</a>
+  </div>
+  <div>
+    <a href="#navigation">Page Navigation</a>
+    <a href="#social">Social Buttons</a>
+    <a href="#404">404 Page Not Found</a>
+  </div>
+</div>
+<hr />
+<h2>Theme Variables</h2>
+<hr />
+<div class="theme-variables">
+	<h2>Colors</h2>
+	<p>The default colors - see <em>css/base/_variables.scss</em> to change</p>
+<div class="black-color">
+	<p>$black</p>
+</div>
+<div class="white-color">
+	<p>$white</p>
+</div>
+	<p>Set the grays</p>
+<div class="dark-gray">
+	<p>$dark-gray</p>
+</div>
+<div class="medium-gray">
+	<p>$medium-gray</p>
+</div>
+<div class="light-gray">
+	<p>$light-gray</p>
+</div>
+<div class="font-color">
+	<p>$font-color</p>
+</div>
+<div class="link-color">
+	<p>$link-color</p>
+</div>
+<div class="hover-color">
+	<p>$hover-color</p>
+</div>
+<div class="input-color">
+	<p>$input-background</p>
+</div>
+<div class="button-color">
+	<p>$button-background</p>
+</div>
+<div class="background">
+	<p>$background color</p>
+</div>
+<div class="light-background">
+	<p>$light background color</p>
+</div>
+<div class="border">
+	<p>$border and $radius</p>
+</div>
+<div class="error-color">
+	<p>$error-color</p>
+</div>
+<div class="alert-color">
+	<p>$alert-color</p>
+</div>
+<div class="success-color">
+	<p>$success-color</p>
+</div>
+</div>
+<hr />
+<h2 id="typography">Typography</h2>
+<hr />
+<p>The heading font-sizes are not set - see <em>css/base/_typography.scss</em></p>
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h2 style="font-weight: 300;">Heading h2 weight 300</h2>
+<h2>Heading h2 check line-height with this really long, I mean really long, I really mean this really long title. The same line-height effects all headings.</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<hr>
+<p>
+	<strong>Normal Paragraph</strong> Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+</p>
+<p class="lead">
+	<strong>Lead Paragraph</strong> Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis <strong>strong</strong> dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+</p>
+<p class="secondary">
+	<strong>Secondary Paragraph</strong> Lorem ipsum dolor sit amet, <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+</p>
+<p class="third">
+	<strong>Third Paragraph</strong> Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis <strong>strong</strong> dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+</p>
+<p class="alt">
+	<strong>Alternative Font</strong> Do you have an extra - alternative font? <em>(Ubuntu Condensed - used here)</em>. Lorem ipsum dolor sit amet, <em>emphasis</em> consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis <strong>strong</strong> dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+</p>
+<hr>
+<h2>Basic Tags</h2>
+<h3>big</h3>
+<p><big>This is big, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. </big></p>
+<h3>small</h3>
+<p><small>This is small, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. </small></p>
+<h3>Definition (dfn).</h3>
+<p>They parked the truck on the side of the road trying to park off the road as much as they could, and the definition - <dfn>but usually without much success and then placed large stones around the side of the truck that was still on the road.</dfn> - end definition. They then try and repair the truck behind this barrier of stone</p>
+<h3>pre (pre)</h3>
+<pre>Another surprise was how much water there was. Water was pumped around fields for irrigation, where the water forms largish ponds women washed clothes or men showered at the water pumps in the hot sun.</pre>
+<h3>Blockquotes (blockquote)</h3>
+<blockquote>
+<p>Blockquote - The roads were still crazy and I was still forced off the road from time to time by the odd 'Blow Horn' truck. I call them 'Blow Horn' because at the back of every truck there was a sign in big letters, "BLOW HORN OK PLEASE"</p>
+</blockquote>
+<h3>Blockquotes with Cite (blockquote)</h3>
+<blockquote>
+<p>Blockquote with p and small - cite at the bottom - The roads were still crazy and I was still forced off the road from time to time by the odd 'Blow Horn' truck. I call them 'Blow Horn' because at the back of every truck there was a sign in big letters, "BLOW HORN OK PLEASE"</p>
+<p><small><cite>blockquote cite</cite></small></p>
+</blockquote>
+<h3>Address (address)</h3>
+<address>Some Name
+<br />Some Street
+<br />Some City
+<br />Tel: 0123 456 789
+<br />email: mail@someexample.com
+<br />web: example.com
+</address>
+<h3>Abbreviation (abbr)</h3>
+<p>By the time I got to
+<abbr title="This is the name of a town in India">Alwar</abbr> it was<abbr title="Pitch Black"> well dark</abbr>. I'd cycled about 12km in the dark with no <abbr title="There are very few street lights in India">lights, </abbr>very difficult with no or very poor street lights.</p>
+<h3>Cite (cite)</h3>
+<p>I thought I'd found a good, and the cite - <cite>hotel</cite> - end cite, that was cheap and clean but I couldn't stay there, the guy didn't have the, a longer cite - <cite>official form for tourists</cite> - end long cite, so, and a final short cite - <cite>India</cite> - end short cite, being so keen on paperwork made it impossible for me to stay.</p>
+<h3>Mark (mark)</h3>
+<p>The next day I had a bit of trouble getting out of Alwar,
+<mark>surprise, the lack of directions out of town was unbelievable.</mark> My route meant
+<mark>I had to back-track about 12km</mark> to join the road to Deeg.</p>
+<h3>Ins (ins)</h3>
+<p>The next day I had a bit of trouble getting out of Alwar, <ins>surprise, the lack of directions out of town was unbelievable.</ins> My route meant <ins>I had to back-track about 12km</ins> to join the road to Deeg.</p>
+<h3>Code (code)</h3>
+<code>&lt;p&gt;This is the basic code tag.&lt;/p&gt;</code>
+<hr>
+<h2>Ordered List</h2>
+
+<ol>
+<li>List Item 1</li>
+<li>List Item 2
+<ol>
+	<li>List Item 2-I</li>
+	<li>List Item 2-II</li>
+	<li>List Item 2-III</li>
+</ol>
+</li>
+<li>List Item 3</li>
+<li>List Item 4</li>
+<li>List Item 5</li>
+</ol>
+<h2>Unordered List</h2>
+<ul>
+<li>List Item 1</li>
+<li>List Item 2</li>
+<li>List Item 3
+<ul>
+	<li>List Item 3-I</li>
+	<li>List Item 3-II</li>
+	<li>List Item 3-III</li>
+</ul>
+</li>
+<li>List Item 4</li>
+<li>List Item 5</li>
+</ul>
+<h2>No Style List - <small>see _reset.scss</small></h2>
+<ul role="list">
+<li>List Item 1</li>
+<li>List Item 2</li>
+<li>List Item 3
+<ul role="list">
+	<li>List Item 3-I</li>
+	<li>List Item 3-II</li>
+	<li>List Item 3-III</li>
+</ul>
+</li>
+<li>List Item 4</li>
+<li>List Item 5</li>
+</ul>
+<h2>The inline list (ul class="inline"...)</h2>
+<ul class="inline">
+<li>Item one</li>
+<li>Item two</li>
+<li>Item three</li>
+</ul>
+<h2>Definition List</h2>
+<dl>
+<dt>Definition Title 1</dt>
+<dd>Definition description</dd>
+<dd>Definition description</dd>
+<dd>Definition description</dd>
+<dt>Definition Title 2</dt>
+<dd>Definition description 2</dd>
+<dd>Definition description 2</dd>
+<dt>Definition Title 3</dt>
+<dd>Definition description 3</dd>
+</dl>
+<hr />
+<h2 id="forms">Forms</h2>
+<hr />
+<form>
+	
+	<label for="text-field">Text Field</label>
+	<input id="text-field" type="text">
+	<label for="disabled-text-field">Disabled Text Field</label>
+	<input id="disabled-text-field" type="text" disabled>
+	<label for="text-area">Text Area</label>
+	<textarea id="text-area"></textarea>
+	<label for="password">Password</label>
+	<input id="password" type="password">
+	<label for="search">Search</label>
+	<input id="search" type="search">
+
+	<input id="file" type="file">
+	<label for="select">Select</label>
+	<select id="select">
+	<optgroup label="Group 1">
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+		<option value="3">Option 3</option>
+	</optgroup>
+	<optgroup label="Group 2">
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+		<option value="3">Option 3</option>
+	</optgroup>
+	</select>
+	<label for="select-multiple">Select Multiple</label>
+	<select id="select-multiple" multiple>
+		<option value="1">Option 1</option>
+		<option value="2">Option 2</option>
+		<option value="3">Option 3</option>
+	</select>
+	<fieldset>
+	<legend>Fieldset</legend>
+		<label for="first-name">First Name</label>
+		<input type="text" id="first-name" placeholder="Fred">
+		<label for="last-name">Last Name</label>
+		<input type="text" id="last-name" placeholder="Done">
+	</fieldset>
+	<fieldset>
+	<legend>Radio Fieldset</legend>
+		<label>
+		<input type="radio" name="radio-buttons" value="radio-1" checked> Radio 1
+		</label>
+		<label>
+		<input type="radio" name="radio-buttons" value="radio-2"> Radio 2
+		</label>
+		<label>
+		<input type="radio" name="radio-buttons" value="radio-3"> Radio 3
+		</label>
+	</fieldset>
+	<fieldset>
+	<legend>Checkbox Fieldset</legend>
+		<label>
+		<input type="checkbox" name="checkboxes" value="check-1" checked> Checkbox 1
+		</label>
+		<label>
+		<input type="checkbox" name="checkboxes" value="check-2"> Checkbox 2
+		</label>
+		<label>
+		<input type="checkbox" name="checkboxes" value="check-3"> Checkbox 3
+		</label>
+	</fieldset>
+		<button>Reset</button>
+		<input type="submit" class="but" value="Submit">
+		<input type="submit" class="but" value="Disabled" disabled>
+</form>
+<hr>
+<h3>Search Form</h3>
+<div class="search-box">
+	<form class="search-and-submit">
+	<input type="search" placeholder="Search this site">
+	<input type="submit" class="but">
+	</form>
+</div>
+<hr />
+<h2 id="tables">Tables</h2>
+<hr />
+<h4>Basic table</h4>
+<table>
+	<caption>Table Caption</caption>
+	<tr>
+		<th>Table Header 1</th>
+		<th>Table Header 2</th>
+		<th>Table Header 3</th>
+	</tr>
+	<tr>
+		<td>Division 1</td>
+		<td>Division 2</td>
+		<td>Division 3</td>
+	</tr>
+	<tr>
+		<td>Division 1</td>
+		<td>Division 2</td>
+		<td>Division 3</td>
+	</tr>
+	<tr>
+		<td>Division 1</td>
+		<td>Division 2</td>
+		<td>Division 3</td>
+	</tr>
+</table>
+
+<h4>General table</h4>
+<table>
+	<thead>
+	<tr>
+		<th scope="col">Header</th>
+		<th>Header</th>
+		<th>Header</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+</tbody>
+</table>
+<hr>
+	<h4>Condensed table</h4>
+<table class="table-condensed">
+<thead>
+	<tr>
+		<th scope="col">Header</th>
+		<th>Header</th>
+		<th>Header</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+</tbody>
+</table>
+<hr>
+<h4>Table (table-striped)</h4>
+<table class="table-striped">
+<thead>
+	<tr>
+		<th scope="col">Header</th>
+		<th>Header</th>
+		<th>Header</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+</tbody>
+</table>
+<hr>
+	<h4>Table (table-bordered)</h4>
+<table class="table-bordered">
+<thead>
+	<tr>
+		<th scope="col">Header</th>
+		<th>Header</th>
+		<th>Header</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+</tbody>
+</table>
+<hr>
+	<h4>Table (table-bordered and table-striped)</h4>
+<table class="table-bordered table-striped">
+<thead>
+	<tr>
+		<th scope="col">Header</th>
+		<th>Header</th>
+		<th>Header</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+	<tr>
+		<th scope="row">Data</th>
+		<td>Data</td>
+		<td>Data</td>
+	</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="images">Images</h2>
+<hr />
+<blockquote><p> - Images use <em>figure</em> and <em>figcaption</em> with the classes <em>alignleft, aligncenter</em> and <em>alignright</em>. All images are centered at base with the align's taking affect at <em>>900px</em>.</p></blockquote>
+<figure class="alignleft"><img src="test-images/taj-mahal.jpg" alt="Taj Mahal image" width="300" height="257">
+    <figcaption>The Taj Mahal</figcaption>
+</figure>
+<p>I liked <strong>Agra</strong>, not the city, but the area around the <strong>Taj Mahal</strong>. <strong>Agra city</strong> is a typical Indian city, <em>chaotic, big</em> and <em>busy</em>. It's still chaotic around the <strong>Taj Mahal</strong> but there are some cheap hotels and cheap places to eat. You can relax on the roof top restaurants with the <strong>Taj Mahal</strong> shimmering in the background. I was staying at a hotel 1.5 km back towards the city. About 200 metres from the hotel were I was staying there was a <em>'Pizza Hut'</em>, I tried it and I had one of the best meals I have had in <strong>India</strong>. Their pizza's were lovely and crispy served with crisp salad and fries.</p>
+<p>The Tuk Tuk's were out in force hassling as were the Rickshaw's, it's hard to get rid of them. I got one to the <strong>Taj</strong> and when he insisted on waiting I insisted he didn't. The <strong>Taj</strong> looked like a ghost, the effect of the sun shinning on it's white marble. It glistened in a hazy mist of pollution which gave it a mirage effect. The charge for tourists was <em>750 rupees</em> for Indians it's a fraction of this price. There were a lot of souvenir sellers and guides hassling the tourists and some will even take pictures of you against the <strong>Taj</strong> background for a price of course. After the <strong>Taj</strong> I visited <strong>Agra Fort</strong>, the outside looked impressive but inside was a bit of a let down. It cost <em>250 rupees</em> but if your not really into ruins, then going into the fort is a waste of time. But it was nice at the end of the day to go to a restaurant by the <strong>Taj</strong> <cite>'Lonely Planet recommended' </cite>according to the signs and relax away from the crowds.</p>
+<figure class="alignright"><img src="test-images/two-indian-men.jpg" alt="Guards at the Palace of Winds" width="254" height="300">
+    <figcaption>Guards at the Palace of Winds</figcaption>
+</figure>
+<p>Getting out of <strong>Agra</strong> was hard. It was <em>misty, smelly</em> and <em>big</em>. I had to keep asking the way as I was following a secondary road to <strong>Bharatpur</strong>. <strong>Bharatpur</strong> was only <em>40 miles</em> away and from what I had read has a pretty impressive bird sanctuary. On the way I passed <strong>Fatehpur Sikri</strong>, which had a very impressive looking temple but I decided against going inside. On reaching <strong>Bharatpur</strong> I found a hotel at the end of town, I was drawn to it because of it's very colourful garden. It was cheap and clean and did a good breakfast, very relaxing after the big towns. There is a main town which is quite big and busy like any other Indian town, the good thing was it was <em>2km</em> away.</p>
+<p>The bird sanctuary cost <em>200 rupees</em> plus <em>25 rupees</em> for the bike. The main entrance ticket was small and came from a machine. The entrance ticket for the bike was A5 size and filled in by hand, it took ten times longer to issue the bike ticket just for the extra <em>25 rupees</em>. After passing the gauntlet of guides and rickshaw cycles I entered the park. A tarmac road takes you through the centre of the park for about <em>6km</em> with trees and what should have been marsh land on either side. There was a lack of water due to climate change which is affecting the monsoons. As a result there was a lack of birds and a lack of tourists. <strong>Bharatpur</strong> is really struggling for tourists, it should be booked solid with bird watchers but there were none.</p>
+<figure class="aligncenter"><img src="test-images/guruvayur.jpg" alt="Guruvayur Elephant Santuary" width="300" height="210">
+    <figcaption>Guruvayur Elephant Santuary</figcaption>
+</figure>
+<p>There were a few waders and other smaller birds, even owls and birds of prey along the banks of the few small ponds. In the ponds you could see turtles with very long necks and some ugly cat fish, but the water looked murky, like something out of <em>Murdor</em>, <cite>'Lord Of The Rings'</cite>, thick with mud. There were bridle tracks leading off the main tarmac road. These roads went for miles into the parks remote areas. I ended up doing about <em>20 miles</em> in the park on the first day. There wasn't much more wildlife in the remote areas but I did surprise a few big lizards basking in the sun. The park had a wall going round the perimeter with a few small villages scattered along the edges. The people from the villages worked in the park clearing reeds, it seemed like the women did the work while the men sat and watched from the shade. I stayed at <strong>Bharatpur</strong> for two days and went in the park again on the second day. As I cycled up the tarmac road I could hear the rickshaw drivers/guides point out to the few tourists the same owls and same birds in distant trees, and when I looked they did look the same as the previous day. I began to think maybe they were nailed in position. At the end of the tarmac road I met another cyclist touring <em>India</em>, but he was going in the opposite direction, heading for <strong>Agra</strong>. He was carrying camping equipment and tried to camp where possible. He camped far from the towns and made sure there were no people around. He then went into the fields and tried to hide his position from the road. But within <em>15 minutes</em> of pitching the tent a head popped inside the tent <em>"hello how are you?".</em> Soon after a crowd gathered and he soon found out why camping wasn't popular in <em>India</em>.</p>
+<img src="test-images/auroville-matri-mandir.jpg" alt="Auroville Matri Mandir" width="300" height="270" class="alignleft">
+<p><strong>Tonk</strong> seems to be an up and coming town with lots of building going on. I didn't see much of the town as the hotel was on the highway about <em>3km</em> away. It seemed a bit weird, the hotel built on baron land with a bit of a pond next to it was very isolated. The nearest building looked to be about a kilometre away. On a stroll to the local <em>Hero Honda shop</em> which was on the edge of town, I learned that I could have purchased a brand new <em>Hero Honda</em> for <em>38,000 Rupee (about 500 Pounds)</em>, the same price as my bike. No wonder the Indians look at me as if I am mad, why would a westerner with supposedly lots of money want to cycle in India when an Indian with not so much money can afford a motorcycle and there are thousands of these <em>Hero Hondas</em> on the road.</p>
+<img src="test-images/murudeshwar.jpg" alt="Murudeshwar" width="300" height="330" class="alignright">
+<p>It was another easy ride to <strong>Sawai Madopur</strong> along a quiet secondary road, with fields of various vegetables on either side. I stayed at <strong>Sawai Madopur</strong> for two days and went to see the tigers in the park on the second day. I would recommend a visit to <em>Ranthambore National Park</em> early in the morning <em>6.30 am</em>. I paid <em>550 Rupees</em> for a seat on the tourist jeep which looked like an old army wagon that seated about <em>15</em> people. The park was about <em>12km</em> away, we picked up people from various isolated hotels on the way. It took about an hour to reach the park which was in the mountains. It was quite cold, we were wrapped up in blankets and I wore a fleece top for the first time since arriving in India. There were five or six tourist jeeps and a few smaller jeeps all full with people, camera ready to spot the tiger. It wasn't long before one came into view, the chase was on, all the jeeps headed for the tiger, wheels bouncing over the rough tracks trying to get the best position. The tiger although still quite far away didn't seem to mind the commotion of vehicles and carried on walking slowly and casually until it went out of view into the reed bed. Spotted deer, monkeys and many birds could be seen as the vehicles made there way through the rugged landscape searching for more tigers.</p>
+<img src="test-images/sawai-medhopur.jpg" alt="Sawai Medhopur" width="300" height="207" class="aligncenter">
+<p>We stopped by a lake where there were plenty of birds, a couple of crocodiles could be seen, they looked like logs drifting in the water. Another tiger came into view and the chase was on again. This time the tiger was a lot closer and posed for some very good pictures. It wasn't concerned with the commotion and stayed in view walking along the edge of the reed bed. It then disappeared into the reed bed and we heard the cry of a young deer. The tiger had caught the deer and seemed to be playing with it's victim as cats do. The adult deers and the monkeys were making very loud cries as if to try and frighten the tiger into letting it's prey go. Although we couldn't see what was happening we could hear the young deer cry and the tiger growl for what seemed to go on for a long time. Even though I had seen this before on wildlife programmes seeing it live was both sad and thrilling. The safari lasted about <em>4 hours</em> and was worth the money and the tip of about a <em>100 rupee</em> off each person to the guides/driver. They don't guarantee a tiger sighting but if you go in the morning you stand a better chance, <dfn>(they do morning and afternoon trips)</dfn>. I would not miss <em>Ranthambore National Park</em> if you're in the area.</p>
+<figure class="alignleft"><img src="test-images/auroville-banyan-tree.jpg" alt="Banyan Tree" width="320" height="240" class="img-framed">
+    <figcaption>Banyan Tree</figcaption>
+</figure>
+<p><mark><em>These two images have the class="img-framed".</em></mark> The next day I cycled to <strong>Jaipur</strong>. The ride was easy, very flat but I still arrived a little late, it was dark when I reached the outskirts of the city. I had looked for a hotel in <strong>Deuce</strong> a town <em>51km</em> before <strong>Jaipur</strong>, but the one I looked at was very scruffy and a bit overpriced. Staying at this hotel was another cyclist, he was cycling from the east coast to the west coast. If I hadn’t have spent time in <strong>Deuce</strong> I would have made Jaipur in the light and would have seen some buildings that seem to have been cut into the rock on a hilly road into the city.</p>
+<figure class="alignright"><img src="test-images/palace-of-winds.jpg" alt="Palace of Winds" width="200" height="150" class="img-framed"></figure>
+<p>These buildings looked impressive, even though I couldn't fully see them in the dark, and I got quite excited about <strong>Jaipur</strong>. Maybe I had come to a city that wasn't a clone of <strong>Delhi</strong>, that had these impressive old buildings. When I got to the city centre I was to be disappointed again. From the hotel, the palace and other tourist attractions were about <em>2km</em>. They were interesting and a nice colour of pink and very crowded. I could have reached <strong>Sawai Madopur, Ranthambore National Park</strong> a day earlier by using the secondary road from <strong>Bharatpur</strong>. Instead from <strong>Jaipur</strong> I cycled to <strong>Tonk</strong> on the national highway.</p>
+
+<figure class="alignleft"><img src="test-images/delhi-gate-small.jpg" alt="Delhi Gate" class="img-circle">
+    <figcaption>Delhi Gate</figcaption>
+</figure>
+<p><mark><em>And square images with the class="img-circle".</em></mark> The next day I cycled to <strong>Jaipur</strong>. The ride was easy, very flat but I still arrived a little late, it was dark when I reached the outskirts of the city. I had looked for a hotel in <strong>Deuce</strong> a town <em>51km</em> before <strong>Jaipur</strong>, but the one I looked at was very scruffy and a bit overpriced. Staying at this hotel was another cyclist, he was cycling from the east coast to the west coast. If I hadn’t have spent time in <strong>Deuce</strong> I would have made Jaipur in the light and would have seen some buildings that seem to have been cut into the rock on a hilly road into the city.</p>
+<figure class="alignright"><img src="test-images/delhi-gate-small.jpg" alt="Delhi Gate" width="100" height="100" class="img-circle"></figure>
+<p>These buildings looked impressive, even though I couldn't fully see them in the dark, and I got quite excited about <strong>Jaipur</strong>. Maybe I had come to a city that wasn't a clone of <strong>Delhi</strong>, that had these impressive old buildings. When I got to the city centre I was to be disappointed again. From the hotel, the palace and other tourist attractions were about <em>2km</em>. They were interesting and a nice colour of pink and very crowded. I could have reached <strong>Sawai Madopur, Ranthambore National Park</strong> a day earlier by using the secondary road from <strong>Bharatpur</strong>. Instead from <strong>Jaipur</strong> I cycled to <strong>Tonk</strong> on the national highway.</p>
+
+
+<hr />
+<h2 id="navigation">Page Navigation</h2>
+<hr />
+<h5>Breadcrumbs</h5>
+<div class="breadcrumb-box">
+	<p><a href="">home</a> > <strong>breadcrumbs</strong></p>
+</div>
+
+<h5>Pagination</h5>
+	<!-- page 2 -->
+<div class="pagination">
+	<ul>
+	<li><a class="next page-numbers" href="#">&laquo; Prev</a></li>
+	<li><span>2 of 3</span></li>
+	<li><a class='page-numbers' href='#'>1</a></li>
+	<li><span class='page-numbers current'>2</span></li>
+	<li><a class='page-numbers' href='#'>3</a></li>
+	<li><a class="next page-numbers" href="#">Next &raquo;</a></li>
+	</ul>
+</div>
+
+<h5>Previous/Next Page</h5>
+<ul class="prev-next">
+	<li class="prev-link"><a href="#" rel="prev">Previous</a></li>
+	<li class="next-link"><a href="#" rel="next">Next</a></li>
+</ul>
+<hr />
+<h2 id="social">Social Buttons</h2>
+<hr />
+<div class="social">
+	<p>Set your icons - Combine the code here with your preferred icon library or the now popular <em>SVG</em>, facebook icon shown is an <em>in-line SVG</em></p>
+	<a href=""><span class=""></span>Home</a>
+	<a href="mailto:your email address"><span class=""></span>Email</a>
+	<a href="#"><span class=""></span>Facebook</a>
+	<a href="#"><span class=""></span>Twitter</a>
+	<a href="#"><span class=""></span>LinkedIn</a>
+	<a href="#"><span class=""></span>Google+</a>
+	<a href="#"><span class=""></span>Github</a>
+
+<!-- //In-line SVG -->
+	<a href="#"><span class=""></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg></a>
+</div>
+<hr />
+<h2 id="404">404 Page Not Found</h2>
+<p>Change the 404 to your liking</p>
+<a class="secondary" href="../404.html">404.html</a>
+<hr />
+<p class="third center">
+  <a href="https://phone1st.org/">Home</a> | <a href="about.html">About</a> |
+  <a href="scss.html">Scss</a> | <a href="extras.html">Extras</a> |
+  <a href="layout.html">Layout</a> | <a href="flexbox.html">Flexbox</a>
+</p>
+</section>
+
+<footer class="footer">
+	<button id="topBtn" title="Back to top">Top</button>
+		<p class="third">&copy;2024 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a> . <a href="contact.html">Contact</a></p>
+	</footer>
+</div><!-- wrapper   -->
+
+
+<script src="js/back-top.js"></script>
+<script src="js/scroll.js"></script>
+
+</body>
+</html>

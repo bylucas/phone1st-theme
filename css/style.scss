@@ -16,7 +16,7 @@
 
 // ====================
 //   Import the basics
-//  ===================
+// ====================
 
 @import "reset";
 @import "bourbon";
@@ -28,23 +28,14 @@
 html {
   -webkit-overflow-scrolling: touch;
   -webkit-tap-highlight-color: $light-gray;
-  box-sizing: border-box;
-  height: 100%;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 body {
-  height: 100%;
   color: $font-color;
   font-family: $font;
   font-feature-settings: "kern", "liga", "pnum";
   font-size: $font-size;
-  line-height: 1.5;
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
 }
 

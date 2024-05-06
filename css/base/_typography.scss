@@ -16,6 +16,7 @@ h6 {
   font-family: $heading-font;
   color: $font-color;
   clear: both;
+  font-weight: normal;
   line-height: 1.4;
   hyphens: none;
   font-size: $font-size; //Remove to set browser default headings
@@ -121,7 +122,6 @@ li {
 
 li li {
   font-size: math.div($font-size, 1.09);
-  margin-left: math.div($spacer, 2);
 }
 
 //inline list
