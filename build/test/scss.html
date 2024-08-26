@@ -1,8 +1,115 @@
- <!DOCTYPE html> <html lang="en"> <head> <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"></script> <script> window.dataLayer = window.dataLayer || [];
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-7WCWMB5E47'); </script> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width,initial-scale=1"> <title>Scss Mixins including user and Bourbon Mixins</title> <meta name="HandheldFriendly" content="True"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta name="description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme"> <meta name="author" content="h@howardl.org"> <meta name="robots" content="INDEX,FOLLOW"> <meta name="keywords" content="scss"> <link rel="canonical" href="https://phone1st.org/test/scss.html"> <link rel="apple-touch-icon" href="apple-touch-icon.png"> <meta property="og:site_name" content="Phone1st Starter Theme"> <meta property="og:type" content="website"> <meta property="og:title" content="Scss Mixins including user and Bourbon Mixins"> <meta property="og:description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme"> <meta property="og:url" content="https://phone1st.org/test/scss.html"> <meta property="og:image" content="https://phone1st.org/tile-wide.png"> <meta property="og:image:width" content="580"> <meta property="og:image:height" content="296"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:title" content="Scss Mixins including user and Bourbon Mixins"> <meta name="twitter:description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme"> <meta name="twitter:url" content="https://phone1st.org/test/scss.html"> <meta name="twitter:image:src" content="https://phone1st.org/tile-wide.png"> <meta name="google-site-verification" content="TvuzHUBIxICVdbTVw1poUSZv8eYF7RmjWccv_0kBoFc"> <link rel="stylesheet" href="../css/style.css"> <link rel="stylesheet" href="css/base.css"> </head> <body class=""> <div class="wrapper"> <header class="header"> <h1> Scss Mixins </h1> </header> <section class="main"> <figure> <img src="../tile-wide.png" alt="Phone1st logo"> </figure> <p class="intro-para">To see the full code for the user mixins see <code>css/base/mixins.scss</code><br> To see the full code for the Bourbon mixins see <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code> </p> <hr> <h2 class="links-title">-- Links --</h2> <div class="links"> <div> <a href="#user-mixins">User Mixins</a> <a href="#background">background</a> <a href="#center">Center Elements</a> <a href="#hide">hide from screenreaders</a> <a href="#placeholders">placeholders</a> <a href="#breakpoints">media breakpoints</a> <a href="#bourbon-mixins">Bourbon Mixins</a> <a href="#buttons">buttons</a> <a href="#clearfix">clearfix</a> <a href="#contrast">contrast switch</a> <a href="#ellipsis">ellipsis</a> <a href="#fontface">@fontface</a> <a href="#stacks">font stacks</a> <a href="#hide-text">hide text</a> </div> <div> <a href="#visually">hide visually</a> <a href="#margin">margin</a> <a href="#modular">modular scale</a> <a href="#wrap">overflow wrap</a> <a href="#padding">padding</a> <a href="#position">position</a> <a href="#prefixer">prefixer</a> <a href="#shade">shade</a> <a href="#size">size</a> <a href="#unit">strip unit</a> <a href="#inputs">text inputs</a> <a href="#tint">tint</a> <a href="#triangle">triangle</a> <a href="#value">value prefixer</a> </div> </div> <hr> <div class="scss-extras"> <h2>-- User Mixins --</h2> <h3 id="background">background</h3> <pre><code>@mixin background($background-color: $background) {
+  gtag('config', 'G-7WCWMB5E47');
+</script>
+
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scss Mixins including user and Bourbon Mixins</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme">
+  <meta name="author" content="h@howardl.org">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="keywords" content="scss">
+  <link rel="canonical" href="https://phone1st.org/test/scss.html" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
+  <meta property="og:site_name" content="Phone1st Starter Theme" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Scss Mixins including user and Bourbon Mixins" />
+  <meta property="og:description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme" />
+  <meta property="og:url" content="https://phone1st.org/test/scss.html" />
+  <meta property="og:image" content="https://phone1st.org/images/phone1st-logo.webp" />
+  <meta property="og:image:width" content="580"/>
+  <meta property="og:image:height" content="296"/>
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Scss Mixins including user and Bourbon Mixins" />
+  <meta name="twitter:description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme" />
+  <meta name="twitter:url" content="https://phone1st.org/test/scss.html" />
+  <meta name="twitter:image:src" content="https://phone1st.org/images/phone1st-logo.webp" />
+  
+   <!-- google url verification - remove or update to your site -->
+    <meta name="google-site-verification" content="TvuzHUBIxICVdbTVw1poUSZv8eYF7RmjWccv_0kBoFc" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <header class="header">
+      <h1>
+        Scss Mixins
+      </h1>
+    </header>
+
+
+<section class="main">
+        
+        <figure>
+          <img src="../images/phone1st-logo.webp" alt="Phone1st logo" />
+        </figure>
+
+<p class="intro-para">To see the full code for the user mixins see <code>css/base/mixins.scss</code><br />
+  To see the full code for the Bourbon mixins see
+  <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code>
+</p>
+<hr />
+<h2 class="links-title">-- Links --</h2>
+<div class="links">
+  <div>
+    <a href="#user-mixins">User Mixins</a>
+    <a href="#background">background</a>
+    <a href="#center">Center Elements</a>
+    <a href="#hide">hide from screenreaders</a>
+    <a href="#placeholders">placeholders</a>
+    <a href="#breakpoints">media breakpoints</a>
+    <a href="#bourbon-mixins">Bourbon Mixins</a>
+    <a href="#buttons">buttons</a>
+    <a href="#clearfix">clearfix</a>
+    <a href="#contrast">contrast switch</a>
+    <a href="#ellipsis">ellipsis</a>
+    <a href="#fontface">@fontface</a>
+    <a href="#stacks">font stacks</a>
+    <a href="#hide-text">hide text</a>
+  </div>
+  <div>
+    <a href="#visually">hide visually</a>
+    <a href="#margin">margin</a>
+    <a href="#modular">modular scale</a>
+    <a href="#wrap">overflow wrap</a>
+    <a href="#padding">padding</a>
+    <a href="#position">position</a>
+    <a href="#prefixer">prefixer</a>
+    <a href="#shade">shade</a>
+    <a href="#size">size</a>
+    <a href="#unit">strip unit</a>
+    <a href="#inputs">text inputs</a>
+    <a href="#tint">tint</a>
+    <a href="#triangle">triangle</a>
+    <a href="#value">value prefixer</a>
+  </div>
+</div>
+<hr />
+<div class="scss-extras">
+  <h2>-- User Mixins --</h2>
+  <h3 id="background">background</h3>
+  
+  <pre><code>@mixin background($background-color: $background) {
     background: $background-color;
     box-shadow: inset 0 0 4px darken($background-color, 7%);
   }
@@ -11,11 +118,26 @@
     @include background($success-color);//mixin
     @include size(300px, 100px);
     @include center-block;
-  }</code></pre> <div class="background"></div> <hr> <h3 id="center">Center Elements</h3> <pre><code>.center-element {
+  }</code></pre>
+  
+  <div class="background"></div>
+  
+  <hr />
+  
+  <h3 id="center">Center Elements</h3>
+  
+  <pre><code>.center-element {
     @include center-block;//mixin
     @include background(#E03D44);
     @include size(80%, 60px);
-  }</code></pre> <div class="center-element"></div> <hr> <h3 id="hide">hide from both screenreaders and browsers</h3> <pre><code>@mixin hidden {
+  }</code></pre>
+  
+  <div class="center-element"></div>
+  
+  <hr />
+  
+  <h3 id="hide">hide from both screenreaders and browsers</h3>
+  <pre><code>@mixin hidden {
     display: none !important;
     visibility: hidden;
   }
@@ -31,11 +153,31 @@
     &:hover span {
       @include hidden;//mixin
     }
-  }</code></pre> <div class="hidden-box"> <span>This text will hide on hover and be invisible to screen readers and browsers</span> </div> <hr> <h3 id="placeholders">placeholders</h3> <pre><code>input {
+  }</code></pre>
+  
+  <div class="hidden-box">
+    <span
+      >This text will hide on hover and be invisible to screen readers and
+      browsers</span
+    >
+  </div>
+  
+  <hr />
+  
+  <h3 id="placeholders">placeholders</h3>
+  <pre><code>input {
     @include placeholder {
     color: red;
     }
-  }</code></pre> <input placeholder="placeholder"> <hr> <h3 id="breakpoints">media breakpoints</h3> <p>Base styles are phone-first</p> <pre><code>.media-points p {
+  }</code></pre>
+  
+  <input type="text" placeholder="placeholder" />
+  
+  <hr />
+  <h3 id="breakpoints">media breakpoints</h3>
+  <p>Base styles are phone-first</p>
+  
+  <pre><code>.media-points p {
     color: red;
   }
   
@@ -49,11 +191,36 @@
     .media-points p {
       color: rebeccapurple;
     }
-  }</code></pre> <div class="media-points"> <p> At base level this text is red<br> At 700px this text is blue<br> At 900px this text is purple </p> </div> <p> To see the full code for the user mixins see <code>css/base/mixins.scss</code> </p> <hr> <h2 id="bourbon-mixins">-- Bourbon Mixins --</h2> <h3 id="border">border</h3> <pre><code>@include border-color(#a60b55 #76cd9c null #e8ae1a);
+  }</code></pre>
+  
+  <div class="media-points">
+    <p>
+      At base level this text is red<br />
+      At 700px this text is blue<br />
+      At 900px this text is purple
+    </p>
+  </div>
+  
+  <p>
+    To see the full code for the user mixins see
+    <code>css/base/mixins.scss</code>
+  </p>
+  <hr />
+  <h2 id="bourbon-mixins">-- Bourbon Mixins --</h2>
+  <h3 id="border">border</h3>
+  
+  <pre><code>@include border-color(#a60b55 #76cd9c null #e8ae1a);
   @include border-top-radius(15px);
   @include border-bottom-radius(10px);
   @include border-style(dashed solid dotted);
-  @include border-width(.7em 3px 10px);</code></pre> <div class="show-border"></div> <hr> <h3 id="buttons">buttons</h3> <pre><code>#{$all-buttons} {
+  @include border-width(.7em 3px 10px);</code></pre>
+  
+  <div class="show-border"></div>
+  
+  <hr />
+  <h3 id="buttons">buttons</h3>
+  
+  <pre><code>#{$all-buttons} {
   background-color: #f00;
   }
   
@@ -67,7 +234,15 @@
   
   #{$all-buttons-hover} {
     background-color: #0f0;
-  }//See css/base/_form.scss to see how the themes uses buttons</code></pre> <hr> <h3 id="clearfix">clearfix</h3> <pre><code>@include clearfix;</code></pre> <hr> <h3 id="contrast">constrast switch</h3> <pre><code>.contrast {
+  }//See css/base/_form.scss to see how the themes uses buttons</code></pre>
+  <hr />
+  
+  <h3 id="clearfix">clearfix</h3>
+  <pre><code>@include clearfix;</code></pre>
+  <hr />
+  
+  <h3 id="contrast">constrast switch</h3>
+  <pre><code>.contrast {
     @include size(300px, 30px);
     @include center-block;
     $button-color: #2d72d9;
@@ -75,7 +250,22 @@
     a {
       color: contrast-switch($button-color, #222, #eee);//mixin
     }
-  }</code></pre> <div class="contrast"> <a href="https://www.bourbon.io/docs/latest/">See the Bourbon docs</a> </div> <hr> <h3 id="ellipsis">ellipsis</h3> <pre><code>@include ellipsis;</code></pre> <div class="ellipsis"> <span>Hover over me to see the ellipsis in action</span> </div> <hr> <h3 id="fontface">@fontface</h3> <pre><code>@include font-face(
+  }</code></pre>
+  
+  <div class="contrast">
+    <a href="https://www.bourbon.io/docs/latest/">See the Bourbon docs</a>
+  </div>
+  <hr />
+  
+  <h3 id="ellipsis">ellipsis</h3>
+  <pre><code>@include ellipsis;</code></pre>
+  <div class="ellipsis">
+    <span>Hover over me to see the ellipsis in action</span>
+  </div>
+  <hr />
+  
+  <h3 id="fontface">@fontface</h3>
+  <pre><code>@include font-face(
     "source-sans-pro",
     "fonts/source-sans-pro-regular",
     ("woff2", "woff")
@@ -83,7 +273,11 @@
     font-style: normal;
     font-weight: 400;
     }
-  //See css/base/_fonts.scss to see the themes use of this mixin</code></pre> <hr> <h3 id="stacks">font-stacks</h3> <pre><code>font-family: $font-stack-helvetica;
+  //See css/base/_fonts.scss to see the themes use of this mixin</code></pre>
+  <hr />
+  
+  <h3 id="stacks">font-stacks</h3>
+  <pre><code>font-family: $font-stack-helvetica;
   font-family: $font-stack-lucida-grande;
   font-family: $font-stack-verdana;
   font-family: $font-stack-system;
@@ -92,7 +286,11 @@
   font-family: $font-stack-hoefler-text;
   font-family: $font-stack-consolas;
   font-family: $font-stack-courier-new;
-  font-family: $font-stack-monaco;</code></pre> <hr> <h3 id="hide-text">hide text</h3> <pre><code>.hide-text {
+  font-family: $font-stack-monaco;</code></pre>
+  <hr />
+  
+  <h3 id="hide-text">hide text</h3>
+  <pre><code>.hide-text {
     @include size(220px, 120px);
     @include center-block;
     padding: 7px;
@@ -104,7 +302,16 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-  }</code></pre> <div class="hide-text"> On hover replace text with image, text still available for SEO </div> <hr> <h3 id="visually">hide visually</h3> <pre><code>.hide-visually {
+  }</code></pre>
+  
+  <div class="hide-text">
+    On hover replace text with image, text still available for SEO
+  </div>
+  
+  <hr />
+  
+  <h3 id="visually">hide visually</h3>
+  <pre><code>.hide-visually {
     @include size(220px, 120px);
     @include center-block;
     font-size: .9rem;
@@ -119,13 +326,50 @@
     &:hover span {
       @include hide-visually("unhide");//alt mixin
     }
-  }</code></pre> <div class="hide-visually"> Box title is hidden but still available to screen readers, hover to view<br> <span>Box Title</span> </div> <hr> <h3 id="margin">margin</h3> <pre><code>@include margin(10px null null 20px);</code></pre> <div class="margin"><p>MARGIN</p></div> <hr> <h3 id="modular">module scale</h3> <pre><code>$bourbon: (
+  }</code></pre>
+  
+  <div class="hide-visually">
+    Box title is hidden but still available to screen readers, hover to view<br />
+    <span>Box Title</span>
+  </div>
+  <hr />
+  
+  <h3 id="margin">margin</h3>
+  <pre><code>@include margin(10px null null 20px);</code></pre>
+  <div class="margin"><p>MARGIN</p></div>
+  <hr />
+  
+  <h3 id="modular">module scale</h3>
+  <pre><code>$bourbon: (
   "modular-scale-ratio": 1.2,
   );
   .element {
   font-size: modular-scale(3);
-  }</code></pre> <div class="modular">Modular Scale</div> <hr> <h3 id="wrap">overflow wrap (break word)</h3> <pre><code>@include overflow-wrap;
-  //hover to see overflow-wrap</code></pre> <div class="wrap"> Thisisaveryveryveryveryveryveryveryveryveryveryveryverylongword </div> <hr> <h3 id="padding">padding</h3> <pre><code>@include padding(10px null null 20px);</code></pre> <div class="padding"><p>PADDING</p></div> <hr> <h3 id="position">position</h3> <pre><code>@include position(absolute, 20px null null 20px);</code></pre> <div class="position"><div></div></div> <hr> <h3 id="prefixer">prefixer</h3> <pre><code>.element {
+  }</code></pre>
+  
+  <div class="modular">Modular Scale</div>
+  <hr />
+  
+  <h3 id="wrap">overflow wrap (break word)</h3>
+  <pre><code>@include overflow-wrap;
+  //hover to see overflow-wrap</code></pre>
+  <div class="wrap">
+    Thisisaveryveryveryveryveryveryveryveryveryveryveryverylongword
+  </div>
+  <hr />
+  
+  <h3 id="padding">padding</h3>
+  <pre><code>@include padding(10px null null 20px);</code></pre>
+  <div class="padding"><p>PADDING</p></div>
+  <hr />
+  
+  <h3 id="position">position</h3>
+  <pre><code>@include position(absolute, 20px null null 20px);</code></pre>
+  <div class="position"><div></div></div>
+  <hr />
+  
+  <h3 id="prefixer">prefixer</h3>
+  <pre><code>.element {
     @include prefixer(appearance, none, ("webkit", "moz"));
   }
   
@@ -134,10 +378,29 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-  }</code></pre> <hr> <h3 id="shade">shade</h3> <pre><code>background-color: shade(#ffbb52, 30%);</code></pre> <div class="shade"></div> <hr> <h3 id="size">size</h3> <pre><code>@include size(300px, 1.8em);</code></pre> <div class="size"></div> <hr> <h3 id="unit">strip unit</h3> <pre><code>$dimension: strip-unit(10em);
+  }</code></pre>
+  <hr />
+  
+  <h3 id="shade">shade</h3>
+  <pre><code>background-color: shade(#ffbb52, 30%);</code></pre>
+  
+  <div class="shade"></div>
+  <hr />
+  
+  <h3 id="size">size</h3>
+  <pre><code>@include size(300px, 1.8em);</code></pre>
+  <div class="size"></div>
+  <hr />
+  
+  <h3 id="unit">strip unit</h3>
+  <pre><code>$dimension: strip-unit(10em);
   
   //Output
-  $dimension: 10;</code></pre> <hr> <h3 id="inputs">text inputs</h3> <pre><code>#{$all-text-inputs} {
+  $dimension: 10;</code></pre>
+  <hr />
+  
+  <h3 id="inputs">text inputs</h3>
+  <pre><code>#{$all-text-inputs} {
     border: 1px solid #ccc;
   }
   
@@ -155,7 +418,17 @@
   
   #{$all-text-inputs-invalid} {
     border: 1px solid #00f;
-  }</code></pre> <hr> <h3 id="tint">tint</h3> <pre><code>background-color: tint(#ffbb52, 30%);</code></pre> <div class="tint"></div> <hr> <h3 id="triangle">triangle</h3> <pre><code>.element {
+  }</code></pre>
+  <hr />
+  
+  <h3 id="tint">tint</h3>
+  <pre><code>background-color: tint(#ffbb52, 30%);</code></pre>
+  
+  <div class="tint"></div>
+  <hr />
+  
+  <h3 id="triangle">triangle</h3>
+  <pre><code>.element {
     @include size(300px, 50px);
     @include center-block;
     background-color: #b25c9c;
@@ -169,11 +442,41 @@
       top:-1rem; 
       left:6rem;
     }
-  }</code></pre> <div class="triangle"></div> <hr> <h3 id="value">value prefixer</h3> <pre><code>@include value-prefixer(cursor, grab, ("webkit", "moz"));
+  }</code></pre>
+  <div class="triangle"></div>
+  <hr />
+  
+  <h3 id="value">value prefixer</h3>
+  <pre><code>@include value-prefixer(cursor, grab, ("webkit", "moz"));
   
   //CSS Output
   .element {
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
-  }</code></pre> <hr> <p>To see the full code for the Bourbon mixins see <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code> </p> </div> <hr> <p class="third center"> <a href="https://phone1st.org/">Home</a> | <a href="about.html">About</a> | <a href="test.html">Test</a> | <a href="extras.html">Extras</a> | <a href="layout.html">Layout</a> | <a href="flexbox.html">Flexbox</a> </p> </section> <footer class="footer"> <button id="topBtn" title="Back to top">Top</button> <p class="third">&copy;2024 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a> . <a href="contact.html">Contact</a></p> </footer> </div> <script src="js/back-top.js"></script> <script src="js/scroll.js"></script> </body> </html> 
+  }</code></pre>
+  <hr />
+  
+  <p>To see the full code for the Bourbon mixins see <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code>
+  </p>
+</div>
+<hr />
+<p class="third center">
+  <a href="https://phone1st.org/">Home</a> | <a href="about.html">About</a> |
+  <a href="test.html">Test</a> | <a href="extras.html">Extras</a> |
+  <a href="layout.html">Layout</a> | <a href="flexbox.html">Flexbox</a>
+</p>
+</section>
+<footer class="footer">
+	<button id="topBtn" title="Back to top">Top</button>
+		<p class="third">&copy;2024 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a> . <a href="contact.html">Contact</a></p>
+	</footer>
+</div><!-- wrapper   -->
+
+
+<script src="js/back-top.js"></script>
+<script src="js/scroll.js"></script>
+
+</body>
+
+</html>

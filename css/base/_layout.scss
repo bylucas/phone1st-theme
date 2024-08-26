@@ -9,6 +9,8 @@
 }
 
 ///////////////////////////////////////////
+//Remove the Grids below if not needed.
+//See the 'layout' page in the 'test' folder if using Grids
 
 //Using Grids
 //The layout page in the test folder uses a grid layout
@@ -20,6 +22,7 @@ $main: 100%;
 $sidebar: 25%;
 $grid-color: #CDCDCD;
 
+//Display phone1st
 .with-sidebar {
 .wrapper {
   display: grid;
@@ -45,10 +48,6 @@ $grid-color: #CDCDCD;
   grid-area: sidebar;
   background: $grid-color;
   padding: 20px;
-
-  ul {
-    list-style: none;
-  }
 }
 
 .footer {
