@@ -2,7 +2,7 @@
 
 const form = document.querySelector(".signup-form")
 //const username = document.querySelector('#username'); alternative
-const feedback = document.querySelector(".feedback")
+const feedback = document.querySelector(".feedback-form")
 const usernamePattern = /^[a-zA-Z]{6,12}$/
 //contain only letters & be between 6 & 12 characters
 
