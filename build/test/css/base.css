@@ -19,11 +19,6 @@ hr {
 .links a {
   display: block;
   font-size: 1.0666666667rem;
-  font-family: "Ubuntu Condensed", sans-serif;
-}
-
-.alt {
-  font-family: "Ubuntu Condensed", sans-serif;
 }
 
 .theme-variables p {
@@ -51,6 +46,9 @@ hr {
 .medium-gray {
   background: #999;
 }
+.medium-gray p {
+  color: #fff;
+}
 
 .light-gray {
   background: #ddd;
@@ -66,9 +64,15 @@ hr {
 .link-color {
   background: #2365c0;
 }
+.link-color p {
+  color: #fff;
+}
 
 .hover-color {
   background: #af0c22;
+}
+.hover-color p {
+  color: #fff;
 }
 
 .background {
@@ -76,36 +80,37 @@ hr {
 }
 
 .light-background {
-  background: #f9f9f9;
+  background: rgb(243.1, 243.1, 243.1);
 }
 
 .border {
-  border: 1px solid #999;
-  border-radius: 5px;
+  border: 1px solid #464747;
+  border-radius: 0.1875rem;
   margin-bottom: 2rem;
 }
 .border p {
   margin: 0;
 }
 
-.input-color {
-  background: #fdfdfd;
-}
-
-.button-color {
-  background: #2365c0;
-}
-
 .error-color {
   background: #ba221d;
+}
+.error-color p {
+  color: #fff;
 }
 
 .alert-color {
   background: #bd912f;
 }
+.alert-color p {
+  color: #fff;
+}
 
 .success-color {
   background: #3f913a;
+}
+.success-color p {
+  color: #fff;
 }
 
 .center {
@@ -150,9 +155,9 @@ hr {
 .about pre {
   text-align: left;
   padding: 1rem 2rem;
-  background: #f1f1f1;
-  box-shadow: inset 0 0 4px #dfdfdf;
-  border-radius: 5px;
+  background: rgb(241.4, 241.4, 241.4);
+  box-shadow: inset 0 0 4px rgb(224.502, 224.502, 224.502);
+  border-radius: 0.1875rem;
   color: rgb(87, 127, 214);
 }
 .about code {
@@ -197,9 +202,9 @@ hr {
 .scss-extras pre {
   text-align: left;
   padding: 1rem 2rem;
-  background: #f1f1f1;
-  box-shadow: inset 0 0 4px #dfdfdf;
-  border-radius: 5px;
+  background: rgb(241.4, 241.4, 241.4);
+  box-shadow: inset 0 0 4px rgb(224.502, 224.502, 224.502);
+  border-radius: 0.1875rem;
   color: rgb(87, 127, 214);
 }
 .scss-extras code {
@@ -207,26 +212,23 @@ hr {
 }
 .scss-extras .background {
   background: #3f913a;
-  box-shadow: inset 0 0 4px #347830;
+  box-shadow: inset 0 0 4px rgb(58.59, 134.85, 53.94);
   height: 100px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
 .scss-extras .center-element {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   background: #e03d44;
-  box-shadow: inset 0 0 4px #d7222a;
+  box-shadow: inset 0 0 4px rgb(208.32, 56.73, 63.24);
   height: 60px;
   width: 80%;
 }
 .scss-extras .hidden-box {
   height: 70px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 7px;
@@ -237,16 +239,6 @@ hr {
 .scss-extras .hidden-box:hover span {
   display: none !important;
   visibility: hidden;
-}
-.scss-extras input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: red;
-  opacity: 1; /* Firefox */
-}
-.scss-extras input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: red;
-}
-.scss-extras input::-ms-input-placeholder { /* Microsoft Edge */
-  color: red;
 }
 .scss-extras .media-points p {
   color: red;
@@ -264,7 +256,6 @@ hr {
 .scss-extras .show-border {
   height: 80px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   border-top-color: #a60b55;
@@ -280,7 +271,6 @@ hr {
 .scss-extras .contrast {
   height: 30px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   background-color: #2d72d9;
@@ -291,7 +281,6 @@ hr {
 .scss-extras .hide-text {
   height: 120px;
   width: 220px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 7px;
@@ -308,7 +297,6 @@ hr {
 .scss-extras .hide-visually {
   height: 120px;
   width: 220px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   font-size: 0.9rem;
@@ -340,7 +328,6 @@ hr {
 .scss-extras .ellipsis {
   height: 80px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.1rem;
@@ -358,7 +345,6 @@ hr {
 .scss-extras .margin {
   height: 60px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid blue;
@@ -372,7 +358,7 @@ hr {
   font-size: 1.953125em;
 }
 .scss-extras .wrap {
-  border: 1px solid #999;
+  border: 1px solid #464747;
   font-size: 0.9rem;
   max-width: 300px;
 }
@@ -383,7 +369,6 @@ hr {
 .scss-extras .padding {
   height: 60px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid blue;
@@ -396,7 +381,6 @@ hr {
 .scss-extras .position {
   height: 100px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid blue;
@@ -413,15 +397,13 @@ hr {
 .scss-extras .shade {
   height: 50px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #b38339;
+  background-color: rgb(178.5, 130.9, 57.4);
 }
 .scss-extras .size {
   height: 1.8em;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid blue;
@@ -429,15 +411,13 @@ hr {
 .scss-extras .tint {
   height: 50px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffcf86;
+  background-color: rgb(255, 207.4, 133.9);
 }
 .scss-extras .triangle {
   height: 50px;
   width: 300px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   background-color: #b25c9c;
@@ -458,8 +438,46 @@ hr {
   display: inline !important;
 }
 
+.with-sidebar .wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  row-gap: 40px;
+  grid-template-areas: "header" "main" "sidebar" "footer";
+}
+.with-sidebar .header {
+  grid-area: header;
+  background: #cdcdcd;
+  padding: 2rem 0;
+}
+.with-sidebar .main {
+  grid-area: main;
+  background: #cdcdcd;
+  padding: 15px;
+}
+.with-sidebar .sidebar {
+  grid-area: sidebar;
+  background: #cdcdcd;
+  padding: 20px;
+}
+.with-sidebar .footer {
+  grid-area: footer;
+  background: #cdcdcd;
+  padding: 2rem 0 0;
+  text-align: center;
+}
+@media only screen and (min-width: 900px) {
+  .with-sidebar .wrapper {
+    grid-template-columns: auto 25%;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    align-items: start;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+  }
+}
+
 #topBtn {
-  font-family: "Ubuntu Condensed", sans-serif;
+  font-family: "antonio", sans-serif;
   text-align: center;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
@@ -468,7 +486,7 @@ hr {
   right: 0;
   background: #1c0301;
   display: none;
-  padding: 0.5rem;
+  padding: 0.7rem;
   font-size: 0.9561752988rem;
   letter-spacing: 1px;
   color: #fff;
@@ -511,7 +529,7 @@ hr {
   border-bottom: 1px solid #af0c22;
 }
 .subscribe:focus {
-  border-bottom: 1px solid #7AABDA;
+  border-bottom: 1px solid #7aabda;
   box-shadow: none;
 }
 
@@ -524,7 +542,7 @@ hr {
   font-size: 1.0666666667rem;
   letter-spacing: 2px;
   font-weight: 500;
-  color: #51B924;
+  color: #51b924;
   padding-bottom: 6px;
   display: none;
 }

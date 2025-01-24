@@ -4,10 +4,20 @@
 // Finished format or tweak to your liking
 // ===============================================
 
+@use "../root/" as *;
+
 table {
   width: 95%;
   margin: $spacer auto;
   background-color: transparent;
+
+  caption {
+    font-size: $font-size;
+    caption-side: top;
+    text-align: left;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
 
   th,
   td {
@@ -27,37 +37,21 @@ table {
   thead th {
     vertical-align: bottom;
   }
-
-  tbody tr td,
-  tbody tr th {
-  }
-
-@media (hover: hover) {
-  tbody tr:hover td,
-  tbody tr:hover th {
-  }
- }
-}
-
-table caption {
-  font-size: $font-size;
-  margin-top: math.div($spacer, 2);
-  margin-bottom: math.div($spacer, 2);
 }
 
 //Table hovers
 @include media(900) {
   tbody tr td,
   tbody tr th {
-    transition: background-color 1s ease-in-out;
+    transition: background-color $timing $duration;
   }
 
-@media (hover: hover) {
-  tbody tr:hover td,
-  tbody tr:hover th {
-    background-color: $light-background;
+  @media (hover: hover) {
+    tbody tr:hover td,
+    tbody tr:hover th {
+      background-color: $light-background;
+    }
   }
- }
 }
 
 // CONDENSED ============================

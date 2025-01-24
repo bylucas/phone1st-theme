@@ -1,7 +1,8 @@
 // =======================
 // Form
 // =======================
-
+@use "sass:math";
+@use "../../css/root/" as *;
 .signup-form {
   display: flex;
   flex-direction: column;
@@ -10,29 +11,31 @@
   align-items: center;
   width: 100%;
   max-width: 400px;
-  border: $border;
-  @include padding(20px null);
+  @include padding(20px);
   @include margin(math.div($spacer, 2) auto);
 
   input {
     margin: math.div($spacer, 2) 0;
-    padding: 10px 5px;
-    max-width: 70%;
   }
 }
 
-  .feedback-form {
-    text-align: center;
-    font-size: $third;
-    padding: 0 20px;
-  }
+.feedback-form {
+  text-align: center;
+  font-size: $third;
+  padding: 0 20px;
+  color: $alert-color;
+}
+
+.feedback-form.successtext {
+  color: $success-color;
+}
 
 .signup-form .success {
-  border: 2px solid $success-color;
+  outline: 2px solid $success-color;
   color: $success-color;
 }
 
 .signup-form .error {
-  border: 2px solid $error-color;
+  outline: 2px solid $error-color;
   color: $error-color;
 }

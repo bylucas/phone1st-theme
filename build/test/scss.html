@@ -1,61 +1,59 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag('config', 'G-7WCWMB5E47');
+    </script>
 
-  gtag('config', 'G-7WCWMB5E47');
-</script>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scss Mixins including user and Bourbon Mixins</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme">
+    <meta name="author" content="how5360@gmail.com">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="keywords" content="scss">
+    <link rel="canonical" href="https://phone1st.org/test/scss.html" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <meta property="og:site_name" content="Phone1st Starter Theme" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Scss Mixins including user and Bourbon Mixins" />
+    <meta property="og:description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme" />
+    <meta property="og:url" content="https://phone1st.org/test/scss.html" />
+    <meta property="og:image" content="https://phone1st.org/images/phone1st-logo.webp" />
+    <meta property="og:image:width" content="580"/>
+    <meta property="og:image:height" content="296"/>
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Scss Mixins including user and Bourbon Mixins" />
+    <meta name="twitter:description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme" />
+    <meta name="twitter:url" content="https://phone1st.org/test/scss.html" />
+    <meta name="twitter:image:src" content="https://phone1st.org/images/phone1st-logo.webp" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
 
-  
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scss Mixins including user and Bourbon Mixins</title>
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme">
-  <meta name="author" content="how5360@gmail.com">
-  <meta name="robots" content="INDEX,FOLLOW">
-  <meta name="keywords" content="scss">
-  <link rel="canonical" href="https://phone1st.org/test/scss.html" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  
-  <meta property="og:site_name" content="Phone1st Starter Theme" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Scss Mixins including user and Bourbon Mixins" />
-  <meta property="og:description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme" />
-  <meta property="og:url" content="https://phone1st.org/test/scss.html" />
-  <meta property="og:image" content="https://phone1st.org/images/phone1st-logo.webp" />
-  <meta property="og:image:width" content="580"/>
-  <meta property="og:image:height" content="296"/>
-  
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Scss Mixins including user and Bourbon Mixins" />
-  <meta name="twitter:description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme" />
-  <meta name="twitter:url" content="https://phone1st.org/test/scss.html" />
-  <meta name="twitter:image:src" content="https://phone1st.org/images/phone1st-logo.webp" />
-  
-   <!-- google url verification - remove or update to your site -->
-    <meta name="google-site-verification" content="TvuzHUBIxICVdbTVw1poUSZv8eYF7RmjWccv_0kBoFc" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="css/base.css" />
-  
-</head>
-
-<body class="">
-  <div class="wrapper">
-    <header class="header">
-      <h1>
-        Scss Mixins
-      </h1>
-    </header>
+  <body class="">
+    <div class="wrapper">
+      <header class="header">
+        <h1>
+          Scss Mixins
+        </h1>
+      </header>
 
 
 <section class="main">
@@ -76,7 +74,6 @@
     <a href="#background">background</a>
     <a href="#center">Center Elements</a>
     <a href="#hide">hide from screenreaders</a>
-    <a href="#placeholders">placeholders</a>
     <a href="#breakpoints">media breakpoints</a>
     <a href="#bourbon-mixins">Bourbon Mixins</a>
     <a href="#buttons">buttons</a>
@@ -86,9 +83,9 @@
     <a href="#fontface">@fontface</a>
     <a href="#stacks">font stacks</a>
     <a href="#hide-text">hide text</a>
+    <a href="#visually">hide visually</a>
   </div>
   <div>
-    <a href="#visually">hide visually</a>
     <a href="#margin">margin</a>
     <a href="#modular">modular scale</a>
     <a href="#wrap">overflow wrap</a>
@@ -117,7 +114,7 @@
   .background {
     @include background($success-color);//mixin
     @include size(300px, 100px);
-    @include center-block;
+    @include center;
   }</code></pre>
   
   <div class="background"></div>
@@ -127,7 +124,7 @@
   <h3 id="center">Center Elements</h3>
   
   <pre><code>.center-element {
-    @include center-block;//mixin
+    @include center;//mixin
     @include background(#E03D44);
     @include size(80%, 60px);
   }</code></pre>
@@ -144,7 +141,7 @@
   
   .hidden-box {
     @include size(300px, 70px);
-    @include center-block;
+    @include center;
     padding: 7px;
     font-size: .9rem;
     color: orange;
@@ -164,16 +161,6 @@
   
   <hr />
   
-  <h3 id="placeholders">placeholders</h3>
-  <pre><code>input {
-    @include placeholder {
-    color: red;
-    }
-  }</code></pre>
-  
-  <input type="text" placeholder="placeholder" />
-  
-  <hr />
   <h3 id="breakpoints">media breakpoints</h3>
   <p>Base styles are phone-first</p>
   
@@ -244,7 +231,7 @@
   <h3 id="contrast">constrast switch</h3>
   <pre><code>.contrast {
     @include size(300px, 30px);
-    @include center-block;
+    @include center;
     $button-color: #2d72d9;
     background-color: $button-color;
     a {
@@ -292,7 +279,7 @@
   <h3 id="hide-text">hide text</h3>
   <pre><code>.hide-text {
     @include size(220px, 120px);
-    @include center-block;
+    @include center;
     padding: 7px;
     border: 1px solid blue;
   
@@ -313,7 +300,7 @@
   <h3 id="visually">hide visually</h3>
   <pre><code>.hide-visually {
     @include size(220px, 120px);
-    @include center-block;
+    @include center;
     font-size: .9rem;
     padding: 7px;
     border: 1px solid blue;
@@ -430,7 +417,7 @@
   <h3 id="triangle">triangle</h3>
   <pre><code>.element {
     @include size(300px, 50px);
-    @include center-block;
+    @include center;
     background-color: #b25c9c;
     position: relative;
     
@@ -462,14 +449,14 @@
 </div>
 <hr />
 <p class="third center">
-  <a href="https://phone1st.org/">Home</a> | <a href="about.html">About</a> |
-  <a href="test.html">Test</a> | <a href="extras.html">Extras</a> |
-  <a href="layout.html">Layout</a> | <a href="flexbox.html">Flexbox</a>
+  <a href="/">Home</a> | <a href="/test/about.html">About</a> |
+  <a href="/test/test.html">Test</a> | <a href="/test/extras.html">Extras</a> |
+  <a href="/test/layout.html">Layout</a> | <a href="/test/flexbox.html">Flexbox</a>
 </p>
 </section>
 <footer class="footer">
 	<button id="topBtn" title="Back to top">Top</button>
-		<p class="third">&copy;2024 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a> . <a href="contact.html">Contact</a></p>
+		<p class="third">&copy;2024 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a> . <a href="/test/contact.html">Contact</a></p>
 	</footer>
 </div><!-- wrapper   -->
 

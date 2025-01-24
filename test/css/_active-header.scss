@@ -2,6 +2,7 @@
 // Active Header
 // =======================
 
+@use "../../css/root/" as *;
 .active-header {
   background-color: #988dff;
   position: fixed;
@@ -45,7 +46,7 @@
   height: 2px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color: #3E3A37;
+  background-color: #3e3a37;
   display: block;
   transition: 0.33s;
 }
@@ -78,7 +79,7 @@
 #menu {
   width: 300px;
   margin: 70px auto;
-  border: 1px solid #494ED7;
+  border: 1px solid #494ed7;
   padding: 10px;
 
   li {
@@ -88,7 +89,7 @@
 
   a {
     cursor: pointer;
-    color: #494ED7;
+    color: #494ed7;
     font-size: 1.1rem;
     position: relative;
   }
@@ -126,15 +127,11 @@
 }
 
 .main {
-  margin-top: $spacer*3;
+  margin-top: $spacer * 3;
 }
 @include media(700) {
   .active-header {
     height: 12vh;
-
-    h1 {
-      //margin-top: 0;
-    }
   }
 }
 @include media(900) {

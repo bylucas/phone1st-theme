@@ -1,89 +1,34 @@
-//Phone1st
-//A super light developer theme
-
-//compiling scss with Dart Sass
-//math div(divide) - eg math.div($font-size, 1.03)
-//https://sass-lang.com/documentation/breaking-changes/slash-div
-
-//Can use calc as an alternative to math.div()
-//$secondary: calc($font-size/1.125);
-
-//Needed to use math.div()
-@use "sass:math";
-
-//import Google Fonts
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400;1,600&family=Source+Code+Pro:wght@400&family=Ubuntu+Condensed&display=swap');
-
 // ====================
-//   Import the basics
+// Phone1st
+// A light developer theme
 // ====================
 
-@import "reset";
-@import "bourbon";
-
-@import "base/variables";
-@import "base/mixins";
-@import "base/fonts";
-
-html {
-  -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: $light-gray;
-}
-
-body {
-  color: $font-color;
-  font-family: $font;
-  font-feature-settings: "kern", "liga", "pnum";
-  font-size: $font-size;
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
-}
-
-a {
-  color: $link-color;
-  text-decoration: none;
-
-  &:active,
-  &:focus {
-    color: $link-color;
-  }
-}
-
-//Link hovers
-@media (hover: hover) and (pointer: fine) {
-  a {
-    transition: color 0.4s ease-in 0.1s;
-  }
-
-  a:hover {
-    color: $hover-color;
-  }
-}
+@use "reset";
 
 // ==============
 //   Base styles
 //  =============
-@import "base/utilities";
-@import "base/typography";
-@import "base/media";
-@import "base/form";
-@import "base/button";
-@import "base/table";
+@use "base/fonts";
+@use "base/typography";
+@use "base/media";
+@use "base/form";
+@use "base/button";
+@use "base/table";
 
 // ==============
 // Custom styles
 // ==============
-@import "base/layout";
+//start to build the stylesheet
+@use "site/site";
 
-@import "site/site";
-@import "site/menu";
-@import "site/navigation";
-@import "site/social";
+@use "site/menu";
+@use "site/navigation";
+@use "site/social";
 
-//temporary - remove
-@import "start";
+//index page
+@use "home";
 
 // =============
 // Print styles
 // =============
-@import "base/print";
+@use "base/print";

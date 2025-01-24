@@ -32,8 +32,6 @@
       <strong>Import into CodeKit</strong>
     </p>
 
-    <p>Remove <strong>css/_start.scss</strong></p>
-
     <p>Build your site with the help of the <strong>test folder</strong></p>
 
     <p>Remove the <strong>test folder</strong></p>
@@ -74,7 +72,7 @@
       >
     </p>
 
-    <p><em>You can set the paths to suit yourself but phone1st uses:</em></p>
+    <p><em>You can set the paths to the 'build' folder to suit yourself but phone1st uses:</em></p>
   </div>
   <ul>
     <li>style.scss - /build/css/style.css</li>
@@ -104,7 +102,7 @@
   </ul>
 
   <ul>
-    <li>all extras js files go into the js folder /build/test/js/</li>
+    <li>all 'extras' js files go into the js folder /build/test/js/</li>
     <li>all test images to /build/test/test-images/</li>
     <li>contact page uses /build/test/firestore/contact.js</li>
   </ul>
@@ -142,13 +140,11 @@
     should add or subtract what you require.
   </p>
 
-  <p><strong>Meta variables available:</strong></p>
+  <p><strong>Meta variables:</strong></p>
 
   <pre><code>&lt;!-- $title Page Title --&gt;// - Basic page title for use with navigation etc. eg <em>Home, About, etc</em>
 
 &lt;!-- $SEO-title A Longer Title--&gt;//- A more descriptive title - 60ish characters
-
-//Note: Your sitename is added after the $SEO-title
 
 &lt;!-- $description Page Description --&gt;// - 120ish characters
 
@@ -159,15 +155,7 @@
 &lt;!-- $post-image eg tile-wide.png --&gt;// - image to use for Facebook and Twitter meta image</code></pre>
   <div class="about-wrap">
     <p>
-      See <em>includes/_meta.kit</em>, set the website path and sitename at the
-      top of the page. The page variables <em>(from the top of each page)</em>,
-      along with your website path and sitename will be used to set the meta
-      data.
-    </p>
-
-    <p>
-      sitename is usually the name in your web address ie
-      <em>www.mysitename.com</em> - your sitename would be <em>mysitename</em>
+      See <em>includes/_meta.kit</em>.
     </p>
 
     <p>
@@ -181,25 +169,10 @@
 
   <h4>Dart Scss</h4>
 
-  <p>The math division is changing in <em>Dart Scss</em></p>
+  <p>Check the <a href="https://sass-lang.com/documentation/breaking-changes/"><em>Dart Scss</em></a> website for updates and deprecations</p>
 
-  <pre><code>@use &quot;sass:math&quot;;//already in style.scss
-
-// WRONG, will not work in future Sass versions.
-@debug (12px/4px); // 3
-
-// RIGHT, will work in future Sass versions.
-@debug math.div(12px, 4px); // 3
-
-// Also allowed, calc returns a single number
-@debug calc(12px / 4px); // 3</code></pre>
-
-  <p>
-    for more information
-    <a href="https://sass-lang.com/documentation/breaking-changes/slash-div"
-      >click here</a
-    >
-  </p>
+  <h4>Bourbon</h4>
+  <p><em>Bourbon</em> is no longer being maintained <a href="https://www.bourbon.io/docs/latest/">See here</a>. <em>Bourbon</em> can be copied to your site but <em>Bourbon</em> may not be compatable with the next <em>Dart Scss</em> major version</p>
 
   <h3>Contact Info:</h3>
 
@@ -207,9 +180,9 @@
 </div>
 <hr />
 <p class="third center">
-  <a href="https://phone1st.org/">Home</a> | <a href="test.html">Test</a> |
-  <a href="scss.html">Scss</a> | <a href="extras.html">Extras</a> |
-  <a href="layout.html">Layout</a> | <a href="flexbox.html">Flexbox</a>
+  <a href="/">Home</a> | <a href="/test/test.html">Test</a> |
+  <a href="/test/scss.html">Scss</a> | <a href="/test/extras.html">Extras</a> |
+  <a href="/test/layout.html">Layout</a> | <a href="/test/flexbox.html">Flexbox</a>
 </p>
 </section>
 <!-- @import templates-kit/_test-footer -->

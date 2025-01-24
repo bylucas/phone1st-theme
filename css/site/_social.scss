@@ -2,9 +2,11 @@
 // Social Buttons
 // =======================
 
+@use "../root/" as *;
+
 .social {
   margin-bottom: $spacer;
-  margin-top: math.div($spacer, 2);
+  margin-top: calc($spacer / 2);
 
   a {
     font-size: $third;

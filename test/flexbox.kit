@@ -4,159 +4,250 @@
 <!-- $keyword flexbox -->
 <!-- $url test/flexbox.html -->
 <!-- $post-image images/phone1st-logo.webp -->
-
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-7WCWMB5E47');
 </script>
-  <!-- @import ../includes/_meta -->
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="css/flexbox.css">
-  
-  <title>Basic Layout</title>
-  </head>
-  <body>
-  <div class="wrapper">
-  <header class="header">
-      <h1><!-- $title --></h1>
-  </header>
-  <section class="main">
-<div class="flex-wrap">
-<p>Below shows a basic introduction to '<em>Flexbox</em>'. See more information on the <strong>"Css-Tricks"</strong> website <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></p>
-	<hr>
-<div class="flexbox-one">
-	<div><span>1</span></div>
-	<div><span>2</span></div>
-	<div><span>3</span></div>
-	<div><span>4</span></div>
-</div>
+    <!-- @import ../includes/_meta -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <title>Basic Layout</title>
+</head>
 
-<div class="results">
-	<form class="justify">
-
-<div class="content-wrap">
-    <div class="content-direction">
-    <p>flex-direction</p>
-    <div class="form-wrap">
-  <input type="radio" name="three" value="AAA" checked>
-  <label>row</label>
-</div>
-<div class="form-wrap">
-  <input type="radio" name="three" value="BBB">
-  <label>row-reverse</label>
-</div>
-<div class="form-wrap">
-  <input type="radio" name="three" value="CCC">
-  <label>column</label>
-</div>
-<div class="form-wrap">
-  <input type="radio" name="three" value="DDD">
-  <label>column-reverse</label>
-</div>
-</div>
-
-<div class="content-flex-wrap">
-<p>flex-wrap</p>
-
-<div class="form-wrap">
-  <input type="radio" name="four" value="AAAA">
-  <label>nowrap</label>
-</div>
-<div class="form-wrap">
-  <input type="radio" name="four" value="BBBB" checked>
-  <label>wrap</label>
-</div>
-<div class="form-wrap">
-  <input type="radio" name="four" value="CCCC">
-  <label>wrap-reverse</label>
-</div>
-</div>
-</div><!-- content-wrap -->
-
-<div class="content-wrap">
-    <div class="content-justify">
-    <p>justify-content &#8594;</p>
-    <div class="form-wrap">
-	<input type="radio" name="one" value="A">
-	<label>flex-start</label>
-</div>
-<div class="form-wrap">
-	<input type="radio" name="one" value="B">
-	<label>flex-end</label>
-</div>
-<div class="form-wrap">
-	<input type="radio" name="one" value="C">
-	<label>center</label>
-</div>
-<div class="form-wrap">
-	<input type="radio" name="one" value="D" checked>
-	<label>space-between</label>
-</div>
-<div class="form-wrap">
-	<input type="radio" name="one" value="E">
-	<label>space-around</label>
-</div>
-<div class="form-wrap">
-	<input type="radio" name="one" value="F">
-	<label>space-evenly</label>
-</div>
-</div>
-<div class="content-align">
-<p>align-items &#8595;</p>
-
-<div class="form-wrap">
-  <input type="radio" name="two" value="AA">
-  <label>flex-start</label>
-</div>
-<div class="form-wrap">
-  <input type="radio" name="two" value="BB">
-  <label>flex-end</label>
-</div>
-<div class="form-wrap">
-  <input type="radio" name="two" value="CC" checked>
-  <label>center</label>
-</div>
-<div class="form-wrap">
-  <input type="radio" name="two" value="DD">
-  <label>baseline</label>
-</div>
-<div class="form-wrap">
-  <input type="radio" name="two" value="EE">
-  <label>stretch</label>
-</div>
-</div>
-</div><!-- content-wrap -->
-	<input type="submit" class="but" value="Css Output"> 
-	</form>
-  <div class="css-output">
-        <p>//Css Output</p>
-        <span>.element {</span><br>
-        <span>display: flex;</span><br>
-        <span class="flexdirection">flex-direction: row;</span><br>
-        <span class="flexwrap">flex-wrap: wrap;</span><br>
-        <span class="justifycontent">justify-content: space-between;</span><br>
-        <span class="alignitems">align-items: center;</span><br>
-      <span>}</span>
-
-  </div>
-</div>
-
-<hr>
-</div>
-	<p class="third center"><a href="https://phone1st.org/">Home</a> | <a href="about.html">About</a> | <a href="test.html">Test</a> | <a href="scss.html">Scss</a> | <a href="extras.html">Extras</a> | <a href="layout.html">Layout</a></p>
-	
-	</section>
-	<!-- @import templates-kit/_test-footer -->
-
-		<script src="js/back-top.js"></script>
-		<script src="js/flex.js"></script>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>
+                <!-- $title -->
+            </h1>
+        </header>
+        <section class="main">
+            <div class="flex-wrap">
+                <p>Below shows a basic introduction to '<em>Flexbox</em>'. See more information on the <strong>"Css-Tricks"</strong> website <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a></p>
+                <hr>
+                <div class="flexbox-one">
+                    <div><span>1</span></div>
+                    <div><span>2</span></div>
+                    <div><span>3</span></div>
+                    <div><span>4</span></div>
+                </div>
+                <div class="results">
+                    <form class="justify">
+                        <div class="content-wrap">
+                            <div class="content-direction">
+                                <p>flex-direction</p>
+                                <div class="custom-radios">
+                                    <div>
+                                        <input type="radio" id="AAA" name="three" value="AAA" checked />
+                                        <label for="AAA">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            row
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="BBB" name="three" value="BBB" />
+                                        <label for="BBB">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            row-reverse
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="CCC" name="three" value="CCC" />
+                                        <label for="CCC">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            column
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="DDD" name="three" value="DDD" />
+                                        <label for="DDD">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            column-reverse
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-flex-wrap">
+                                <p>flex-wrap</p>
+                                <div class="custom-radios">
+                                    <div>
+                                        <input type="radio" id="AAAA" name="four" value="AAAA" />
+                                        <label for="AAAA">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            nowrap
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="BBBB" name="four" value="BBBB" checked />
+                                        <label for="BBBB">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            wrap
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="CCCC" name="four" value="CCCC" />
+                                        <label for="CCCC">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            wrap-reverse
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- content-wrap -->
+                        <div class="content-wrap">
+                            <div class="content-justify">
+                                <p>justify-content &#8594;</p>
+                                <div class="custom-radios">
+                                    <div>
+                                        <input type="radio" id="A" name="one" value="A" />
+                                        <label for="A">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            flex-start
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="B" name="one" value="B" />
+                                        <label for="B">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            flex-end
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="C" name="one" value="C" />
+                                        <label for="C">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            center
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="D" name="one" value="D" checked />
+                                        <label for="D">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            space-between
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="E" name="one" value="E" />
+                                        <label for="E">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            space-around
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="F" name="one" value="F" />
+                                        <label for="F">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            space-evenly
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-align">
+                                <p>align-items &#8595;</p>
+                                <div class="custom-radios">
+                                    <div>
+                                        <input type="radio" id="AA" name="two" value="AA" />
+                                        <label for="AA">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            flex-start
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="BB" name="two" value="BB" />
+                                        <label for="BB">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            flex-end
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="CC" name="two" value="CC" checked />
+                                        <label for="CC">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            center
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="DD" name="two" value="DD" />
+                                        <label for="DD">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            baseline
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="EE" name="two" value="EE" />
+                                        <label for="EE">
+                                            <span>
+                                                <div></div>
+                                            </span>
+                                            stretch
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- content-wrap -->
+                        <input type="submit" class="but" value="Css Output">
+                    </form>
+                </div>
+                <div class="css-output">
+                    <p>//Css Output</p>
+                    <span>.element {</span><br>
+                    <span>display: flex;</span><br>
+                    <span class="flexdirection">flex-direction: row;</span><br>
+                    <span class="flexwrap">flex-wrap: wrap;</span><br>
+                    <span class="justifycontent">justify-content: space-between;</span><br>
+                    <span class="alignitems">align-items: center;</span><br>
+                    <span>}</span>
+                </div>
+                <hr>
+            </div>
+            <p class="third center"><a href="/">Home</a> | <a href="/test/about.html">About</a> | <a href="/test/test.html">Test</a> | <a href="/test/scss.html">Scss</a> | <a href="/test/extras.html">Extras</a> | <a href="/test/layout.html">Layout</a></p>
+        </section>
+        <!-- @import templates-kit/_test-footer -->
+        <script src="js/back-top.js"></script>
+        <script src="js/flex.js"></script>
 </body>
+
 </html>

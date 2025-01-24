@@ -1,0 +1,72 @@
+// ==========
+// Home
+// ==========
+
+@use "root/" as *;
+
+.header {
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+.start {
+  text-align: center;
+
+  figure {
+    margin-bottom: $spacer;
+  }
+
+  p {
+    font-size: $lead;
+    margin-bottom: $spacer;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .features {
+    margin: 20px 0 30px;
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+  }
+
+  .third {
+    font-size: $third;
+  }
+
+  hr {
+    margin-bottom: $spacer;
+  }
+}
+@include media(700) {
+  .header {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .start {
+    h2 {
+      font-size: 1.7rem;
+    }
+  }
+}
+@include media(900) {
+  .header {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .start {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,17 +1,13 @@
 // =======================
 // Extras
 // =======================
-@use "sass:math";
+//@use "sass:math";
+//@use "../../css/index" as *;
 
-@import "bourbon";
-@import "../../css/base/variables";
-@import "../../css/base/mixins";
-
-
-@import "active-header";
-@import "dropdowns";
-@import "tabs";
-@import "tooltip";
-@import "snackbar";
-@import "form";
-@import "modal";
+@use "active-header";
+@use "dropdowns";
+@use "tabs";
+@use "tooltip";
+@use "snackbar";
+@use "form";
+@use "modal";

@@ -8,7 +8,7 @@
 .background {
   @include background($success-color);//mixin
   @include size(300px, 100px);
-  @include center-block;
+  @include center;
 }</code></pre>
 
 <div class="background"></div>
@@ -18,7 +18,7 @@
 <h3 id="center">Center Elements</h3>
 
 <pre><code>.center-element {
-  @include center-block;//mixin
+  @include center;//mixin
   @include background(#E03D44);
   @include size(80%, 60px);
 }</code></pre>
@@ -35,7 +35,7 @@
 
 .hidden-box {
   @include size(300px, 70px);
-  @include center-block;
+  @include center;
   padding: 7px;
   font-size: .9rem;
   color: orange;
@@ -55,16 +55,6 @@
 
 <hr />
 
-<h3 id="placeholders">placeholders</h3>
-<pre><code>input {
-  @include placeholder {
-  color: red;
-  }
-}</code></pre>
-
-<input type="text" placeholder="placeholder" />
-
-<hr />
 <h3 id="breakpoints">media breakpoints</h3>
 <p>Base styles are phone-first</p>
 

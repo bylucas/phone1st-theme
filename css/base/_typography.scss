@@ -1,10 +1,15 @@
 // =======================
 // Typography
 // =======================
+@use "sass:math";
+@use "../root/variables" as *;
 
 hr {
-  display: block;
-  clear: both;
+  border-bottom: $border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $spacer 0;
 }
 
 h1,
@@ -66,7 +71,7 @@ pre {
   overflow: auto;
   word-wrap: break-word;
   white-space: pre;
-  white-space: -moz-pre-wrap; // fennec
+  white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
@@ -93,22 +98,22 @@ dl {
 
 ul ul,
 ol ol {
-  margin-bottom: 8px;
+  margin-bottom: math.div($spacer, 3);
 }
 
 ul {
   list-style: disc;
-  margin-left: 5px;
+  margin-left: math.div($spacer, 2);
 }
 
 ol {
   list-style: decimal;
-  margin-left: 5px;
+  margin-left: math.div($spacer, 2);
 }
 
 li > ul,
 li > ol {
-  margin-top: 8px;
+  margin-top: math.div($spacer, 3);
 }
 
 li > ul {
@@ -117,7 +122,7 @@ li > ul {
 
 li {
   font-size: math.div($font-size, 1.03);
-  margin-bottom: 5px;
+  margin-bottom: math.div($spacer, 4);
 }
 
 li li {

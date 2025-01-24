@@ -1,6 +1,8 @@
 // =======================
 // Snackbar
 // =======================
+@use "sass:math";
+@use "../../css/root/" as *;
 
 .snackbar-area {
   max-width: 600px;
@@ -10,7 +12,7 @@
 
   p {
     font-size: $secondary;
-    @include margin( 10px null 0 null);
+    @include margin(10px null 0 null);
   }
 }
 
@@ -19,7 +21,7 @@
   height: 40px;
 }
 
-.snackbar{
+.snackbar {
   width: 200px;
   padding: 20px;
   position: fixed;
@@ -27,7 +29,7 @@
   margin-left: -120px;
   top: 0;
   border-radius: 0 0 5px 5px;
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
   background: #ff6565;
   text-align: center;
   color: #fff;
@@ -35,6 +37,6 @@
   transition: all 0.2s;
   z-index: 2000;
 }
-.snackbar.active{
+.snackbar.active {
   margin-top: 0;
 }

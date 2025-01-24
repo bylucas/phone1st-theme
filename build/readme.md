@@ -14,8 +14,6 @@
 
 Remove **css/\_start.scss**
 
-Alter/Remove **google site verification** - includes/\_header.kit
-
 Alter/Remove **google analylitics** - includes/\_scripts.kit
 
 Build your site with the help of the **test folder**
@@ -30,7 +28,7 @@ Upload the **build folder** to your server
 
 Phone1st is designed to be used with [CodeKit](https://codekitapp.com/) (_Mac only_). Taking advantage of _CodeKits_ - _kit_ templates and _kit_ variables.
 
-If you don't have _CodeKit_ the _css_ folder and _scss_ files can be adapted to suit your use.
+If you don't have _CodeKit_ the _css_ folder and _scss_ files may be adapted to suit your use.
 
 The theme should build correctly when imported into Codekit, but if not:
 
@@ -62,7 +60,7 @@ To view the _test folder pages_
 - flexbox.scss - /build/test/css/flexbox.css
 
 
-- all extras js files go into the js folder /build/test/js/
+- all 'extras' js files go into the js folder /build/test/js/
 - all test images to /build/test/test-images/
 - Contact page uses /build/test/firestore/contact.js
 
@@ -92,7 +90,7 @@ Basic _Flexbox_ introduction.
 
 The following _variables_ for Meta Data are available with some _Facebook_ and _Twitter_ meta. These are optional and you should add or subtract what you require.
 
-Meta variables available:
+Meta variables:
 
 	<!-- $title Page Title --> - //Basic page title for use with navigation etc. eg _Home, About, etc
 	
@@ -108,9 +106,7 @@ Meta variables available:
 
 	<!-- $post-image eg tile-wide.png --> - //image to use for Facebook and Twitter meta image
 
-See _includes/\_meta.kit_, set the website path and sitename at the top of the page. The page variables _(from the top of each page)_, along with your website path and sitename will be used to set the meta data.
-
-sitename is usually the name in your web address ie _www.mysitename.com_ - your sitename would be _mysitename_
+See _includes/\_meta.kit_.
 
 **Important** - Check the meta data in your _page head_ with the browser inspector
 
@@ -120,18 +116,11 @@ sitename is usually the name in your web address ie _www.mysitename.com_ - your 
 
 #### Dart Scss
 
-The math division is changing in _Dart Scss_
+Check the [Dart Scss](https://sass-lang.com/documentation/breaking-changes/) website for updates and deprecations
 
-	@use "sass:math";//already in style.scss
-	
-	//WRONG, will not work in future Sass versions. @debug (12px/4px); //3
-	
-	// RIGHT, will work in future Sass versions. @debug math.div(12px, 4px); //3
+#### Bourbon
 
-for more information [click here](https://sass-lang.com/documentation/breaking-changes/slash-div)
-
-You can use `calc()` instead of the `math division` above  
-eg. `calc(12px/4);` //3
+*Bourbon* is no longer being maintained [See here](https://www.bourbon.io/docs/latest/). *Bourbon* can be copied to your site but *Bourbon* may not be compatable with the next *Dart Scss* major version
 
 * * *
 

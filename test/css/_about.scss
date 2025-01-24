@@ -1,7 +1,8 @@
 // =======================
 // About
 // =======================
-
+@use "sass:math";
+@use "../../css/root/" as *;
 .about {
   padding-top: $spacer;
 

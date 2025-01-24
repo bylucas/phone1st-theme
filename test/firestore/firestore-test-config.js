@@ -1,5 +1,7 @@
-import { initializeApp } from "firebase/app"
-import { getFirestore } from "firebase/firestore"
+//example Firestore Config File
+
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 //Your Firebase Settings
 const firebaseConfig = {
@@ -9,14 +11,14 @@ const firebaseConfig = {
   storageBucket: "xxxxxx",
   messagingSenderId: "xxxxx",
   appId: "xxxxxx",
-  measurementId: "xxxxx"
-}
+  measurementId: "xxxxx",
+};
 
 // init firebase
-initializeApp(firebaseConfig)
+initializeApp(firebaseConfig);
 
 // init firestore service
-const db = getFirestore()
+const db = getFirestore();
 
 // export firestore
-export { db }
+export { db };

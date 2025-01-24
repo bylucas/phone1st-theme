@@ -2,55 +2,73 @@
 // Forms
 // =======================
 
+@use "../root/" as *;
+
 input,
+label,
 select,
 textarea {
-  outline: 0 none;
-  font-size: $third;
   display: block;
-  padding: 5px;
-  margin-bottom: math.div($spacer, 2);
+  margin-bottom: calc($spacer / 2);
 }
-// Add your type inputs - Bourbon Mixin
-#{$all-text-inputs} {
-  background-color: $input-background;
-  width: 100%;//set for phone first
-  border: $border;
-  border-radius: $radius;
-  box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-  transition: background-color 0.8s ease-in 0.1s;
 
-@media (hover: hover) {
-  &:hover {
-    border-color: darken($input-background, 20%);
-  }
+fieldset {
+  margin-top: calc($spacer / 2);
 }
+legend {
+  margin-bottom: calc($spacer / 2);
+}
+
+#{$all-text-inputs} {
+  appearance: none;
+  border: $border;
+  transition: border-color $duration $timing;
+  width: 100%;
+  font-size: $secondary;
+  background-color: transparent;
+  border-radius: $radius;
+  box-shadow: inset 0 1px 2px rgba(#000, 0.26);
+  margin-bottom: calc($spacer / 2);
+  padding: calc($spacer / 3);
+
   &:focus {
     border-color: $link-color;
-    box-shadow: inset 0 1px 2px rgba(#000, 0.1);
-    outline: none;
+    border-width: 1.5px;
+    box-shadow: inset 0 1px 3px rgba(#000, 0.4);
   }
+
   &:disabled {
     cursor: not-allowed;
-    opacity: 0.5;
-  
-  @media (hover: hover) {
-    &:hover {
-      border-color: $error-color;
+    box-shadow: none;
+
+    @media (hover: hover) {
+      &:hover {
+        border-color: $error-color;
+      }
     }
-   }
   }
-  @include placeholder {
-    color: $medium-gray;
+  &::placeholder {
+    color: $font-color;
+    opacity: 0.75;
   }
+}
+
+[type="search"] {
+  appearance: textfield;
+  -webkit-appearance: textfield;
 }
 
 textarea {
   resize: vertical;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+[type="checkbox"],
+[type="radio"] {
   display: inline;
-  margin-right: 3px;
+  margin: 0;
+}
+
+[type="file"],
+select {
+  width: 100%;
 }

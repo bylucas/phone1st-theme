@@ -1,12 +1,13 @@
 // =======================
 // Breadcrumbs
 // =======================
+@use "sass:math";
+@use "../root/" as *;
 
 .breadcrumb-box {
   margin-bottom: $spacer;
 
   p {
-    font-family: $alt-font;
     font-size: $third;
   }
 }
@@ -23,8 +24,8 @@
   ul {
     li {
       display: inline;
-      font-family: $alt-font;
-      font-size: $third;
+      font-family: $heading-font;
+      font-size: math.div($third, 1.2);
       font-weight: bold;
 
       &:first-child a,
@@ -37,7 +38,7 @@
 
       a,
       span {
-        padding: 0.4rem 0.6rem;
+        padding: 0.2rem 0.6rem;
         @include background();
         border-radius: $radius;
       }
@@ -60,7 +61,6 @@
 
 .prev-link,
 .next-link {
-  font-family: $alt-font;
   font-size: $third;
   @include background();
   border-radius: $radius;

@@ -35,7 +35,7 @@ background-color: #f00;
 <h3 id="contrast">constrast switch</h3>
 <pre><code>.contrast {
   @include size(300px, 30px);
-  @include center-block;
+  @include center;
   $button-color: #2d72d9;
   background-color: $button-color;
   a {
@@ -83,7 +83,7 @@ font-family: $font-stack-monaco;</code></pre>
 <h3 id="hide-text">hide text</h3>
 <pre><code>.hide-text {
   @include size(220px, 120px);
-  @include center-block;
+  @include center;
   padding: 7px;
   border: 1px solid blue;
 
@@ -104,7 +104,7 @@ font-family: $font-stack-monaco;</code></pre>
 <h3 id="visually">hide visually</h3>
 <pre><code>.hide-visually {
   @include size(220px, 120px);
-  @include center-block;
+  @include center;
   font-size: .9rem;
   padding: 7px;
   border: 1px solid blue;
@@ -221,7 +221,7 @@ $dimension: 10;</code></pre>
 <h3 id="triangle">triangle</h3>
 <pre><code>.element {
   @include size(300px, 50px);
-  @include center-block;
+  @include center;
   background-color: #b25c9c;
   position: relative;
   

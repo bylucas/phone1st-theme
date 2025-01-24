@@ -2,50 +2,37 @@
 // Button
 // =======================
 
-%btn {
-  outline: 0 none;
-  color: $white;
-  border-radius: $radius;
-  border: none;
+@use "../root/" as *;
+
+//Use a btn class for tags such as <a>
+#{$all-buttons},
+.btn {
+  appearance: none;
   cursor: pointer;
   display: inline-block;
-  font-size: $third;
   -webkit-font-smoothing: antialiased;
+  line-height: 1;
   text-align: center;
   text-decoration: none;
-  vertical-align: middle;
+  transition: background-color $duration $timing;
   user-select: none;
+  vertical-align: middle;
   white-space: nowrap;
-  padding: 10px;
+  font-family: $heading-font;
+  letter-spacing: 0.03rem;
+  border: 0;
+  border-radius: $radius;
+  font-size: $third;
+  padding: 15px 20px;
 
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
-  
-  @media (hover: hover) {
-  &:hover {
-    background-color: $error-color;
-   }
-  }
- }
-}
-
-@mixin button-bg($bg) {
-  background: $bg;
-
-  @media (hover: hover) {
-    transition: all 0.3s ease;
-    &:hover {
-     background: $hover-color;
-    }
   }
 }
 
-//Add button types
-button,
-.but,
-.submit {
-  @extend %btn;
-  @include button-bg($button-background);
-  margin-bottom: 0; //to line-up button and input class="but" on the test page
+//set the color and hover-color - see mixins
+#{$all-buttons},
+.btn {
+  @include button;
 }

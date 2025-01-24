@@ -1,30 +1,27 @@
 // =======================
-// Test
+// Base
 // =======================
-@use "sass:math";
 
-@import "bourbon";
-@import "../../css/base/variables";
-@import "../../css/base/mixins";
+@use "../../css/root/" as *;
 
-@import "test";
-@import "about";
-@import "scss";
-@import "back-top";
-@import "firebase";
-
+@use "test";
+@use "about";
+@use "scss";
+@use "grids";
+@use "back-top";
+@use "firebase";
 
 //layout.kit
 .sidebar {
-text-align: center;
-  
+  text-align: center;
+
   ul li {
     display: inline;
 
     &:after {
       content: "|";
       margin-right: 2px;
-       margin-left: 5px;
+      margin-left: 5px;
     }
 
     &:last-child {
@@ -37,16 +34,16 @@ text-align: center;
 
 @include media(900) {
   .sidebar {
-text-align: left;
-  
-  ul li {
-    display: block;
+    text-align: left;
 
-    &:after {
-      content: "";
-      margin-right: 0;
-       margin-left: 0;
+    ul li {
+      display: block;
+
+      &:after {
+        content: "";
+        margin-right: 0;
+        margin-left: 0;
+      }
     }
   }
-}
 }

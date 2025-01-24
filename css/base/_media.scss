@@ -1,18 +1,16 @@
-// =============================
-// Images - base level - phone
-// =============================
+// =============
+// Images
+// =============
+
+@use "../root/" as *;
 
 figure {
   text-align: center;
 }
 
-figure img {
-  margin: 0 !important;
-}
-
 figcaption {
   font-size: $secondary;
-  font-family: $alt-font;
+  font-family: $heading-font;
   line-height: 1.4;
   color: $dark-gray;
 }
@@ -35,8 +33,8 @@ figcaption {
 .alignleft,
 .alignright,
 .aligncenter {
-  clear: both;
-  @include center-block;
+  @include center;
+  display: block;
   margin-bottom: $spacer;
 }
 
@@ -53,10 +51,12 @@ figcaption {
   figure.alignright,
   img.alignright {
     margin-left: $spacer;
+    margin-top: 10px;
   }
 
   figure.alignleft,
   img.alignleft {
     margin-right: $spacer;
+    margin-top: 10px;
   }
 }

@@ -1,20 +1,21 @@
 // =======================
 // Dropdowns
 // =======================
-
+@use "sass:math";
+@use "../../css/root/" as *;
 .dropdown-area {
   max-width: 600px;
   @include margin($spacer auto);
   padding: math.div($spacer, 2);
 }
 
-.dropdown .trigger{
+.dropdown .trigger {
   border-bottom: 1px solid #ddd;
   padding: 10px;
   position: relative;
   cursor: pointer;
 }
-.dropdown .trigger::after{
+.dropdown .trigger::after {
   content: ">";
   display: inline-block;
   position: absolute;
@@ -23,10 +24,10 @@
   font-weight: bold;
   transition: transform 0.3s;
 }
-.dropdown .trigger.active::after{
+.dropdown .trigger.active::after {
   transform: rotate(-90deg) scale(0.5, 1);
 }
-.dropdown .content{
+.dropdown .content {
   display: none;
 
   p {
@@ -35,6 +36,6 @@
     margin-bottom: 0;
   }
 }
-.dropdown .content.active{
+.dropdown .content.active {
   display: block;
 }

@@ -39,9 +39,6 @@
     <meta name="twitter:description" content="javascript elements to enhance user interaction and experience" />
     <meta name="twitter:url" content="https://phone1st.org/test/extras.html" />
     <meta name="twitter:image:src" content="https://phone1st.org/images/phone1st-logo.webp" />
-    
-     <!-- google url verification - remove or update to your site -->
-      <meta name="google-site-verification" content="TvuzHUBIxICVdbTVw1poUSZv8eYF7RmjWccv_0kBoFc" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/extras.css" />
@@ -50,18 +47,17 @@
   <body>
     <div class="active-header">
       <header class="header">
-        <h1>Extras</h1>
-    
+        <h1>
+          Extras
+        </h1>
         <div id="hamburger">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </header>
-    
       <div id="menu">
         <li><a>Menu 1</a></li>
-    
         <li>
           <a class="drop">Menu 2 dropdown <span>&#8227;</span></a>
           <ul class="drop_menu">
@@ -70,7 +66,6 @@
             <a>Sub menu 3</a>
           </ul>
         </li>
-    
         <li>
           <a class="drop">Menu 3 dropdown <span>&#8227;</span></a>
           <ul class="drop_menu">
@@ -79,9 +74,7 @@
             <a>Sub menu 3</a>
           </ul>
         </li>
-    
         <li><a>Menu 4</a></li>
-    
         <li>
           <a class="drop">Menu 5 dropdown <span>&#8227;</span></a>
           <ul class="drop_menu">
@@ -90,7 +83,6 @@
             <a>Sub menu 3</a>
           </ul>
         </li>
-    
         <li><a>Menu 6</a></li>
       </div>
     </div>
@@ -219,7 +211,7 @@
         <hr />
         <h2 class="links-title" id="snackbar">Snackbar</h2>
         <div class="snackbar-area">
-          <button class="snackbar-trigger">Snackbar Button</button>
+          <button id="snack">Snackbar Button</button>
           <p>Snackbar displays for 4 seconds</p>
         </div>
         
@@ -228,37 +220,38 @@
         <form class="signup-form">
           <h2>Signup with feedback</h2>
           <input type="text" id="username" placeholder="username" />
-          <input class="but" type="submit" value="submit" />
+          <input type="submit" value="submit" />
           <div class="feedback-form"></div>
         </form>
         
         <hr />
         <h2 class="links-title" id="modal">Modal</h2>
         <div class="popup-content-area">
-        <button class="submit-button">Click for Modal</button>
+          <button class="modal">Click for Modal</button>
         
-        <div class="popup-wrapper">
-          <div class="popup">
-            <div class="popup-close">x</div>
+          <div class="popup-wrapper">
+            <div class="popup">
+              <div class="popup-close">x</div>
               <div class="popup-content">
                 <h2>MODAL HEADING</h2>
                 <p>Modal body</p>
                 <a href="#">Go Somewhere</a>
+              </div>
             </div>
           </div>
         </div>
-        </div>
+        
         <hr />
         <p class="third center">
-          <a href="https://phone1st.org/">Home</a> | <a href="about.html">About</a> |
-          <a href="test.html">Test</a> | <a href="scss.html">Scss</a> |
-          <a href="layout.html">Layout</a> | <a href="flexbox.html">Flexbox</a>
+          <a href="/">Home</a> | <a href="/test/about.html">About</a> |
+          <a href="/test/test.html">Test</a> | <a href="/test/scss.html">Scss</a> |
+          <a href="/test/layout.html">Layout</a> | <a href="/test/flexbox.html">Flexbox</a>
         </p>
       </section>
 
     <footer class="footer">
     	<button id="topBtn" title="Back to top">Top</button>
-    		<p class="third">&copy;2024 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a> . <a href="contact.html">Contact</a></p>
+    		<p class="third">&copy;2024 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a> . <a href="/test/contact.html">Contact</a></p>
     	</footer>
     </div><!-- wrapper   -->
     

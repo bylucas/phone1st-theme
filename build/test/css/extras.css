@@ -41,7 +41,7 @@
   height: 2px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color: #3E3A37;
+  background-color: #3e3a37;
   display: block;
   transition: 0.33s;
 }
@@ -73,7 +73,7 @@
 #menu {
   width: 300px;
   margin: 70px auto;
-  border: 1px solid #494ED7;
+  border: 1px solid #494ed7;
   padding: 10px;
 }
 #menu li {
@@ -82,7 +82,7 @@
 }
 #menu a {
   cursor: pointer;
-  color: #494ED7;
+  color: #494ed7;
   font-size: 1.1rem;
   position: relative;
 }
@@ -207,16 +207,17 @@
 .tabs .content {
   background: #fbfbfb;
   padding: 10px 20px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-top-right-radius: 6px;
+  border-radius: 6px;
   display: none;
 }
 
 .tabs .content.active {
   display: block;
   background: #c1acff;
+}
+
+.tabs #one.content.active {
+  border-top-left-radius: 0;
 }
 
 @media only screen and (min-width: 700px) {
@@ -318,40 +319,40 @@
   align-items: center;
   width: 100%;
   max-width: 400px;
-  border: 1px solid #999;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
   margin: 1rem auto;
 }
 .signup-form input {
   margin: 1rem 0;
-  padding: 10px 5px;
-  max-width: 70%;
 }
 
 .feedback-form {
   text-align: center;
   font-size: 0.9561752988rem;
   padding: 0 20px;
+  color: #bd912f;
+}
+
+.feedback-form.successtext {
+  color: #3f913a;
 }
 
 .signup-form .success {
-  border: 2px solid #3f913a;
+  outline: 2px solid #3f913a;
   color: #3f913a;
 }
 
 .signup-form .error {
-  border: 2px solid #ba221d;
+  outline: 2px solid #ba221d;
   color: #ba221d;
 }
 
 .popup-content-area {
   position: relative;
 }
-.popup-content-area .submit-button {
+.popup-content-area button {
   display: block;
   margin: 20px auto;
-  padding: 6px 10px;
 }
 .popup-content-area .popup-wrapper {
   background: rgba(0, 0, 0, 0.5);
@@ -361,6 +362,7 @@
   width: 100%;
   height: 100%;
   display: none;
+  z-index: 110;
 }
 .popup-content-area .popup-wrapper .popup {
   text-align: center;
