@@ -20,6 +20,10 @@ hr {
   display: block;
   font-size: 1.0666666667rem;
 }
+.links .bigger {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 
 .theme-variables p {
   padding: 1rem;
@@ -496,55 +500,6 @@ hr {
   #topBtn:active, #topBtn:focus, #topBtn:hover {
     opacity: 1;
   }
-}
-
-.firebase {
-  text-align: center;
-}
-.firebase p {
-  margin: 1rem auto 2.4rem auto;
-}
-.firebase hr {
-  margin-top: 0;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.contact {
-  margin-bottom: 2rem;
-}
-
-.subscribe {
-  border: none;
-  border-radius: 0 !important;
-  border-bottom: 1px solid #2365c0;
-  margin: 10px auto 30px auto;
-  padding: 10px;
-  background: none;
-  outline: none;
-  box-shadow: none;
-  max-width: 400px;
-}
-.subscribe:hover {
-  border-bottom: 1px solid #af0c22;
-}
-.subscribe:focus {
-  border-bottom: 1px solid #7aabda;
-  box-shadow: none;
-}
-
-.contact-submit {
-  width: 120px;
-  margin: 10px auto;
-}
-
-.feedback {
-  font-size: 1.0666666667rem;
-  letter-spacing: 2px;
-  font-weight: 500;
-  color: #51b924;
-  padding-bottom: 6px;
-  display: none;
 }
 
 .sidebar {

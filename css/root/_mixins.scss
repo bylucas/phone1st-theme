@@ -47,18 +47,6 @@
   }
 }
 
-// @include button;
-@mixin button($bg: $button-background, $col: $button-color) {
-  background-color: $bg;
-  color: $col;
-
-  @media (hover: hover) {
-    &:hover {
-      background-color: tint($bg, 20%);
-      color: shade($col, 10%);
-    }
-  }
-}
 
 //Phone1st uses Bourbon, a light mixin library, via Codekit.
 //Bourbon mixins

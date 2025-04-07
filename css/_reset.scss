@@ -34,16 +34,9 @@ html {
   text-size-adjust: none;
 }
 
-/* Remove list styles on ul, ol elements with a list role*/
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  line-height: 1;
 }
 
 blockquote, q {
@@ -60,7 +53,6 @@ table {
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
 button, input, label {
   line-height: 1.1;
 }
@@ -70,12 +62,6 @@ img,
 picture {
   max-width: 100%;
   height: auto;
-}
-
-/* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
- font: inherit;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */

@@ -52,7 +52,6 @@ To view the _test folder pages_
 - extras.kit - /build/test/extras.html
 - layout.kit - /build/test/layout.html
 - flexbox.kit - /build/test/flexbox.html
-- contact.kit - /build/test/contact.html
 
 
 - base.scss - /build/test/css/base.css
@@ -62,7 +61,6 @@ To view the _test folder pages_
 
 - all 'extras' js files go into the js folder /build/test/js/
 - all test images to /build/test/test-images/
-- Contact page uses /build/test/firestore/contact.js
 
 * * *
 
@@ -126,10 +124,10 @@ Check the [Dart Scss](https://sass-lang.com/documentation/breaking-changes/) web
 
 ### View Phone1st Theme
 
-[Phone1st Starter Theme](https://phone1st-theme.netlify.app/)
+[Phone1st Starter Theme](https://phone1st.org/)
 
 * * *
 
 ### Contact Info
 
-email: <mailto:how5360@gmail.com>
+email: <mailto:h@phone1st.org>

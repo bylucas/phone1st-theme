@@ -24,7 +24,11 @@ hr {
   a {
     display: block;
     font-size: $secondary;
-    //font-family: $alt-font;
+  }
+
+  .bigger {
+    font-size: $font-size;
+    font-weight: 600;
   }
 }
 

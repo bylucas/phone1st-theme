@@ -1,1 +1,0 @@
-import{initializeApp}from"firebase/app";import{getFirestore}from"firebase/firestore";const firebaseConfig={apiKey:"xxxxxx",authDomain:"xxxxx",projectId:"xxxxxx",storageBucket:"xxxxxx",messagingSenderId:"xxxxx",appId:"xxxxxx",measurementId:"xxxxx"};initializeApp(firebaseConfig);const db=getFirestore();export{db};

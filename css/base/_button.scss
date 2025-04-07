@@ -31,8 +31,16 @@
   }
 }
 
-//set the color and hover-color - see mixins
+//set the color and hover-color
 #{$all-buttons},
 .btn {
-  @include button;
+  background-color: $button-background;
+  color: $button-color;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: tint($button-background, 20%);
+      color: shade($button-color, 10%);
+    }
+  }
 }

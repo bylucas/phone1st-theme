@@ -129,12 +129,6 @@ li li {
   font-size: math.div($font-size, 1.09);
 }
 
-//inline list
-ul.inline li {
-  display: inline;
-  margin-right: math.div($spacer, 2);
-}
-
 dt {
   margin-top: math.div($spacer, 4);
 }
