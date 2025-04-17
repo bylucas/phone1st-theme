@@ -455,13 +455,12 @@ table thead th {
   vertical-align: bottom;
 }
 
-@media only screen and (min-width: 900px) {
-  tbody tr td,
-  tbody tr th {
-    transition: background-color ease 150ms;
-  }
+tbody tr td,
+tbody tr th {
+  transition: background-color ease 150ms;
 }
-@media only screen and (min-width: 900px) and (hover: hover) {
+
+@media (hover: hover) {
   tbody tr:hover td,
   tbody tr:hover th {
     background-color: rgb(243.1, 243.1, 243.1);
@@ -659,6 +658,73 @@ a {
     font-size: 2rem;
   }
 }
+body.inverted {
+  background-color: #1c0301;
+  color: #fff;
+}
+
+.inverted h1, .inverted h2, .inverted h3, .inverted h4, .inverted h5, .inverted h6 {
+  color: #fff;
+}
+.inverted hr {
+  border-bottom: 1px solid #fff;
+}
+.inverted mark, .inverted ins {
+  color: #1c0301;
+}
+.inverted [type=color], .inverted [type=date], .inverted [type=datetime], .inverted [type=datetime-local], .inverted [type=email], .inverted [type=month], .inverted [type=number], .inverted [type=password], .inverted [type=search], .inverted [type=tel], .inverted [type=text], .inverted [type=time], .inverted [type=url], .inverted [type=week], .inverted input:not([type]), .inverted textarea,
+.inverted textarea {
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 2px rgba(159, 159, 159, 0.26);
+  background-color: rgba(47.813, 47.813, 47.813, 0.3);
+  color: #ddd;
+}
+.inverted [type=color]::-moz-placeholder, .inverted [type=date]::-moz-placeholder, .inverted [type=datetime]::-moz-placeholder, .inverted [type=datetime-local]::-moz-placeholder, .inverted [type=email]::-moz-placeholder, .inverted [type=month]::-moz-placeholder, .inverted [type=number]::-moz-placeholder, .inverted [type=password]::-moz-placeholder, .inverted [type=search]::-moz-placeholder, .inverted [type=tel]::-moz-placeholder, .inverted [type=text]::-moz-placeholder, .inverted [type=time]::-moz-placeholder, .inverted [type=url]::-moz-placeholder, .inverted [type=week]::-moz-placeholder, .inverted input:not([type])::-moz-placeholder, .inverted textarea::-moz-placeholder, .inverted textarea::-moz-placeholder {
+  color: #999;
+}
+.inverted [type=color]::placeholder, .inverted [type=date]::placeholder, .inverted [type=datetime]::placeholder, .inverted [type=datetime-local]::placeholder, .inverted [type=email]::placeholder, .inverted [type=month]::placeholder, .inverted [type=number]::placeholder, .inverted [type=password]::placeholder, .inverted [type=search]::placeholder, .inverted [type=tel]::placeholder, .inverted [type=text]::placeholder, .inverted [type=time]::placeholder, .inverted [type=url]::placeholder, .inverted [type=week]::placeholder, .inverted input:not([type])::placeholder, .inverted textarea::placeholder,
+.inverted textarea::placeholder {
+  color: #999;
+}
+.inverted [type=file],
+.inverted select {
+  background: transparent;
+  color: #ddd;
+}
+.inverted table th,
+.inverted table td {
+  border-top: 1px solid #ddd;
+  color: #ddd;
+}
+@media (hover: hover) {
+  .inverted table tbody tr:hover td,
+  .inverted table tbody tr:hover th {
+    background-color: #464747;
+  }
+}
+.inverted .table-bordered {
+  border: 1px solid #ddd;
+}
+.inverted .table-bordered th,
+.inverted .table-bordered td {
+  border-left: 1px solid #ddd;
+}
+.inverted .table-striped tbody tr:nth-child(odd) td,
+.inverted .table-striped tbody tr:nth-child(odd) th {
+  background-color: #464747;
+}
+.inverted figcaption {
+  color: #ddd;
+}
+.inverted .img-framed {
+  background-color: #ddd;
+  border: 1px solid #999;
+  box-shadow: 2px 2px 2px #999;
+}
+.inverted .pagination {
+  color: #464747;
+}
+
 @media print {
   *,
   *:before,

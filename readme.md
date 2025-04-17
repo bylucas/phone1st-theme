@@ -93,8 +93,6 @@ Meta variables:
 	<!-- $title Page Title --> - //Basic page title for use with navigation etc. eg _Home, About, etc
 	
 	<!-- $SEO-title A Longer Title--> - //A more descriptive title - 60ish characters
-	
-	//Note: Your sitename is added after the $SEO-title
 
 	<!-- $description Page Description --> - //120ish characters
 

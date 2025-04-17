@@ -38,3 +38,5 @@ class Backtotop {
 
 const backtotop = new Backtotop();
 backtotop.init();
+
+//if using the scroll script - see scroll.js

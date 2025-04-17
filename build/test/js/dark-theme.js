@@ -1,0 +1,1 @@
+const changeTheme=document.getElementById("toggle"),Body=document.querySelector("body");changeTheme.addEventListener("click",(()=>{Body.classList.toggle("inverted")}));

@@ -130,6 +130,68 @@ hr {
     align-items: flex-start;
   }
 }
+.dark-button {
+  text-align: center;
+}
+.dark-button p {
+  margin-bottom: 10px;
+}
+.dark-button label {
+  margin-bottom: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  height: 24px;
+  width: 46px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 22px;
+  width: 22px;
+  border-radius: 22px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+input[type=checkbox]:checked + .switch::after {
+  transform: translateX(22px);
+}
+
+input[type=checkbox]:checked + .switch {
+  background-color: #2365c0;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.inverted .white-color p {
+  color: #1c0301;
+}
+.inverted .light-gray p {
+  color: #1c0301;
+}
+.inverted .background p {
+  color: #1c0301;
+}
+.inverted .light-background p {
+  color: #1c0301;
+}
+.inverted #topBtn {
+  background: #fff;
+  color: #1c0301;
+}
+
 .about {
   padding-top: 2rem;
 }

@@ -40,7 +40,6 @@ table {
 }
 
 //Table hovers
-@include media(900) {
   tbody tr td,
   tbody tr th {
     transition: background-color $timing $duration;
@@ -52,7 +51,6 @@ table {
       background-color: $light-background;
     }
   }
-}
 
 // CONDENSED ============================
 
