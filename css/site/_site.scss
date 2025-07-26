@@ -4,50 +4,45 @@
 
 @use "../root/" as *;
 
-html {
-  -webkit-overflow-scrolling: touch;
-  -webkit-tap-highlight-color: $light-gray;
-}
-
 body {
-  color: $font-color;
-  font-family: $font;
-  font-feature-settings: "kern", "liga", "pnum";
-  font-size: $font-size;
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
+ color: $font-color;
+ font-family: $font;
+ font-feature-settings: "kern", "liga", "pnum";
+ font-size: $font-size;
+ line-height: 1.6;
+ text-rendering: optimizeLegibility;
 }
 
 a {
-  color: $link-color;
-  text-decoration: none;
-  text-decoration-skip-ink: auto;
-  transition: color $duration $timing;
+ color: $link-color;
+ text-decoration: none;
+ text-decoration-skip-ink: auto;
+ transition: color $duration $timing;
 
-  @media (hover: hover) and (pointer: fine) {
-    &:hover {
-      color: $hover-color;
-    }
+ @media (hover: hover) and (pointer: fine) {
+  &:hover {
+   color: $hover-color;
   }
+ }
 }
 
 .wrapper {
-  padding: $spacer 5%;
+ padding: $spacer 5%;
 }
 
 @include media(700) {
-  //Balance text wrapping on headings
-  h1,
-  h2,
-  h3,
-  h4 {
-    text-wrap: balance;
-  }
+ //Balance text wrapping on headings
+ h1,
+ h2,
+ h3,
+ h4 {
+  text-wrap: balance;
+ }
 }
 
 @include media(900) {
-  .wrapper {
-    max-width: 900px;
-    @include center;
-  }
+ .wrapper {
+  max-width: 900px;
+  @include center;
+ }
 }

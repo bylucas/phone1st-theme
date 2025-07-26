@@ -1,0 +1,140 @@
+// =======================
+// Scss Mixins
+// =======================
+@use "sass:math";
+@use "../../css/root/" as *;
+
+@use "back-top";
+@use "main";
+.scss-extras {
+ text-align: center;
+ overflow: hidden;
+
+ .background {
+  @include background($success-color);
+  @include size(300px, 100px);
+  @include center;
+ }
+
+ .center-element {
+  @include center;
+  @include background(#e03d44);
+  @include size(80%, 60px);
+ }
+
+ .hidden-box {
+  @include size(300px, 70px);
+  @include center;
+  padding: 7px;
+  font-size: 0.9rem;
+  color: orange;
+  border: 1px solid blue;
+
+  &:hover span {
+   @include hidden;
+  }
+ }
+
+ .media-points p {
+  color: red;
+ }
+
+ @include media(700) {
+  .media-points p {
+   color: blue;
+  }
+ }
+
+ @include media(900) {
+  .media-points p {
+   color: rebeccapurple;
+  }
+ }
+
+ .show-border {
+  @include size(300px, 80px);
+  @include center;
+  border-style: solid;
+  border-width: 3px;
+
+  @include border-top-radius(15px);
+  @include border-bottom-radius(10px);
+ }
+
+ .show-border-two {
+  @include size(300px, 80px);
+  @include center;
+  border-style: dashed;
+  border-width: 2px;
+
+  @include border-left-radius(10px);
+  @include border-right-radius(5px);
+ }
+
+ .hide-text {
+  @include size(220px, 120px);
+  @include center;
+  padding: 7px;
+  border: 1px solid blue;
+
+  &:hover {
+   @include hide-text;
+   background: url(../test-images/taj-mahal.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+ }
+
+ .hide-visually {
+  @include size(220px, 120px);
+  @include center;
+  font-size: 0.9rem;
+  padding: 7px;
+  border: 1px solid blue;
+
+  span {
+   font-size: 1.3rem;
+   color: #a60b55;
+   @include hide-visually;
+  }
+  &:hover span {
+   @include hide-visually("unhide");
+  }
+ }
+
+ .ellipsis {
+  @include size(300px, 80px);
+  @include center;
+  font-size: 1.1rem;
+  padding: 10px;
+  border: 1px solid blue;
+  &:hover span {
+   @include ellipsis;
+  }
+ }
+
+ .size {
+  @include size(300px, 1.8em);
+  @include center;
+  border: 1px solid blue;
+ }
+
+ .triangle {
+  @include size(300px, 50px);
+  @include center;
+  background-color: #b25c9c;
+  position: relative;
+
+  &::before {
+   @include triangle(up, 2rem, 1rem, #b25c9c);
+   position: absolute;
+   content: "";
+   top: -1rem;
+   left: 6rem;
+  }
+ }
+
+ .inline {
+  display: inline !important;
+ }
+}

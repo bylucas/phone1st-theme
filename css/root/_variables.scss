@@ -1,8 +1,7 @@
 // =======================
 // Variables
 // =======================
-//Bourbon is no longer being maintained. See https://www.bourbon.io/.
-@use "bourbon" as *;
+@use "base-color" as *;
 
 // TYPOGRAPHY
 $font: "Raleway", sans-serif;
@@ -17,24 +16,24 @@ $secondary: calc($font-size / 1.125);
 $third: calc($font-size / 1.255);
 
 // SIZE
-$radius: 0.1875rem;
+$radius: 0.55rem;
 $spacer: 2rem;
+$medium-spacer: calc($spacer / 2);
+$small-spacer: calc($spacer / 4);
 
 // COLOR
-$black: #1c0301;
-$white: #fff;
-$dark-gray: #464747;
-$medium-gray: #999;
-$light-gray: #ddd;
+$dark-gray: $black-35;
+$medium-gray: $black-60;
+$light-gray: $black-95;
 
 // Font Colors
-$font-color: $dark-gray;
-$link-color: #2365c0; //blue
-$hover-color: #af0c22;
+$font-color: $black-20;
+$link-color: $first-30;
+$hover-color: $second-color;
 
 // Background Colors
-$background: $light-gray;
-$light-background: tint($background, 65%);
+$background: $black-80;
+$light-background: color-mix(in srgb, $background, white 75%);
 
 // Informaton colors
 $error-color: #ba221d;
@@ -43,7 +42,9 @@ $success-color: #3f913a;
 
 //Button
 $button-color: $white;
-$button-background: $link-color;
+$button-background: $first-color;
+$button-color-hover: $black-80;
+$button-background-hover: $hover-color;
 
 // Border
 $border: 1px solid $dark-gray;

@@ -1,0 +1,32 @@
+@use "../root/variables" as *;
+//classes can be like inline styles and become a problem with responsive design
+
+//common classes - see _media.scss and _table.scss for more classes used with Phone1st
+
+//typography
+//font-size
+.normal {
+  font-size: $font-size;
+}
+
+.lead {
+  font-size: $lead;
+}
+
+.secondary {
+  font-size: $secondary;
+}
+
+.third {
+  font-size: $third;
+}
+
+//align
+.center {
+  text-align: center;
+}
+
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -10,9 +10,7 @@ figure {
 
 figcaption {
   font-size: $secondary;
-  font-family: $heading-font;
   line-height: 1.4;
-  color: $dark-gray;
 }
 
 //framed image
@@ -40,22 +38,16 @@ figcaption {
 
 // We start to align the images and captions
 @include media(900) {
-  .alignright {
-    float: right;
-  }
-
-  .alignleft {
-    float: left;
-  }
-
   figure.alignright,
   img.alignright {
+    float: right;
     margin-left: $spacer;
     margin-top: 10px;
   }
 
   figure.alignleft,
   img.alignleft {
+    float: left;
     margin-right: $spacer;
     margin-top: 10px;
   }

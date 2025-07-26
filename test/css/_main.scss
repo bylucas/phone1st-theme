@@ -1,0 +1,115 @@
+// =======================
+// Test
+// =======================
+@use "sass:math";
+@use "../../css/root/" as *;
+
+h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: $spacer;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: math.div($spacer, 2);
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    text-align: center;
+    color: $medium-gray;
+  }
+
+  pre {
+    text-align: left;
+    padding: math.div($spacer, 2) $spacer;
+    @include background($black-90);
+    border-radius: $radius;
+    color: $first-color;
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+  }
+
+  code {
+    font-size: $third;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    font-size: $secondary;
+  }
+
+
+.intro-para {
+  text-align: center;
+  margin-top: $spacer;
+}
+
+hr {
+  margin: $spacer math.div($spacer, 2);
+}
+
+.links-title {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.links {
+  margin: math.div($spacer, 2) 0 $spacer 0;
+  text-align: center;
+
+  a {
+    display: block;
+    font-size: $secondary;
+  }
+}
+
+h6 {
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.footer {
+  text-align: center;
+  p {
+    margin-bottom: $spacer;
+  }
+}
+
+@include media(700) {
+   h2 {
+      font-size: 1.7rem;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+    }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+}
+
+@include media(900) {
+    h3 {
+      font-size: 1.7rem;
+    }
+
+    h4 {
+      font-size: 1.7rem;
+    }
+}

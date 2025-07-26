@@ -1,19 +1,9 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-7WCWMB5E47');
-    </script>
 
     
     <meta charset="utf-8">
@@ -21,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Phone1st starter theme information and usage</title>
     <meta name="HandheldFriendly" content="True" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="description" content="About Phone1st - A light and basic html starter theme to get you off to a quick start with your web developments.">
     <meta name="author" content="h@phone1st.org">
     <meta name="robots" content="INDEX,FOLLOW">
@@ -44,22 +34,22 @@
     <meta name="twitter:url" content="https://phone1st.org/test/about.html" />
     <meta name="twitter:image:src" content="https://phone1st.org/images/phone1st-logo.webp" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
 
-  <body class="">
-    <div class="wrapper">
+  <body>
+    <div id="top" class="wrapper">
       <header class="header">
         <h1>
-          About Phone1st
+          About
         </h1>
       </header>
 
  <section class="main">
         
-        <figure>
-          <img src="../images/phone1st-logo.webp" alt="Phone1st logo" />
-        </figure>
+        
+<img src="../images/phone1st-logo.webp" alt="Phone1st logo" class="aligncenter" />
+        
 <div class="about">
   <h2>A light, clean, starter theme that starts... <strong>phone1st</strong></h2>
 
@@ -138,19 +128,13 @@
     <li>test.kit - /build/test/test.html</li>
     <li>about.kit - /build/test/about.html</li>
     <li>scss.kit - /build/test/scss.html</li>
-    <li>extras.kit - /build/test/extras.html</li>
-    <li>layout.kit - /build/test/layout.html</li>
-    <li>flexbox.kit - /build/test/flexbox.html</li>
   </ul>
 
   <ul>
     <li>base.scss - /build/test/css/base.css</li>
-    <li>extras.scss - /build/test/css/extras.css</li>
-    <li>flexbox.scss - /build/test/css/flexbox.css</li>
   </ul>
 
   <ul>
-    <li>all 'extras' js files go into the js folder /build/test/js/</li>
     <li>all test images to /build/test/test-images/</li>
   </ul>
 
@@ -166,16 +150,6 @@
     <p>
       <strong>Test Page</strong> - Use the test page to set the basic elements.
     </p>
-
-    <p>
-      <strong>Extras Page</strong> - A few javascript extras to start you off.
-    </p>
-
-    <p><strong>Scss Page</strong> - User and Bourbon mixins used with the <em>Phone1st</em> theme.</p>
-
-    <p><strong>Layout Page</strong> - Basic Grid Css page layout.</p>
-
-    <p><strong>Flexbox Page</strong> - Basic Flexbox introduction.</p>
   </div>
   <hr />
 
@@ -218,34 +192,20 @@
 
   <p>Check the <a href="https://sass-lang.com/documentation/breaking-changes/"><em>Dart Scss</em></a> website for updates and deprecations</p>
 
-  <h4>Bourbon</h4>
-  <p><em>Bourbon</em> is no longer being maintained <a href="https://www.bourbon.io/docs/latest/">See here</a>. <em>Bourbon</em> can be copied to your site but <em>Bourbon</em> may not be compatable with the next <em>Dart Scss</em> major version</p>
-
   <h3>Contact Info:</h3>
 
   <p class="secondary">email: <a href="mailto:h@phone1st.org">h@phone1st.org</a></p>
 </div>
 <hr />
-<p class="third center">
-  <a href="/">Home</a> | <a href="/test/test.html">Test</a> |
-  <a href="/test/scss.html">Scss</a> | <a href="/test/extras.html">Extras</a> |
-  <a href="/test/layout.html">Layout</a> | <a href="/test/flexbox.html">Flexbox</a>
-</p>
+<p class="third footer-links center"><a href="../index.html">Home</a> | <a href="test.html">Test Page</a> | <a href="scss.html">Scss Mixins</a></p>
 </section>
 <footer class="footer">
-	<button id="topBtn" title="Back to top">Top</button>
+	<a id="topBtn" class="btn" href="#top">Top</a>
 		<p class="third">&copy;2025 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a></p>
 	</footer>
 </div><!-- wrapper   -->
 
-
-  <script src="js/back-top.js"></script>
-
-<script>
-var _gaq=[['_setAccount','UA-139947881-1'],['_trackPageview']];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-g.src='//www.google-analytics.com/ga.js';
-s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
+  <script src="js/footer-links.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
 </html>

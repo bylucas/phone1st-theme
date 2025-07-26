@@ -1,4 +1,5 @@
-User-Agent: *
-Disallow:
+# https://www.robotstxt.org/
 
-Sitemap: https://www.phone1st.org/sitemap.xml
+# Allow crawling of all content
+User-agent: *
+Disallow:

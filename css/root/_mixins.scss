@@ -1,28 +1,34 @@
-// =============================
-// Mixins with Bourbon examples
-// =============================
-@use "bourbon" as *;
+// ====================
+// Mixins
+// ====================
 @use "variables" as *;
 
 // @include background(value);
-// example @include background(lighten($red, 20%));
+// example @include background(red);
 @mixin background($background-color: $background) {
   background: $background-color;
-  box-shadow: inset 0 0 4px shade($background-color, 7%);
 }
 
 // Center Elements
 // @include center;
+// this may need display: block to work
 @mixin center {
   margin-left: auto;
   margin-right: auto;
 }
 
-// Hide from both screenreaders and browsers: h5bp.com/u
+// Hide from both screenreaders and browsers
 // @include hidden;
 @mixin hidden {
   display: none !important;
   visibility: hidden;
+}
+
+//@include hide-text;
+@mixin hide-text {
+  overflow: hidden;
+  text-indent: 104%;
+  white-space: nowrap;
 }
 
 // Simple breakpoints - base styles are phone first
@@ -47,139 +53,121 @@
   }
 }
 
+//@include border-top-radius(5px);
+@mixin border-top-radius($rad) {
+  border-top-left-radius: $rad;
+  border-top-right-radius: $rad;
+}
 
-//Phone1st uses Bourbon, a light mixin library, via Codekit.
-//Bourbon mixins
-//Bourbon is no longer being maintained https://www.bourbon.io/
+//@include border-right-radius(5px);
+@mixin border-right-radius($rad) {
+  border-bottom-right-radius: $rad;
+  border-top-right-radius: $rad;
+}
 
-//Bourbon Mixins for reference
-//Border
-//@include border-color(#a60b55 #76cd9c null #e8ae1a);
-//@include border-top-radius(4px);
-//@include border-right-radius(3px);
-//@include border-bottom-radius(2px);
-//@include border-left-radius(1px);
-//@include border-style(dashed null solid);
-//@include border-width(1em null 20px);
+//@include border-bottom-radius(5px);
+@mixin border-bottom-radius($rad) {
+  border-bottom-left-radius: $rad;
+  border-bottom-right-radius: $rad;
+}
 
-//buttons
-//#{$all-buttons} {
-//background-color: #f00;
-//}
+//@include border-left-radius(5px);
+@mixin border-left-radius($rad) {
+  border-bottom-left-radius: $rad;
+  border-top-left-radius: $rad;
+}
 
-//#{$all-buttons-active} {
-// background-color: #00f;
-//}
+//@include size(100px);
+//@include size(100px, 50px); requires comma
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
 
-//#{$all-buttons-focus} {
-//background-color: #0f0;
-//}
-
-//#{$all-buttons-hover} {
-// background-color: #0f0;
-//}
-
-//clearfix
-//@include clearfix;
-
-//constrast switch
-//color: contrast-switch(#bae6e6);
-
-//Ellipses
-//@include ellipsis;
-
-//@fontface
-//@include font-face(
-//  "source-sans-pro",
-//  "fonts/source-sans-pro-regular",
-//  ("woff2", "woff")
-//) {
-//  font-style: normal;
-//  font-weight: 400;
-//}
-
-//font-stacks
-//font-family: $font-stack-helvetica;
-//font-family: $font-stack-lucida-grande;
-//font-family: $font-stack-verdana;
-//font-family: $font-stack-system;
-//font-family: $font-stack-garamond;
-//font-family: $font-stack-georgia;
-//font-family: $font-stack-hoefler-text;
-//font-family: $font-stack-consolas;
-//font-family: $font-stack-courier-new;
-//font-family: $font-stack-monaco;
-
-//hide text
-//@include hide-text;
 //@include hide-visually;
-//@include hide-visually("unhide");
+//@include hide-visually("unhide"); requires quotes
+@mixin hide-visually($toggle: "hide") {
+  @if not index("hide" "unhide", $toggle) {
+    @error "`#{$toggle}` is not a valid value for the `$toggle` argument in " +
+      "the `hide-visually` mixin. Must be either `hide` or `unhide`.";
+  } @else if $toggle == "hide" {
+    border: 0;
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  } @else if $toggle == "unhide" {
+    clip-path: none;
+    height: auto;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+  }
+}
 
-//margin
-//@include margin(null auto);
+//@include triangle("up", 2rem, 1rem, #b25c9c);
+@mixin triangle(
+  $direction,
+  $width,
+  $height,
+  $color
+) {
+  @if not index(
+    "up" "up-right" "right" "down-right" "down" "down-left" "left" "up-left",
+    $direction
+  ) {
+    @error "Direction must be `up`, `up-right`, `right`, `down-right`, " +
+      "`down`, `down-left`, `left` or `up-left`.";
+  } @else if not _is-color($color) {
+    @error "`#{$color}` is not a valid color for the `$color` argument in " +
+      "the `triangle` mixin.";
+  } @else {
+    border-style: solid;
+    height: 0;
+    width: 0;
 
-//module scale
-//$bourbon: (
-//"modular-scale-ratio": 1.2,
-//);
-//.element {
-//font-size: modular-scale(3);
-//}
+    @if $direction == "up" {
+      border-color: transparent transparent $color;
+      border-width: 0 ($width / 2) $height;
+    } @else if $direction == "up-right" {
+      border-color: transparent $color transparent transparent;
+      border-width: 0 $width $width 0;
+    } @else if $direction == "right" {
+      border-color: transparent transparent transparent $color;
+      border-width: ($height / 2) 0 ($height / 2) $width;
+    } @else if $direction == "down-right" {
+      border-color: transparent transparent $color;
+      border-width: 0 0 $width $width;
+    } @else if $direction == "down" {
+      border-color: $color transparent transparent;
+      border-width: $height ($width / 2) 0;
+    } @else if $direction == "down-left" {
+      border-color: transparent transparent transparent $color;
+      border-width: $width 0 0 $width;
+    } @else if $direction == "left" {
+      border-color: transparent $color transparent transparent;
+      border-width: ($height / 2) $width ($height / 2) 0;
+    } @else if $direction == "up-left" {
+      border-color: $color transparent transparent;
+      border-width: $width $width 0 0;
+    }
+  }
+}
 
-//overflow wrap (break word)
-//@include overflow-wrap;
+//@include ellipsis;
+@mixin ellipsis(
+  $width: 100%,
+  $display: inline-block
+) {
+  display: $display;
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
 
-//padding
-// @include padding(null 1rem);
-
-//position
-//@include position(relative, 0 null null 10em);
-
-//prefixer
-//.element {
-//@include prefixer(appearance, none, ("webkit", "moz"));
-//}
-
-//shade
-//background-color: shade(#ffbb52, 60%);
-
-//size
-//@include size(2em);
-
-//strip unit
-//$dimension: strip-unit(10em);
-
-//text inputs
-//#{$all-text-inputs} {
-//  border: 1px solid #ccc;
-//}
-
-//#{$all-text-inputs-active} {
-// border: 1px solid #aaa;
-//}
-
-//#{$all-text-inputs-focus} {
-//  border: 1px solid #1565c0;
-//}
-
-//#{$all-text-inputs-hover} {
-// border: 1px solid #aaa;
-//}
-
-//#{$all-text-inputs-invalid} {
-// border: 1px solid #00f;
-//}
-
-//tint
-//background-color: tint(#6ecaa6, 40%);
-
-//triangle
-//.element {
-//  &::before {
-//   @include triangle("up", 2rem, 1rem, #b25c9c);
-//   content: "";
-// }
-//}
-
-//value prefixer
-//@include value-prefixer(cursor, grab, ("webkit", "moz"));

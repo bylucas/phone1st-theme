@@ -3,17 +3,6 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-7WCWMB5E47');
-    </script>
 
     
     <meta charset="utf-8">
@@ -21,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scss Mixins including user and Bourbon Mixins</title>
     <meta name="HandheldFriendly" content="True" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="description" content="Examples of Scss Mixins from the Bourbon Mixins Library and User Mixins embeded in the theme">
     <meta name="author" content="h@phone1st.org">
     <meta name="robots" content="INDEX,FOLLOW">
@@ -44,11 +33,11 @@
     <meta name="twitter:url" content="https://phone1st.org/test/scss.html" />
     <meta name="twitter:image:src" content="https://phone1st.org/images/phone1st-logo.webp" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/scss.css" />
   </head>
 
-  <body class="">
-    <div class="wrapper">
+  <body>
+    <div id="top" class="wrapper">
       <header class="header">
         <h1>
           Scss Mixins
@@ -58,57 +47,36 @@
 
 <section class="main">
         
-        <figure>
-          <img src="../images/phone1st-logo.webp" alt="Phone1st logo" />
-        </figure>
+        
+<img src="../images/phone1st-logo.webp" alt="Phone1st logo" class="aligncenter" />
+        
 
-<p class="intro-para">To see the full code for the user mixins see <code>css/base/mixins.scss</code><br />
-  To see the full code for the Bourbon mixins see
-  <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code>
+<p class="intro-para">To see the full code for the mixins see <code>css/root/mixins.scss</code>
 </p>
 <hr />
 <h2 class="links-title">-- Links --</h2>
 <div class="links">
   <div>
-    <a href="#user-mixins">User Mixins</a>
     <a href="#background">background</a>
     <a href="#center">Center Elements</a>
     <a href="#hide">hide from screenreaders</a>
     <a href="#breakpoints">media breakpoints</a>
-    <a class="bigger" href="#bourbon-mixins">Bourbon Mixins</a>
-    <a href="#buttons">buttons</a>
-    <a href="#clearfix">clearfix</a>
-    <a href="#contrast">contrast switch</a>
     <a href="#ellipsis">ellipsis</a>
-    <a href="#fontface">@fontface</a>
-    <a href="#stacks">font stacks</a>
-    <a href="#hide-text">hide text</a>
-    <a href="#visually">hide visually</a>
   </div>
   <div>
-    <a href="#margin">margin</a>
-    <a href="#modular">modular scale</a>
-    <a href="#wrap">overflow wrap</a>
-    <a href="#padding">padding</a>
-    <a href="#position">position</a>
-    <a href="#prefixer">prefixer</a>
-    <a href="#shade">shade</a>
+    <a href="#hide-text">hide text</a>
+    <a href="#visually">hide visually</a>
     <a href="#size">size</a>
-    <a href="#unit">strip unit</a>
-    <a href="#inputs">text inputs</a>
-    <a href="#tint">tint</a>
     <a href="#triangle">triangle</a>
-    <a href="#value">value prefixer</a>
   </div>
 </div>
 <hr />
 <div class="scss-extras">
-  <h2>-- User Mixins --</h2>
+  <h2>-- Mixins --</h2>
   <h3 id="background">background</h3>
   
   <pre><code>@mixin background($background-color: $background) {
     background: $background-color;
-    box-shadow: inset 0 0 4px darken($background-color, 7%);
   }
   
   .background {
@@ -188,60 +156,19 @@
     </p>
   </div>
   
-  <p>
-    To see the full code for the user mixins see
-    <code>css/base/mixins.scss</code>
-  </p>
   <hr />
-  <h2 id="bourbon-mixins">-- Bourbon Mixins --</h2>
-  <h3 id="border">border</h3>
+  <h3 id="border">border radius</h3>
   
-  <pre><code>@include border-color(#a60b55 #76cd9c null #e8ae1a);
-  @include border-top-radius(15px);
-  @include border-bottom-radius(10px);
-  @include border-style(dashed solid dotted);
-  @include border-width(.7em 3px 10px);</code></pre>
+  <pre><code>@include border-top-radius(15px);
+  @include border-bottom-radius(10px);</code></pre>
   
   <div class="show-border"></div>
   
-  <hr />
-  <h3 id="buttons">buttons</h3>
+  <pre><code>@include border-left-radius(10px);
+  @include border-right-radius(5px);</code></pre>
   
-  <pre><code>#{$all-buttons} {
-  background-color: #f00;
-  }
+  <div class="show-border-two"></div>
   
-  #{$all-buttons-active} {
-      background-color: #00f;
-  }
-  
-  #{$all-buttons-focus} {
-    background-color: #0f0;
-  }
-  
-  #{$all-buttons-hover} {
-    background-color: #0f0;
-  }//See css/base/_form.scss to see how the themes uses buttons</code></pre>
-  <hr />
-  
-  <h3 id="clearfix">clearfix</h3>
-  <pre><code>@include clearfix;</code></pre>
-  <hr />
-  
-  <h3 id="contrast">constrast switch</h3>
-  <pre><code>.contrast {
-    @include size(300px, 30px);
-    @include center;
-    $button-color: #2d72d9;
-    background-color: $button-color;
-    a {
-      color: contrast-switch($button-color, #222, #eee);//mixin
-    }
-  }</code></pre>
-  
-  <div class="contrast">
-    <a href="https://www.bourbon.io/docs/latest/">See the Bourbon docs</a>
-  </div>
   <hr />
   
   <h3 id="ellipsis">ellipsis</h3>
@@ -249,31 +176,6 @@
   <div class="ellipsis">
     <span>Hover over me to see the ellipsis in action</span>
   </div>
-  <hr />
-  
-  <h3 id="fontface">@fontface</h3>
-  <pre><code>@include font-face(
-    "source-sans-pro",
-    "fonts/source-sans-pro-regular",
-    ("woff2", "woff")
-    {
-    font-style: normal;
-    font-weight: 400;
-    }
-  //See css/base/_fonts.scss to see the themes use of this mixin</code></pre>
-  <hr />
-  
-  <h3 id="stacks">font-stacks</h3>
-  <pre><code>font-family: $font-stack-helvetica;
-  font-family: $font-stack-lucida-grande;
-  font-family: $font-stack-verdana;
-  font-family: $font-stack-system;
-  font-family: $font-stack-garamond;
-  font-family: $font-stack-georgia;
-  font-family: $font-stack-hoefler-text;
-  font-family: $font-stack-consolas;
-  font-family: $font-stack-courier-new;
-  font-family: $font-stack-monaco;</code></pre>
   <hr />
   
   <h3 id="hide-text">hide text</h3>
@@ -321,97 +223,9 @@
   </div>
   <hr />
   
-  <h3 id="margin">margin</h3>
-  <pre><code>@include margin(10px null null 20px);</code></pre>
-  <div class="margin"><p>MARGIN</p></div>
-  <hr />
-  
-  <h3 id="modular">module scale</h3>
-  <pre><code>$bourbon: (
-  "modular-scale-ratio": 1.2,
-  );
-  .element {
-  font-size: modular-scale(3);
-  }</code></pre>
-  
-  <div class="modular">Modular Scale</div>
-  <hr />
-  
-  <h3 id="wrap">overflow wrap (break word)</h3>
-  <pre><code>@include overflow-wrap;
-  //hover to see overflow-wrap</code></pre>
-  <div class="wrap">
-    Thisisaveryveryveryveryveryveryveryveryveryveryveryverylongword
-  </div>
-  <hr />
-  
-  <h3 id="padding">padding</h3>
-  <pre><code>@include padding(10px null null 20px);</code></pre>
-  <div class="padding"><p>PADDING</p></div>
-  <hr />
-  
-  <h3 id="position">position</h3>
-  <pre><code>@include position(absolute, 20px null null 20px);</code></pre>
-  <div class="position"><div></div></div>
-  <hr />
-  
-  <h3 id="prefixer">prefixer</h3>
-  <pre><code>.element {
-    @include prefixer(appearance, none, ("webkit", "moz"));
-  }
-  
-  //CSS Output
-  .element {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }</code></pre>
-  <hr />
-  
-  <h3 id="shade">shade</h3>
-  <pre><code>background-color: shade(#ffbb52, 30%);</code></pre>
-  
-  <div class="shade"></div>
-  <hr />
-  
   <h3 id="size">size</h3>
   <pre><code>@include size(300px, 1.8em);</code></pre>
   <div class="size"></div>
-  <hr />
-  
-  <h3 id="unit">strip unit</h3>
-  <pre><code>$dimension: strip-unit(10em);
-  
-  //Output
-  $dimension: 10;</code></pre>
-  <hr />
-  
-  <h3 id="inputs">text inputs</h3>
-  <pre><code>#{$all-text-inputs} {
-    border: 1px solid #ccc;
-  }
-  
-  #{$all-text-inputs-active} {
-    border: 1px solid #aaa;
-  }
-  
-  #{$all-text-inputs-focus} {
-    border: 1px solid #1565c0;
-  }
-  
-  #{$all-text-inputs-hover} {
-    border: 1px solid #aaa;
-  }
-  
-  #{$all-text-inputs-invalid} {
-    border: 1px solid #00f;
-  }</code></pre>
-  <hr />
-  
-  <h3 id="tint">tint</h3>
-  <pre><code>background-color: tint(#ffbb52, 30%);</code></pre>
-  
-  <div class="tint"></div>
   <hr />
   
   <h3 id="triangle">triangle</h3>
@@ -422,7 +236,7 @@
     position: relative;
     
     &::before {
-      @include triangle("up", 2rem, 1rem, #b25c9c);//mixin
+      @include triangle(up, 2rem, 1rem, #b25c9c);//mixin
       position: absolute;
       content: "";
       //position triangle on box
@@ -433,35 +247,17 @@
   <div class="triangle"></div>
   <hr />
   
-  <h3 id="value">value prefixer</h3>
-  <pre><code>@include value-prefixer(cursor, grab, ("webkit", "moz"));
   
-  //CSS Output
-  .element {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: grab;
-  }</code></pre>
-  <hr />
-  
-  <p>To see the full code for the Bourbon mixins see <code><a href="https://www.bourbon.io/docs/latest/">The Bourbon Docs</a></code>
-  </p>
 </div>
-<hr />
-<p class="third center">
-  <a href="/">Home</a> | <a href="/test/about.html">About</a> |
-  <a href="/test/test.html">Test</a> | <a href="/test/extras.html">Extras</a> |
-  <a href="/test/layout.html">Layout</a> | <a href="/test/flexbox.html">Flexbox</a>
-</p>
+<p class="third footer-links center"><a href="../index.html">Home</a> | <a href="about.html">About</a> | <a href="test.html">Test Page</a></p>
 </section>
+
 <footer class="footer">
-	<button id="topBtn" title="Back to top">Top</button>
+	<a id="topBtn" class="btn" href="#top">Top</a>
 		<p class="third">&copy;2025 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a></p>
 	</footer>
 </div><!-- wrapper   -->
 
-
-<script src="js/back-top.js"></script>
 <script src="js/scroll.js"></script>
 
 </body>

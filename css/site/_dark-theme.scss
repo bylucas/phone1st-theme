@@ -8,81 +8,101 @@
 
 //Dark theme styles to control basic 'phone1st' theme
 body.inverted {
-  background-color: $black;
-  color: $white;
+ background-color: $black;
+ color: $white;
 }
 
 .inverted {
-  h1, h2, h3, h4, h5, h6 {
-    color: $white;
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  color: $white;
+ }
+
+ hr {
+  border-bottom: 1px solid $white;
+ }
+
+ mark,
+ ins {
+  color: $black;
+ }
+
+ [type="color"],
+ [type="date"],
+ [type="datetime"],
+ [type="datetime-local"],
+ [type="email"],
+ [type="month"],
+ [type="number"],
+ [type="password"],
+ [type="search"],
+ [type="tel"],
+ [type="text"],
+ [type="time"],
+ [type="url"],
+ [type="week"],
+ input:not([type]),
+ textarea {
+  border: 1px solid $light-gray;
+  box-shadow: inset 0 1px 2px rgba(#9f9f9f, 0.26);
+  background-color: rgba(47.813, 47.813, 47.813, 0.3);
+  color: $light-gray;
+
+  &::placeholder {
+   color: $medium-gray;
   }
+ }
 
-  hr {
-    border-bottom: 1px solid $white;
-  }
-
-  mark, ins {
-    color: $black;
-  }
-
-#{$all-text-inputs},
-textarea {
-border: 1px solid $light-gray;
-box-shadow: inset 0 1px 2px rgba(#9f9f9f, 0.26);
-background-color: rgba(47.813, 47.813, 47.813, 0.3);
-color: $light-gray;
-
-&::placeholder {
-    color: $medium-gray;
-  }
-}
-
-[type="file"],
-select {
+ [type="file"],
+ select {
   background: transparent;
   color: $light-gray;
-}
-table {
+ }
+ table {
   th,
   td {
-    border-top: 1px solid $light-gray;
-    color: $light-gray;
+   border-top: 1px solid $light-gray;
+   color: $light-gray;
   }
 
-   @media (hover: hover) {
-    tbody tr:hover td,
-    tbody tr:hover th {
-      background-color: $dark-gray;
-    }
+  @media (hover: hover) {
+   tbody tr:hover td,
+   tbody tr:hover th {
+    background-color: $black-60;
+   }
   }
-}
+ }
 
-.table-bordered {
+ .table-bordered {
   border: 1px solid $light-gray;
 
   th,
   td {
-    border-left: 1px solid $light-gray;
+   border-left: 1px solid $light-gray;
   }
-}
+ }
 
-.table-striped {
+ .table-striped {
   tbody tr:nth-child(odd) td,
   tbody tr:nth-child(odd) th {
-    background-color: $dark-gray;
+   background-color: $black-60;
   }
-}
+ }
 
-figcaption {
+ figcaption {
   color: $light-gray;
-}
+ }
 
-.img-framed {
+ .img-framed {
   background-color: $light-gray;
   border: 1px solid $medium-gray;
   box-shadow: 2px 2px 2px $medium-gray;
-}
-.pagination {
+ }
+ .pagination {
   color: $font-color;
-}
+ }
 }

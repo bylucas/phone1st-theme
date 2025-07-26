@@ -3,17 +3,6 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-7WCWMB5E47"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-7WCWMB5E47');
-    </script>
 
     
     <meta charset="utf-8">
@@ -21,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Set the basic html theme settings using this test page</title>
     <meta name="HandheldFriendly" content="True" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="description" content="Set and preview the very basic html elements and theme settings and then remove the test folder if you wish">
     <meta name="author" content="h@phone1st.org">
     <meta name="robots" content="INDEX,FOLLOW">
@@ -44,11 +33,11 @@
     <meta name="twitter:url" content="https://phone1st.org/test/test.html" />
     <meta name="twitter:image:src" content="https://phone1st.org/images/phone1st-logo.webp" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/test.css" />
   </head>
 
-  <body class="">
-    <div class="wrapper">
+  <body>
+    <div id="top" class="wrapper">
       <header class="header">
         <h1>
           Test Page
@@ -58,10 +47,8 @@
 
 <section class="main">
         
-        <figure>
-          <img src="../images/phone1st-logo.webp" alt="Phone1st logo" />
-        </figure>
-
+<img src="../images/phone1st-logo.webp" alt="Phone1st logo" class="aligncenter"/>
+       
 <p class="intro-para">
   The <em>default style sheet</em> formats this page.<br />
   Use this page to set the basic elements before you start building your
@@ -94,11 +81,16 @@
   </div>
 </div>
 <hr />
-<h2>Theme Variables</h2>
+<h2 class="test-subheader">Theme Variables</h2>
 <hr />
 <div class="theme-variables">
-  <h2>Colors</h2>
   <p>The default colors - see <em>css/base/_variables.scss</em> to change</p>
+  <div class="first-color">
+    <p>$first-color</p>
+  </div>
+  <div class="second-color">
+    <p>$second-color</p>
+  </div>
   <div class="black-color">
     <p>$black</p>
   </div>
@@ -143,11 +135,24 @@
   </div>
 </div>
 
+<div class="margin-spacer">
+    <div class="normal-margin">
+      <p>margin-left: $spacer; - padding: $spacer;</p>
+    </div>
+    <div class="medium-margin">
+      <p>margin-left: $medium-spacer; - padding: $medium-spacer;</p>
+    </div>
+    <div class="small-margin">
+      <p>$margin-left: $small-spacer; - padding: $small-spacer;</p>
+    </div>
+  </div>
+
 <hr />
-<h2 id="typography">Typography</h2>
+<h2 class="test-subheader" id="typography">Typography</h2>
 <hr />
 <p>
-  The heading font-sizes are not set - see <em>css/base/_typography.scss</em>
+  The heading font-sizes are not set - see <em>css/base/_typography.scss</em><br>
+  Using <em>@fontface</em> - antontio with 3 weights - regular, bold, light
 </p>
 <h1>Heading h1</h1>
 <h2>Heading h2 weight normal</h2>
@@ -162,6 +167,21 @@
 <h5>Heading h5</h5>
 <h6>Heading h6</h6>
 <hr />
+<p>
+  The body font from <em>Google Fonts</em> Raleway - uses 9 weights and includes <em>italic</em>
+</p>
+<p><span class="one">Another surprise was how much water there was - font-weight 100</span><br>
+  <span class="two">Another surprise was how much water there was - font-weight 200</span><br>
+  <span class="two"><em>Another surprise was how much water there was</em> - font-weight 200</span><br>
+  <span class="three">Another surprise was how much water there was - font-weight 300</span><br>
+  <span class="four">Another surprise was how much water there was - font-weight 400</span><br>
+  <span class="five">Another surprise was how much water there was - font-weight 500</span><br>
+  <span class="six">Another surprise was how much water there was - font-weight 600</span><br>
+  <span class="seven">Another surprise was how much water there was - font-weight 700</span><br>
+  <span class="eight">Another surprise was how much water there was - font-weight 800</span><br>
+  <span class="nine">Another surprise was how much water there was - font-weight 900</span><br>
+</p>
+<hr>
 <p>
   <strong>Normal Paragraph</strong> Lorem ipsum dolor sit amet,
   <a href="#" title="test link">test link</a> adipiscing elit. Nullam dignissim
@@ -353,7 +373,7 @@ h1 {
 </dl>
 
 <hr />
-<h2 id="forms">Forms</h2>
+<h2 class="test-subheader" id="forms">Forms</h2>
 <hr />
 <p>
   The forms use the base stylesheet and two mixins for the <em>inputs</em> and
@@ -439,6 +459,9 @@ h1 {
   <button>Reset</button>
   <button>Submit</button>
   <button disabled>Disabled</button>
+  <br />
+  <code>&lt;a tag with class btn&gt;</code>
+  <br />
   <a class="btn" href="#">&lt;a&gt;with class btn&lt;/a&gt;</a>
 </form>
 <hr />
@@ -451,7 +474,7 @@ h1 {
 </div>
 
 <hr />
-<h2 id="tables">Tables</h2>
+<h2 class="test-subheader" id="tables">Tables</h2>
 <hr />
 <h4>Basic table</h4>
 <table>
@@ -621,7 +644,7 @@ h1 {
 </table>
 
 <hr />
-<h2 id="images">Images</h2>
+<h2 class="test-subheader" id="images">Images</h2>
 <hr />
 <blockquote>
   <p>
@@ -902,7 +925,7 @@ h1 {
 </p>
 
 <hr />
-<h2 id="navigation">Page Navigation</h2>
+<h2 class="test-subheader" id="navigation">Page Navigation</h2>
 <hr />
 <h5>Breadcrumbs</h5>
 <div class="breadcrumb-box">
@@ -929,7 +952,7 @@ h1 {
 </ul>
 
 <hr />
-<h2 id="social">Social Buttons</h2>
+<h2 class="test-subheader" id="social">Social Buttons</h2>
 <hr />
 <div class="social">
   <p>
@@ -952,25 +975,19 @@ h1 {
 </div>
 
 <hr />
-<h2 id="404">404 Page Not Found</h2>
+<h2 class="test-subheader" id="404">404 Page Not Found</h2>
 <p>Change the 404 to your liking</p>
 <a class="secondary" href="../404.html">404.html</a>
 <hr />
-<p class="third center">
-  <a href="/">Home</a> | <a href="/test/about.html">About</a> |
-  <a href="/test/scss.html">Scss</a> | <a href="/test/extras.html">Extras</a> |
-  <a href="/test/layout.html">Layout</a> | <a href="/test/flexbox.html">Flexbox</a>
-</p>
+<p class="third footer-links center"><a href="../index.html">Home</a> | <a href="about.html">About</a> | <a href="scss.html">Scss Mixins</a></p>
 </section>
 
 <footer class="footer">
-	<button id="topBtn" title="Back to top">Top</button>
+	<a id="topBtn" class="btn" href="#top">Top</a>
 		<p class="third">&copy;2025 Phone1st Starter Theme for html <a href="https://github.com/bylucas/phone1st-theme" title="Phone1st Starter Theme for html available on Github">available on Github</a></p>
 	</footer>
 </div><!-- wrapper   -->
 
-
-<script src="js/back-top.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/dark-theme.js"></script>
 

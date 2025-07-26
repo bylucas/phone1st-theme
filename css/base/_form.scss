@@ -9,17 +9,24 @@ label,
 select,
 textarea {
   display: block;
-  margin-bottom: calc($spacer / 2);
 }
 
-fieldset {
-  margin-top: calc($spacer / 2);
-}
-legend {
-  margin-bottom: calc($spacer / 2);
-}
-
-#{$all-text-inputs} {
+[type="color"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
+input:not([type]),
+textarea {
   appearance: none;
   border: $border;
   transition: border-color $duration $timing;
@@ -27,14 +34,11 @@ legend {
   font-size: $secondary;
   background-color: transparent;
   border-radius: $radius;
-  box-shadow: inset 0 1px 2px rgba(#000, 0.26);
-  margin-bottom: calc($spacer / 2);
-  padding: calc($spacer / 3);
+  box-shadow: inset 0 1px 1px rgba(#000, 0.26);
 
   &:focus {
-    border-color: $link-color;
-    border-width: 1.5px;
-    box-shadow: inset 0 1px 3px rgba(#000, 0.4);
+    outline: 1.5px solid $link-color;
+    box-shadow: inset 0 1px 1px rgba(#000, 0.4);
   }
 
   &:disabled {
@@ -55,7 +59,6 @@ legend {
 
 [type="search"] {
   appearance: textfield;
-  -webkit-appearance: textfield;
 }
 
 textarea {
@@ -68,7 +71,12 @@ textarea {
   margin: 0;
 }
 
+[type="checkbox"],
+[type="radio"],
 [type="file"],
 select {
-  width: 100%;
+  &:focus {
+    outline: 2.5px solid $link-color;
+    outline-offset: 2.5px;
+  }
 }

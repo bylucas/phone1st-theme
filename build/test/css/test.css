@@ -1,0 +1,301 @@
+#topBtn {
+  font-family: "antonio", sans-serif;
+  text-align: center;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background: #1c0301;
+  display: none;
+  padding: 0.7rem;
+  font-size: 0.9561752988rem;
+  letter-spacing: 1px;
+  color: #fff;
+  opacity: 0.7;
+}
+@media (hover: hover) {
+  #topBtn:active, #topBtn:focus, #topBtn:hover {
+    opacity: 1;
+  }
+}
+
+.intro-para {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+hr {
+  margin: 2rem 1rem;
+}
+
+.links-title {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.links {
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+}
+.links a {
+  display: block;
+  font-size: 1.0666666667rem;
+}
+
+.test-subheader {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .test-subheader {
+    font-size: 1.7rem;
+  }
+}
+.theme-variables div {
+  margin: 1.3333333333rem;
+}
+
+.theme-variables p {
+  padding: 1rem;
+}
+
+.first-color {
+  background: #2365c0;
+}
+.first-color p {
+  color: #fff;
+}
+
+.second-color {
+  background: #af0c22;
+}
+.second-color p {
+  color: #fff;
+}
+
+.black-color {
+  background: #1c0301;
+}
+.black-color p {
+  color: #fff;
+}
+
+.white-color {
+  background: #fff;
+}
+
+.dark-gray {
+  background: color-mix(in srgb, #1c0301, white 35%);
+}
+.dark-gray p {
+  color: #fff;
+}
+
+.medium-gray {
+  background: color-mix(in srgb, #1c0301, white 60%);
+}
+.medium-gray p {
+  color: #fff;
+}
+
+.light-gray {
+  background: color-mix(in srgb, #1c0301, white 95%);
+}
+
+.font-color {
+  background: color-mix(in srgb, #1c0301, white 20%);
+}
+.font-color p {
+  color: #fff;
+}
+
+.link-color {
+  background: color-mix(in srgb, #2365c0, white 30%);
+}
+.link-color p {
+  color: #fff;
+}
+
+.hover-color {
+  background: #af0c22;
+}
+.hover-color p {
+  color: #fff;
+}
+
+.background {
+  background: color-mix(in srgb, #1c0301, white 80%);
+}
+
+.light-background {
+  background: color-mix(in srgb, color-mix(in srgb, #1c0301, white 80%), white 75%);
+}
+
+.border {
+  border: 1px solid color-mix(in srgb, #1c0301, white 35%);
+  border-radius: 0.55rem;
+  margin-bottom: 2rem;
+}
+.border p {
+  margin: 0;
+}
+
+.error-color {
+  background: #ba221d;
+}
+.error-color p {
+  color: #fff;
+}
+
+.alert-color {
+  background: #bd912f;
+}
+.alert-color p {
+  color: #fff;
+}
+
+.one {
+  font-weight: 100;
+}
+
+.two {
+  font-weight: 200;
+}
+
+.three {
+  font-weight: 300;
+}
+
+.four {
+  font-weight: 400;
+}
+
+.five {
+  font-weight: 500;
+}
+
+.six {
+  font-weight: 600;
+}
+
+.seven {
+  font-weight: 700;
+}
+
+.eight {
+  font-weight: 800;
+}
+
+.nine {
+  font-weight: 900;
+}
+
+.success-color {
+  background: #3f913a;
+}
+.success-color p {
+  color: #fff;
+}
+
+.margin-spacer {
+  border-left: 1px solid color-mix(in srgb, #1c0301, white 35%);
+}
+.margin-spacer p {
+  font-size: 1.0666666667rem;
+}
+.margin-spacer .normal-margin {
+  border: 1px solid color-mix(in srgb, #1c0301, white 35%);
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+.margin-spacer .medium-margin {
+  border: 1px solid color-mix(in srgb, #1c0301, white 35%);
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.margin-spacer .small-margin {
+  border: 1px solid color-mix(in srgb, #1c0301, white 35%);
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+}
+
+.footer {
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 2rem;
+}
+
+.dark-button {
+  text-align: center;
+}
+.dark-button p {
+  margin-bottom: 10px;
+}
+.dark-button label {
+  margin-bottom: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+input[type=checkbox]:checked + .switch::after {
+  transform: translateX(22px);
+}
+
+input[type=checkbox]:checked + .switch {
+  background-color: color-mix(in srgb, #2365c0, white 30%);
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.inverted .white-color p {
+  color: #1c0301;
+}
+.inverted .light-gray p {
+  color: #1c0301;
+}
+.inverted .background p {
+  color: #1c0301;
+}
+.inverted .light-background p {
+  color: #1c0301;
+}
+.inverted #topBtn {
+  background: #fff;
+  color: #1c0301;
+}
